@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+import "json.proto";
+import "field_mask.proto";
+
+message core_json_pair {
+    JSON_value buffer = 1;
+    FieldMask queryKey = 2;
+}
