@@ -6,10 +6,10 @@
 
 #include "json_writer.h"
 #include "json.pb.h"
-#include "../../Users/goura/source/repos/FYP/core_json.pb.h"
+#include "core_json.pb.h"
 #include "src/libfuzzer/libfuzzer_macro.h"
 #include "skip_assert.h"
-#include "../../Users/goura/source/repos/FYP/json_writer.h"
+#include "json_writer.h"
 
 using namespace std;
 
