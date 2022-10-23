@@ -1,26 +1,25 @@
-Name,URL,Org,Description,Issues
-platformio-core,https://github.com/platformio/platformio-core.git,"Organization(login=""platformio"")",A professional collaborative platform for embedded development :alien:,146
-libwebsockets,https://github.com/warmcat/libwebsockets.git,"Organization(login=""warmcat"")",canonical libwebsockets.org networking library,13
+platformio-core,https://github.com/platformio/platformio-core.git,"Organization(login=""platformio"")",A professional collaborative platform for embedded development :alien:,150
+libwebsockets,https://github.com/warmcat/libwebsockets.git,"Organization(login=""warmcat"")",canonical libwebsockets.org networking library,15
 Awesome-Embedded,https://github.com/nhivp/Awesome-Embedded.git,,A curated list of awesome embedded programming.,0
-InfiniTime,https://github.com/InfiniTimeOrg/InfiniTime.git,"Organization(login=""InfiniTimeOrg"")",Firmware for Pinetime smartwatch written in C/C++ and based on FreeRTOS,300
+InfiniTime,https://github.com/InfiniTimeOrg/InfiniTime.git,"Organization(login=""InfiniTimeOrg"")",Firmware for Pinetime smartwatch written in C/C++ and based on FreeRTOS,297
 Avem,https://github.com/avem-labs/Avem.git,"Organization(login=""avem-labs"")",🚁 轻量级无人机飞控-[Drone]-[STM32]-[PID]-[BLDC],3
 Lua-RTOS-ESP32,https://github.com/whitecatboard/Lua-RTOS-ESP32.git,"Organization(login=""whitecatboard"")",Lua RTOS for ESP32,51
 embedded-notes,https://github.com/xiaowenxia/embedded-notes.git,,嵌入式linux软件开发、嵌入式linux驱动开发、c语言、单片机开发、IOT开发等面试要点记录,0
 arduino-pico,https://github.com/earlephilhower/arduino-pico.git,,"Raspberry Pi Pico Arduino core, for all RP2040 boards",7
 Arduino_FreeRTOS_Library,https://github.com/feilipu/Arduino_FreeRTOS_Library.git,,"A FreeRTOS Library for all Arduino AVR Devices (Uno, Leonardo, Mega, etc)",1
-MuditaOS,https://github.com/mudita/MuditaOS.git,"Organization(login=""mudita"")",Mobile operating system based on FreeRTOS™ optimized for E Ink displays - developed for Mudita Pure minimalist phone,75
+MuditaOS,https://github.com/mudita/MuditaOS.git,"Organization(login=""mudita"")",Mobile operating system based on FreeRTOS™ optimized for E Ink displays - developed for Mudita Pure minimalist phone,76
 freertos-addons,https://github.com/michaelbecker/freertos-addons.git,,Additions to FreeRTOS,21
+luos_engine,https://github.com/Luos-io/luos_engine.git,"Organization(login=""Luos-io"")","Luos engine is an open source and real-time orchestrator for distributed architectures, to easily design, test and deploy edge and embedded applications.",47
 HeliOS,https://github.com/MannyPeterson/HeliOS.git,,The free embedded operating system.,0
-luos_engine,https://github.com/Luos-io/luos_engine.git,"Organization(login=""Luos-io"")","Luos engine is an open source and real-time orchestrator for distributed architectures, to easily design, test and deploy edge and embedded applications.",44
 Raspberry-Pi,https://github.com/LdB-ECM/Raspberry-Pi.git,,My public Baremetal Raspberry Pi code,4
-Modbus-STM32-HAL-FreeRTOS,https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS.git,,"Modbus TCP and  RTU,  Master and Slave for STM32 using Cube HAL and FreeRTOS",1
+Modbus-STM32-HAL-FreeRTOS,https://github.com/alejoseb/Modbus-STM32-HAL-FreeRTOS.git,,"Modbus TCP and  RTU,  Master and Slave for STM32 using Cube HAL and FreeRTOS",0
 freertos.rs,https://github.com/hashmismatch/freertos.rs.git,"Organization(login=""hashmismatch"")",A Rust wrapper for FreeRTOS.,10
-pros,https://github.com/purduesigbots/pros.git,"Organization(login=""purduesigbots"")",Source code for PROS kernel: open source C/C++ development for the VEX V5 microcontroller,24
+pros,https://github.com/purduesigbots/pros.git,"Organization(login=""purduesigbots"")",Source code for PROS kernel: open source C/C++ development for the VEX V5 microcontroller,29
 kendryte-freertos-sdk,https://github.com/kendryte/kendryte-freertos-sdk.git,"Organization(login=""kendryte"")",This project is no longer maintained Not recommended for product development.,27
-FreeRTOS-rust,https://github.com/lobaro/FreeRTOS-rust.git,"Organization(login=""lobaro"")",Rust crate for FreeRTOS,5
+FreeRTOS-rust,https://github.com/lobaro/FreeRTOS-rust.git,"Organization(login=""lobaro"")",Rust crate for FreeRTOS,11
 blinker-doc,https://github.com/blinker-iot/blinker-doc.git,"Organization(login=""blinker-iot"")",blinker中文文档,0
 esp32-cam-mjpeg-multiclient,https://github.com/arkhipenko/esp32-cam-mjpeg-multiclient.git,,ESP32 MJPEG Multiclient Streaming Server,4
-hongbomiao.com,https://github.com/Hongbo-Miao/hongbomiao.com.git,,Personal cutting-edge technology lab,45
+hongbomiao.com,https://github.com/Hongbo-Miao/hongbomiao.com.git,,Personal cutting-edge technology lab,42
 SmartSpeaker,https://github.com/lovelyterry/SmartSpeaker.git,,"一个基于云端语音识别的智能控制设备，类似于天猫精灵，小爱同学。采用的芯片为stm32f407,wm8978,esp8266。",3
 FastLED-idf,https://github.com/bbulkow/FastLED-idf.git,,FastLED port to the ESP-IDF 4.0 development environment,15
 ot-rtos,https://github.com/openthread/ot-rtos.git,"Organization(login=""openthread"")","OpenThread RTOS, an integration of OpenThread, LwIP, and FreeRTOS.",5
@@ -32,7 +31,7 @@ ESP32-freeRTOS,https://github.com/DiegoPaezA/ESP32-freeRTOS.git,,Basic Examples 
 reliance-edge,https://github.com/tuxera/reliance-edge.git,"Organization(login=""tuxera"")",Transactional power-failsafe filesystem for microcontrollers,2
 stm32_framework,https://github.com/Staok/stm32_framework.git,,一个志在实现STM32F1、F2和F4工程模板的项目，集成了FreeRTOS、LWIP、FATFS、DSP、USB、IAP、菜单库、有限状态机模板等等的组件，以及未来将加入的加密、BPNN、最小二乘、音频图片视频解码、LittlevGL等诸多常用的算法或组件，并具有良好的易用性、解耦性和可剪裁性！,0
 FreeRTOS-RISCV,https://github.com/illustris/FreeRTOS-RISCV.git,,A port of FreeRTOS for the RISC-V ISA,2
-nuclei-sdk,https://github.com/Nuclei-Software/nuclei-sdk.git,"Organization(login=""Nuclei-Software"")",  Nuclei RISC-V Software Development Kit,4
+nuclei-sdk,https://github.com/Nuclei-Software/nuclei-sdk.git,"Organization(login=""Nuclei-Software"")",  Nuclei RISC-V Software Development Kit,5
 esp-wifi-logger,https://github.com/VedantParanjape/esp-wifi-logger.git,,ESP32 WiFi Logger component,4
 multizone-sdk,https://github.com/hex-five/multizone-sdk.git,"Organization(login=""hex-five"")","MultiZone® Security TEE is the quick and safe way to add security and separation to any RISC-V processors. The RISC-V standard ISA doesn't define TrustZone-like primitives to provide hardware separation. To shield critical functionality from untrusted third-party components, MultiZone provides hardware-enforced, software-defined separation of multiple equally secure worlds. Unlike antiquated hypervisor-like solutions, MultiZone is self-contained, presents an extremely small attack surface, and it is policy driven, meaning that no coding is required – and in fact even allowed. MultiZone works with any 32-bit or 64-bit RISC-V processors with standard Physical Memory Protection unit (PMP) and “U” mode.",1
 XC-OS,https://github.com/FASTSHIFT/XC-OS.git,,Open source graphics operating system for microcontroller,1
@@ -42,44 +41,45 @@ freertos-teensy,https://github.com/tsandmann/freertos-teensy.git,,"FreeRTOS port
 ArduRTOS,https://github.com/Dentrax/ArduRTOS.git,,Real Time Operating System Lessons using Arduino and The FreeRTOS Kernel,0
 freertos-cell,https://github.com/siemens/freertos-cell.git,"Organization(login=""siemens"")",FreeRTOS for Jailhouse Cells,0
 FreeRTOS-Emulator,https://github.com/alxhoff/FreeRTOS-Emulator.git,,"POSIX based FreeRTOS emulator with SDL2 graphics interface and multiple async communications interfaces, aiming to make it possible to teach FreeRTOS without embedded hardware using similar processes",3
-mTower,https://github.com/Samsung/mTower.git,"Organization(login=""Samsung"")","mTower is Trusted Execution Environment specially designed to be used on MicroController Units (MCUs) supporting ARM TrustZone technology (e.g., Cortex-M23/33/35p). mTower operates well under restrictions typical for such environment – small RAM and ROM sizes, relatively low performance, absence of rich OSes providing variety of services available on PCs or in enterprise environments. mTower is intended for usage in IoT, embedded devices, Smart Home applications, distributed heterogeneous networks and other environments where secure processing of sensitive data is necessary.",19
+mTower,https://github.com/Samsung/mTower.git,"Organization(login=""Samsung"")","mTower is Trusted Execution Environment specially designed to be used on MicroController Units (MCUs) supporting ARM TrustZone technology (e.g., Cortex-M23/33/35p). mTower operates well under restrictions typical for such environment – small RAM and ROM sizes, relatively low performance, absence of rich OSes providing variety of services available on PCs or in enterprise environments. mTower is intended for usage in IoT, embedded devices, Smart Home applications, distributed heterogeneous networks and other environments where secure processing of sensitive data is necessary.",18
 pubsub-c,https://github.com/jaracil/pubsub-c.git,,Pub/Sub library for C,0
 SUCHAI-Flight-Software,https://github.com/spel-uchile/SUCHAI-Flight-Software.git,"Organization(login=""spel-uchile"")",THIS REPOSITORY HAS BEEN MOVED TO GITLAB,0
 rtos-wot,https://github.com/jollen/rtos-wot.git,,Open source FreeRTOS SDK for ESP8266 WiFi Module,1
 STM32_HTTPs_WolfSSL,https://github.com/PeterH0323/STM32_HTTPs_WolfSSL.git,,"STM32 HTTPs demo , using lib : WolfSSL, Lwip, FreeRTOS, LAN8720",0
 stm32f10x_makefile_freertos,https://github.com/freelamb/stm32f10x_makefile_freertos.git,,stm32f10x gcc makefile freertos,0
 pid-stm32f746,https://github.com/JON95Git/pid-stm32f746.git,,Embedded graphical interface for PID control,2
-aimbots-dev,https://github.com/TAMU-Robomasters/aimbots-dev.git,"Organization(login=""TAMU-Robomasters"")",The Taproot-based rewrite of our 2021 development platform.,14
+aimbots-dev,https://github.com/TAMU-Robomasters/aimbots-dev.git,"Organization(login=""TAMU-Robomasters"")",The Taproot-based rewrite of our 2021 development platform.,9
 FreeVario,https://github.com/FreeVario/FreeVario.git,,FreeVario for paragliders,1
-Seeed_Arduino_FreeRTOS,https://github.com/Seeed-Studio/Seeed_Arduino_FreeRTOS.git,"Organization(login=""Seeed-Studio"")",This library gives an example of how to get FreeRTOS running on Seeed production. The project can be used as a template to build your projects off of as well.,2
 esp32-i2c-mpu6050,https://github.com/imxieyi/esp32-i2c-mpu6050.git,,ESP32 I2C MPU6050 driver for esp-idf,4
+Seeed_Arduino_FreeRTOS,https://github.com/Seeed-Studio/Seeed_Arduino_FreeRTOS.git,"Organization(login=""Seeed-Studio"")",This library gives an example of how to get FreeRTOS running on Seeed production. The project can be used as a template to build your projects off of as well.,2
 openMMC,https://github.com/lnls-dig/openMMC.git,"Organization(login=""lnls-dig"")",Open source firmware for MMC controllers,34
 TM4C129_FreeRTOS_Demo,https://github.com/akobyl/TM4C129_FreeRTOS_Demo.git,,Demo of FreeRTOS 10.2.1 for the Tiva TM4C1294 Connected Launchpad from Texas Instruments,0
 IPv6-ESP8266,https://github.com/IPv6-ESP8266/IPv6-ESP8266.git,"Organization(login=""IPv6-ESP8266"")",examples for setting up ipv6 on the esp8266,0
-coreMQTT-Agent-Demos,https://github.com/FreeRTOS/coreMQTT-Agent-Demos.git,"Organization(login=""FreeRTOS"")",Demonstrates use of coreMQTT-Agent for simple MQTT connection sharing among different threads of execution. ,0
 ESP8266-RTOS-HomeKit,https://github.com/luigifcruz/ESP8266-RTOS-HomeKit.git,,ESP8266 HomeKit Accessory Implementation based on FreeRTOS.,1
+coreMQTT-Agent-Demos,https://github.com/FreeRTOS/coreMQTT-Agent-Demos.git,"Organization(login=""FreeRTOS"")",Demonstrates use of coreMQTT-Agent for simple MQTT connection sharing among different threads of execution. ,0
 hsmcpp,https://github.com/igor-krechetov/hsmcpp.git,,C++ based Hierarchical / Finite State Machine library oriented for embedded and RTOS systems.,0
-frt,https://github.com/Floessie/frt.git,,"Lightweight, easy-to-use wrapper around the Arduino_FreeRTOS_Library",0
-CorePartition,https://github.com/solariun/CorePartition.git,,"Universal Cooperative Multithread Lib with real time Scheduler that was designed to work, virtually, into any modern micro controller or Microchip and, also, for user space applications for modern OS  (Mac, Linux, Windows) or on FreeRTOS as well. Supports C and C++ ",1
 obdh,https://github.com/floripasat/obdh.git,"Organization(login=""floripasat"")",On-Board Data Handling Module,9
 STM32H745_Ethernet,https://github.com/AnielShri/STM32H745_Ethernet.git,,Ethernet on STM32H745 using FreeRTOS and LWIP,1
+frt,https://github.com/Floessie/frt.git,,"Lightweight, easy-to-use wrapper around the Arduino_FreeRTOS_Library",0
+CorePartition,https://github.com/solariun/CorePartition.git,,"Universal Cooperative Multithread Lib with real time Scheduler that was designed to work, virtually, into any modern micro controller or Microchip and, also, for user space applications for modern OS  (Mac, Linux, Windows) or on FreeRTOS as well. Supports C and C++ ",1
 obdh2,https://github.com/spacelab-ufsc/obdh2.git,"Organization(login=""spacelab-ufsc"")",On-Board Data Handling Module 2,53
 Prust,https://github.com/visionspacetec/Prust.git,"Organization(login=""visionspacetec"")",PUS-C on Rust. This is the entry point for the Prust tools. List of the tools and a Wiki for them.,1
+RP2040-FreeRTOS,https://github.com/smittytone/RP2040-FreeRTOS.git,,Raspberry Pi RP2040 FreeRTOS baseline development project,0
 selfie-archive-cc-iarrc2018,https://github.com/KNR-Selfie/selfie-archive-cc-iarrc2018.git,"Organization(login=""KNR-Selfie"")",Software for 1:10 scale autonomous cars,0
+coreMQTT-Agent,https://github.com/FreeRTOS/coreMQTT-Agent.git,"Organization(login=""FreeRTOS"")",Implements an MQTT agent (or daemon) task for simple MQTT connection sharing among different threads of execution.,0
 freertos-mcpp,https://github.com/IntergatedCircuits/freertos-mcpp.git,"Organization(login=""IntergatedCircuits"")",Wrapping FreeRTOS in modern C++ classes,0
+EmbeddedMqttBroker,https://github.com/alexCajas/EmbeddedMqttBroker.git,,"This is a Mqtt broker for embedded devices, developed in C++, FreeRTOS, arduino core and tested in an Esp32. ",0
 dscKeybusInterface-RTOS,https://github.com/taligentx/dscKeybusInterface-RTOS.git,,"An esp-open-rtos library to directly interface with DSC security systems, including native HomeKit support.",2
-STM32F407VG-freeRTOS-FATFS-SDIO-SD-CARD,https://github.com/avaan/STM32F407VG-freeRTOS-FATFS-SDIO-SD-CARD.git,,STM32F407VG+freeRTOS+FATFS+SDIO+SD CARD example,0
 LPTIM-Tick,https://github.com/jefftenney/LPTIM-Tick.git,,FreeRTOS Tick/Tickless via LPTIM,1
+STM32F407VG-freeRTOS-FATFS-SDIO-SD-CARD,https://github.com/avaan/STM32F407VG-freeRTOS-FATFS-SDIO-SD-CARD.git,,STM32F407VG+freeRTOS+FATFS+SDIO+SD CARD example,0
 FreeRTOS-Cpp,https://github.com/jonenz/FreeRTOS-Cpp.git,,C++17 header-only interface to the FreeRTOS kernel API.,0
 platformio-libopencm3-freertos,https://github.com/bjwschaap/platformio-libopencm3-freertos.git,,Sample blinky project for PlatformIO using libopencm3 and FreeRTOS,1
-coreMQTT-Agent,https://github.com/FreeRTOS/coreMQTT-Agent.git,"Organization(login=""FreeRTOS"")",Implements an MQTT agent (or daemon) task for simple MQTT connection sharing among different threads of execution.,1
 micro_ros_stm32_template,https://github.com/husarion/micro_ros_stm32_template.git,"Organization(login=""husarion"")",Boilerplate to create a project with:  STM32 + Ethernet + micro-ROS + FreeRTOS + Arduino + PlatformIO,1
 riscv-emu,https://github.com/Kurun-pan/riscv-emu.git,,"RISC-V emulator that is written in Rust. Support Linux, xv6, NuttX, FreeRTOS, Zephyr OS etc.",0
 ESP32-Repo,https://github.com/coder137/ESP32-Repo.git,,ESP-IDF with ESP32,0
 murasaki,https://github.com/suikan4github/murasaki.git,,STM32 HAL class library,2
+multizone-iot-sdk,https://github.com/hex-five/multizone-iot-sdk.git,"Organization(login=""hex-five"")","MultiZone®  Trusted Firmware is the quick and safe way to build secure IoT applications with any RISC-V processor. It provides secure access to commercial and private IoT clouds, real-time monitoring, secure boot, and remote firmware updates. The built-in Trusted Execution Environment provides hardware-enforced separation to shield the execution of trusted applications from untrusted 3rd party libraries.",0
 development-of-real-time-systems,https://github.com/ragu-manjegowda/development-of-real-time-systems.git,,Coursera Development of Real-Time Systems Course Assignments,0
-EmbeddedMqttBroker,https://github.com/alexCajas/EmbeddedMqttBroker.git,,"This is a Mqtt broker for embedded devices, developed in C++, FreeRTOS, arduino core and tested in an Esp32. ",2
-RP2040-FreeRTOS,https://github.com/smittytone/RP2040-FreeRTOS.git,,Raspberry Pi RP2040 FreeRTOS baseline development project,0
 obc-firmware,https://github.com/SFUSatClub/obc-firmware.git,"Organization(login=""SFUSatClub"")",Firmware for our cubesat's On-Board Computer using the TMS570LS0432 and FreeRTOS v9,21
 Cicada-FW,https://github.com/EnAccess/Cicada-FW.git,"Organization(login=""EnAccess"")","IoT Communications Module for Energy Access. An easy way to get production ready, bi-directional communications for your IoT embedded device. Proiect supported by the EnAccess Foundation - https://enaccess.org",2
 port_freertos_to_qemu_a57_virt,https://github.com/NienfengYao/port_freertos_to_qemu_a57_virt.git,,Porting FreeRTOS to QEMU(-M virt -cpu cortex-a57),0
@@ -87,74 +87,620 @@ FreeRTOS_RH850,https://github.com/mikisama/FreeRTOS_RH850.git,,FreeRTOS port for
 hladinomer-studna-scripty,https://github.com/martinius96/hladinomer-studna-scripty.git,,"Water level monitor using open-source microcontrollers (Arduino, ESP8266, ESP32) and ultrasonic sensors HC-SR04 / JSN-SR04T and similar with Trigger and Echo signals. Arduino Core & ESP-IDF implementations. For ESP32 available also with FreeRTOS. ESP8266 and ESP32 support for Ultra Low Power deep sleep app. ESP32 available with PHY Ethernet LAN8720.",0
 Embedded-GUI-for-MT2523,https://github.com/Ever-Never/Embedded-GUI-for-MT2523.git,,嵌入式 GUI for MT2523 FreeRTOS,1
 FreeRTOS-raspi3,https://github.com/eggman/FreeRTOS-raspi3.git,,FreeRTOS port Raspberry Pi 3 ( 64bit /  aarch64 ),1
-multizone-iot-sdk,https://github.com/hex-five/multizone-iot-sdk.git,"Organization(login=""hex-five"")","MultiZone®  Trusted Firmware is the quick and safe way to build secure IoT applications with any RISC-V processor. It provides secure access to commercial and private IoT clouds, real-time monitoring, secure boot, and remote firmware updates. The built-in Trusted Execution Environment provides hardware-enforced separation to shield the execution of trusted applications from untrusted 3rd party libraries.",0
+mokugyOS,https://github.com/ukkz/mokugyOS.git,,The operating system for USB connectable Mokugyo device.,3
 open-authenticator-app,https://github.com/Open-Authenticator/open-authenticator-app.git,"Organization(login=""Open-Authenticator"")",Firmware for Open Authenticator,0
+freertos-mqttclient,https://github.com/jiejieTop/freertos-mqttclient.git,,a demo of mqttclient on freertos platform，https://github.com/jiejieTop/mqttclient,0
 gd32vf103_freertos,https://github.com/QQxiaoming/gd32vf103_freertos.git,,在GD32VF103移植FreeRTOSV10，支持使用中断栈机制，支持sysview,0
 w5500-lwip-freertos,https://github.com/PeterBorisenko/w5500-lwip-freertos.git,,RTOS-based binding for W5500 and LwIp,1
 drone_stm32,https://github.com/EmbeddedArea/drone_stm32.git,"Organization(login=""EmbeddedArea"")",An Open Source Hobby Drone project with STM32F103C8T6 (BluePill),0
 dnx-rtos,https://github.com/devdnl/dnx-rtos.git,,Small UNIX-like Real Time Operating System based on FreeRTOS kernel.,0
 STM32-Repo,https://github.com/coder137/STM32-Repo.git,,Enterprise Firmware platform development,1
 fpc-esp-freertos,https://github.com/ccrause/fpc-esp-freertos.git,,,2
-freertos-mqttclient,https://github.com/jiejieTop/freertos-mqttclient.git,,a demo of mqttclient on freertos platform，https://github.com/jiejieTop/mqttclient,0
 lorawan_freertos_esp32,https://github.com/phfbertoleti/lorawan_freertos_esp32.git,,"Projeto open-source de end-device LoRaWAN com ESP32, sensor BMP180 e FreeRTOS",0
 blueprint-freertos,https://github.com/1NCE-GmbH/blueprint-freertos.git,"Organization(login=""1NCE-GmbH"")","The Internet of Things (IoT) application has attracted a lot of attention due to its powerfulness to build a digital cyber world with meaningful information.Mainly, IoT’s devices are characterized by an (i)small size, (ii) short memory, and (iii)low consumption energy. Towards this end, reduced-memory and efficient embedded real-time operating systems (RTOS) are required to process data acquired by such devices. Primarily, RTOS is designed to support IoT devices in diverse applications andoperational requirements on time. FreeRTOS is known as one of the most utilized RTOS in practice. This is becauseit supports numerous processor architectures and its possession by Amazon has driven increased investment in engineering. Nonetheless, FreeRTOS connectivity is limited to Wi-Fi, Ethernet, or Amazon Web Services (AWS)-IoT Core via a mobile device using Bluetooth Low Energy connectivity. This rends the communication’s coverage very short, especially when connecting to the application and network remotely is needed. Motivating by the above, we aim to add new functionality in FreeRTOS AWS allow-ing to support a cellular Service in module Quectel BG96 (e.g. Narrowband (NB)-IoT,2G) able to connect the device to the internet.",0
-mokugyOS,https://github.com/ukkz/mokugyOS.git,,The operating system for USB connectable Mokugyo device.,3
 FreeRTOS-Amiga,https://github.com/cahirwpz/FreeRTOS-Amiga.git,,FreeRTOS ported to Amiga 500,3
 fpga-lb,https://github.com/xThaid/fpga-lb.git,,A toy L4 load balancer running on FPGA,0
 AVR-ATMega32-drivers-and-tools,https://github.com/Mohammed-AhmedAF/AVR-ATMega32-drivers-and-tools.git,,Personal repository of all C activities I did during embedded software course in IMT School which I took in 2018.,2
 STM32F746G-DISCO_STemWin_FreeRTOS,https://github.com/foldvarid93/STM32F746G-DISCO_STemWin_FreeRTOS.git,,"FreeRTOS, STemWin, STM32F746G-DISCOVERY ",1
 lvgl-demo-embarcadores,https://github.com/JON95Git/lvgl-demo-embarcadores.git,,Aplicação de exemplo usando a biblioteca gráfica LVGL.,0
-cc1310_freertos_blink,https://github.com/MRazvan/cc1310_freertos_blink.git,,CC1310 FreeRTOS Blink,0
+Mastering-the-FreeRTOS-Real-Time-Kernel-CN,https://github.com/iclite/Mastering-the-FreeRTOS-Real-Time-Kernel-CN.git,,,1
 onechuk,https://github.com/karaulj/onechuk.git,,An ESP32 running joystick gesture recognition (Tensorflow Lite for Microcontrollers) inside a Nintendo Wii nunchuk controller.,0
 STM32H750B-DK_TouchGFX_FreeRTOS_MQTT_Example,https://github.com/GrzHeller/STM32H750B-DK_TouchGFX_FreeRTOS_MQTT_Example.git,,A simple example of how to setup an MQTT project on STM32H750B-DK with TouchGFX and FreeRTOS.,0
 kairos-core,https://github.com/kairos-dev/kairos-core.git,"Organization(login=""kairos-dev"")",Open source operacional system for embedded devices ,0
-RingBuffer,https://github.com/lamarrr/RingBuffer.git,,A simple ring buffer for ISR-task communication,0
+cc1310_freertos_blink,https://github.com/MRazvan/cc1310_freertos_blink.git,,CC1310 FreeRTOS Blink,0
 pulp-freertos,https://github.com/pulp-platform/pulp-freertos.git,"Organization(login=""pulp-platform"")",FreeRTOS for PULP,5
+RingBuffer,https://github.com/lamarrr/RingBuffer.git,,A simple ring buffer for ISR-task communication,0
 esp-homekit-cooler-fan,https://github.com/Fonger/esp-homekit-cooler-fan.git,,This is a HomeKit NodeMCU(ESP8266) infrared controller for my air conditioner and a fan,1
+FreeRTOS-mirror,https://github.com/coldnew/FreeRTOS-mirror.git,,"Update every day at 2:30 AM, GMT+8, Taiwan Time",0
+forked-repos,https://github.com/ragu-manjegowda/forked-repos.git,,Repository I have forked from others,0
 USB-PD-Firmware-FreeRTOS,https://github.com/Jana-Marie/USB-PD-Firmware-FreeRTOS.git,,FreeRTOS based USB-PD DRP firmware for the stmf072,0
 RTOS_workspace,https://github.com/mucahitdemir/RTOS_workspace.git,,Real-time Operation System,8
 FreeRTOS-STM32L1,https://github.com/tracediary/FreeRTOS-STM32L1.git,,FreeRTOS and  STM32L1xx  and mqtt,0
 FreeRTOS-TCP-for-PIC32,https://github.com/jjr-simiatec/FreeRTOS-TCP-for-PIC32.git,,A zero copy PIC32 Ethernet MAC driver for FreeRTOS+TCP.,2
 stm32f4discovery-freertos-makefile,https://github.com/AndColla/stm32f4discovery-freertos-makefile.git,,Simple template project to build a firmware for the STM32F4 Discovery board with FreeRTOS and libopencm3,0
-FreeRTOS-mirror,https://github.com/coldnew/FreeRTOS-mirror.git,,"Update every day at 2:30 AM, GMT+8, Taiwan Time",0
-forked-repos,https://github.com/ragu-manjegowda/forked-repos.git,,Repository I have forked from others,0
-Xila,https://github.com/AlixANNERAUD/Xila.git,,A graphical operating system for embedded devices.,0
 Xila,https://github.com/AlixANNERAUD/Xila.git,,A graphical operating system for embedded devices.,0
 RP2040-HAT-FREERTOS-C,https://github.com/Wiznet/RP2040-HAT-FREERTOS-C.git,"Organization(login=""Wiznet"")",FreeRTOS Example for RP2040,1
 STM32-Advanced,https://github.com/Borodkov/STM32-Advanced.git,,Advanced projects with STM32F746-Discovery board,1
 ESP32-FreeRTOS-Tutorial,https://github.com/neilbalch/ESP32-FreeRTOS-Tutorial.git,,"My code produced by watching the videos and doing the programming ""challenges"" for Shawn Hymel's FreeRTOS tutorial series",0
 esp-tree,https://github.com/nochkin/esp-tree.git,,Driving Christmas tree with WS2812 LED strip using ESP8266,0
+amazon-freertos-ota-scripts,https://github.com/aws-samples/amazon-freertos-ota-scripts.git,"Organization(login=""aws-samples"")",Scripts to aid initiating OTA updates for Amazon FreeRTOS devices.,1
 bluepill-freertos,https://github.com/fabiovila/bluepill-freertos.git,,Working blink template for Bluepill mini board made with FreeRTOS -  Code::Blocks,0
 RaspberryPi1-FreeRTOSv9.0.0,https://github.com/leodido99/RaspberryPi1-FreeRTOSv9.0.0.git,,FreeRTOS v9.0.0 port for Raspberry Pi 1,0
 CubeMX2QBS,https://github.com/ivandzen/CubeMX2QBS.git,,Small Python script for converting GPDSC project description files generated by CubeMX software to QBS projects for using with ARMGCC compiler,0
 esp8266stuff,https://github.com/nuclearcat/esp8266stuff.git,,,0
-FreeRTOS-Wrapper,https://github.com/RT-Thread-packages/FreeRTOS-Wrapper.git,"Organization(login=""RT-Thread-packages"")",RT-Thread操作系统的FreeRTOS兼容层 | FreeRTOS Application Compatibility Layer (ACL) for RT-Thread,0
 freertos-addons-ESP32-Port,https://github.com/eagi223/freertos-addons-ESP32-Port.git,,FreeRTOS Add Ons by Michael Becker ported for the ESP-IDF,2
-Mastering-the-FreeRTOS-Real-Time-Kernel-CN,https://github.com/iclite/Mastering-the-FreeRTOS-Real-Time-Kernel-CN.git,,,1
+FreeRTOS-Wrapper,https://github.com/RT-Thread-packages/FreeRTOS-Wrapper.git,"Organization(login=""RT-Thread-packages"")",RT-Thread操作系统的FreeRTOS兼容层 | FreeRTOS Application Compatibility Layer (ACL) for RT-Thread,0
 STM32_RTOS_GNU,https://github.com/laneston/STM32_RTOS_GNU.git,,This is a project template about RTOS in STM32F4xx. Compilated by keil_v5 and GCC Cross compilation chain.,0
 STM32_CODE_EXAMPLES,https://github.com/har-in-air/STM32_CODE_EXAMPLES.git,,Code examples demonstrating usage of peripherals and features on STM32 Cortex micro-controllers,0
+fs2ch,https://github.com/fabiovila/fs2ch.git,,Recursively search for files in current or specified path and embed they in a C Include file,0
 FreeRTOS-TRex-Run,https://github.com/mariam-elshakafi/FreeRTOS-TRex-Run.git,,A rather silly implementation of Google Chrome's T-Rex run over Atmega32 using FreeRTOS,0
 axiplasma,https://github.com/plasoc/axiplasma.git,"Organization(login=""plasoc"")",AXI/MIPS SoC developed in VHDL with FreeRTOS port. Capable of running either preemptively or cooperatively.,0
 esp8266-rtos-softuart,https://github.com/devbis/esp8266-rtos-softuart.git,,Software UART for esp8266 RTOS SDK,1
-fs2ch,https://github.com/fabiovila/fs2ch.git,,Recursively search for files in current or specified path and embed they in a C Include file,0
 event_bus,https://github.com/jocelynmass/event_bus.git,,Event publisher/subscriber library,0
 htcw_freertos_thread_pack,https://github.com/codewitch-honey-crisis/htcw_freertos_thread_pack.git,,Provides some FreeRTOS threading abstractions,0
 nrf52-freertos-helloworld,https://github.com/gadget114514/nrf52-freertos-helloworld.git,,Nordic nRF52832 helloworld with cmake and gcc,0
 harsh-payload,https://github.com/andrempmattos/harsh-payload.git,,Harsh Environment CubeSat Payload designed to evaluate three different manufacturing nodes SDR SDRAM technologies under space radiation conditions. It was developed for the FloripaSat-2 CubeSat mission.,29
 NIOSII_EclipseCompProject,https://github.com/robseb/NIOSII_EclipseCompProject.git,,"Automatically create a NIOS II Eclipse Project with the latest FreeRTOS Version, the Intel hwlib and more... ",0
+RobotControlSystem_BUCT,https://github.com/cfs4819/RobotControlSystem_BUCT.git,,整套5自由度机械臂控制系统解决方案。为北京化工大学机电学院2021届毕业设计项目。,0
+ZYNQ_ADC_DMA_LWIP,https://github.com/Hamid-R-Tanhaei/ZYNQ_ADC_DMA_LWIP.git,,"Interfacing ZYNQ SoC device with ADC, Transferring data through DMA and LwIP",0
 imx6ul_freertos,https://github.com/wangben85/imx6ul_freertos.git,,"The usecase code repository based on imx6ul EVK, including QRdecoder(with Zxing library),DVFS,Power_Mode_Switch,etc",0
 PSoC-6-MCU-RTOS-Based-Design,https://github.com/Infineon/PSoC-6-MCU-RTOS-Based-Design.git,"Organization(login=""Infineon"")",PSoC 6 MCU RTOS Designs,0
 freeRTOS_workshop,https://github.com/freeRTOS-Taipei/freeRTOS_workshop.git,"Organization(login=""freeRTOS-Taipei"")",a collection of slides and example code for freeRTOS workshop,0
 platform,https://github.com/kubasejdak/platform.git,,Application bootstrap layer for various C/C++ platforms,0
 cypress_psoc_freertos_demo,https://github.com/idelsink/cypress_psoc_freertos_demo.git,,PSoC Creator demo for FreeRTOS,0
 mdns-esp8266,https://github.com/esp8266-setup/mdns-esp8266.git,"Organization(login=""esp8266-setup"")","MDNS/DNS-SD implementation (Browse, Query, Respond) for esp8266 (RTOS)",0
+lnArduino,https://github.com/mean00/lnArduino.git,,"Arduino style API for GD32 F1, F3, VF1 and STM32F1, FreeRTOS and Cmake build system included.",1
+Stress-Monitor-Based-on-NB-IoT,https://github.com/Neyzoter/Stress-Monitor-Based-on-NB-IoT.git,,"The codes of my graduation project , stress monitor based on NB-IoT,which is for STM32L1 and can be opened by Keil_MDK.",0
 IMXRT1060-EVK,https://github.com/tkashi-github/IMXRT1060-EVK.git,,IMXRT1060-EVK + MCUXpressoIDE + AmazonFreeRTOS + FatFs + LwIP + LittlevGL,0
-mdns-esp8266,https://github.com/esp8266-setup/mdns-esp8266.git,"Organization(login=""esp8266-setup"")","MDNS/DNS-SD implementation (Browse, Query, Respond) for esp8266 (RTOS)",0
+EtcPal,https://github.com/ETCLabs/EtcPal.git,"Organization(login=""ETCLabs"")",ETC Platform Abstraction Layer,1
 khronos-gnss,https://github.com/luigifcruz/khronos-gnss.git,,Khronos GNSS Frequency Standand & NTP Server,0
 STM32F7HTTPS,https://github.com/anon767/STM32F7HTTPS.git,,A simple HTTPS Client for STM32F7,0
-Stress-Monitor-Based-on-NB-IoT,https://github.com/Neyzoter/Stress-Monitor-Based-on-NB-IoT.git,,"The codes of my graduation project , stress monitor based on NB-IoT,which is for STM32L1 and can be opened by Keil_MDK.",0
 mcu-framework,https://github.com/yhsb2k/mcu-framework.git,,Subset of MCU projects with same high-level api,0
+monad-booking,https://github.com/monadoy/monad-booking.git,"Organization(login=""monadoy"")",An open source software package for meeting room booking.,0
+esp32-i2c-hmc5883l,https://github.com/imxieyi/esp32-i2c-hmc5883l.git,,,0
 Internet-of-Things-COEN-243,https://github.com/SIOTLAB/Internet-of-Things-COEN-243.git,"Organization(login=""SIOTLAB"")",Sample codes and projects for the Internet of Things course (COEN 243) at Santa Clara University,0
 educiaa-freertos,https://github.com/gonzafernan/educiaa-freertos.git,,Control de brazo robótico básico mediante el uso de  freeRTOS en placa de desarrollo EDU-CIAA-NXP.,2
-esp32-i2c-hmc5883l,https://github.com/imxieyi/esp32-i2c-hmc5883l.git,,,0
+Distance_and_TimeDisplay_FreeRTOS_STM32F411,https://github.com/abtom87/Distance_and_TimeDisplay_FreeRTOS_STM32F411.git,,This is a project where multitaksing is demonstrated with FreeRTOS and STM32F411 Evalboard,0
+ComputacaoEmbarcada,https://github.com/Insper/ComputacaoEmbarcada.git,"Organization(login=""Insper"")","Curso de Computação Embarcada do Insper, Quinto semestre",23
 Xling-firmware,https://github.com/mcusim/Xling-firmware.git,"Organization(login=""mcusim"")","Firmware for Xling, a tamagotchi-like toy",0
+horimetro_freertos_esp32,https://github.com/phfbertoleti/horimetro_freertos_esp32.git,,"Horímetro (parcial e total) feito com ESP32, FreeRTOS e LoRaWAN",0
+STM32WeatherStation,https://github.com/AdrianBesciak/STM32WeatherStation.git,,Project of Desktop Weather Station realized on STM32F746G-Disco board,0
+veml7700-esp-idf,https://github.com/kgrozdanovski/veml7700-esp-idf.git,,VEML7700 Light Sensor driver for ESP-IDF,1
+mz25key,https://github.com/pdsmart/mz25key.git,,Sharp MZ-2500/MZ-2800 PS/2 Keyboard Interface with IoT capabilities using the ESP32-S with an unbound core for more accurate interface timing. ,0
+iot-starter,https://github.com/wordyallen/iot-starter.git,,AWS and React based IoT starter project   ⚛️ 🔱 🔊 🔁,0
+Capstone-Project-summer_2020,https://github.com/jassjagga/Capstone-Project-summer_2020.git,,Embedded Project ,0
+midi2wifi,https://github.com/feddischson/midi2wifi.git,,"MIDI over WIFI transmission, based on the ESP8266",0
+pid-plotter-component,https://github.com/VedantParanjape/pid-plotter-component.git,,ESP-IDF component for pid plotter,0
+AmbientSensor,https://github.com/newAM/AmbientSensor.git,,Ambient Environment Sensor for Home Assistant,0
+Anjay-freertos-client,https://github.com/AVSystem/Anjay-freertos-client.git,"Organization(login=""AVSystem"")",LwM2M client based on Anjay and FreeRTOS for STM32 devices.,1
+esp32_uart,https://github.com/manish5897/esp32_uart.git,,UART receive task,0
+esp-homekit-servo-switch,https://github.com/Fonger/esp-homekit-servo-switch.git,,[WIP] This is a HomeKit NodeMCU wall light switch controller using servo,0
+Microprocessor-2-Lab-Template,https://github.com/jminjares4/Microprocessor-2-Lab-Template.git,,Microprocessor 2 Lab Template,0
+cfw-core,https://github.com/Cutie-Club/cfw-core.git,"Organization(login=""Cutie-Club"")",Custom computer keyboard firmware using FreeRTOS™.,6
+oled-driver-demo,https://github.com/zdzislaw-s/oled-driver-demo.git,,OLED driver demo running on ZedBoard,0
+writeFlashESP,https://github.com/MacWyznawca/writeFlashESP.git,,"Function that allow multiple write to flash memory with a significantly reduced number of erase cycles. NR_OF_BLOCKS = 2 (8KB), LENGHT_IN_32BIT_WORDS = 2 (8 Bytes) are 1024 write of 6 Bytes user data for one erase cycle!",0
+Nextion_FreeRTOS,https://github.com/djuseeq/Nextion_FreeRTOS.git,,Library for using the Nextion display with FreeRTOS + STM32 + HAL,0
+hst,https://github.com/unpsjb-rtsg/hst.git,"Organization(login=""unpsjb-rtsg"")",User Mode Scheduler for FreeRTOS.,0
+libopencm3-freertos-template,https://github.com/IOsetting/libopencm3-freertos-template.git,,Project template of libopencm3 + FreeRTOS,0
+udp_echo_server,https://github.com/rauschenbach/udp_echo_server.git,,enc28j60+stm32+lwip+FreeRTOS,0
+learning-stm32,https://github.com/amamory-embedded/learning-stm32.git,"Organization(login=""amamory-embedded"")",A tutorial-like description for using an STM32 device,0
+CANopencm3,https://github.com/Inviz/CANopencm3.git,,"CANopenNode driver for stm32 via libopencm3, includes optional internal flash storage driver, and FreeRTOS scaffold",0
+project-nixie,https://github.com/devKarthikRaj/project-nixie.git,,Hardware and software documentation for a Nixie tube clock created by two engineering students,0
+smart_light_system,https://github.com/bszydxh/smart_light_system.git,,基于esp32的智能灯带系统，支持:小爱同学+流光溢彩+天气时间显示+久坐提醒+关电脑,0
+cc1310_freertos_radio,https://github.com/MRazvan/cc1310_freertos_radio.git,,CC1310 Simple FreeRTOS Radio functionality.,0
+M3WebBackbone,https://github.com/IzyaSoft/M3WebBackbone.git,"Organization(login=""IzyaSoft"")","A backbone for projects for Cortex M3 devices compises of FreeRTOS, IpIw, and tools for store (using internal flash) and update Web face",3
+hoc-lap-trinh-stm32f1,https://github.com/phatvu1294/hoc-lap-trinh-stm32f1.git,,"Tự học lập trình STM32F1 Public bao gồm code mẫu CMSIS, StdPeriph, HAL, Low-Layer, FreeRTOS",0
+gate-sensor,https://github.com/int08h/gate-sensor.git,,Low-power ESP32-based IoT sensor to detect changes in Hall-effect sensor and send notifications via GCP IoT Core,0
+SAME70-examples,https://github.com/Insper/SAME70-examples.git,"Organization(login=""Insper"")",Exemplos do kit SAME70-XPLD,32
+freertos,https://github.com/foss-for-synopsys-dwc-arc-processors/freertos.git,"Organization(login=""foss-for-synopsys-dwc-arc-processors"")",FreeRTOS on ARCv2 Processors,0
+stm32l475_freertos_iot,https://github.com/AirMaxSys/stm32l475_freertos_iot.git,,Using STM32L475 MCU with FreeRTOS kernel. BCM43362 wifi driver using wiced sdk，ported thirdparty framework LVGL LWIP FATFS and eclipse/mqtt.,0
+NEEDOS_ARDUINO,https://github.com/tuliopo/NEEDOS_ARDUINO.git,,This project is based in a simple scheduler created by me ported to ARDUINO. ,1
+free-rtos-coffee-machine,https://github.com/luncf/free-rtos-coffee-machine.git,,Automatic Coffee Brewing Machine in FreeRTOS,0
+stm32-rtc-scheduler,https://github.com/akospasztor/stm32-rtc-scheduler.git,,"RTC-based scheduler implementation suitable for ultra-low power applications, where recurring tasks are needed to be executed with long periods. Can be effectively combined with RTOS.",0
+STM32F429_NUCLEO_LWIP_FREERTOS,https://github.com/DutchEngineer/STM32F429_NUCLEO_LWIP_FREERTOS.git,,This is a template lwIP and FreeRTOS project for the STM32F429-Nucleo (NUCLEO-F429ZI) board using STM32CubeMX and TrueSTUDIO.,1
+FT900,https://github.com/richmondu/FT900.git,,"IoT framework and cloud-connected apps for FTDI/Bridgetek's FT900 MCU, including AWS/GCP/Azure IoT connectivity and Amazon Alexa AVS-SDK integration for PanL Smart Home (smart hub & smart displays).",0
+STM32-Linux,https://github.com/andriy-bilynskyy/STM32-Linux.git,,STM32 project template for development under Linux,0
+esp32-idf-clock,https://github.com/kovagoz/esp32-idf-clock.git,,NTP synchronized clock with 7-segment LED display.,0
+EnhancedFreeRTOS,https://github.com/FreeRTOS-AdaptiveScheduling/EnhancedFreeRTOS.git,"Organization(login=""FreeRTOS-AdaptiveScheduling"")",This is a modified version of FreeRTOS kernel with an enhanced scheduler. An adaptive scheduler for the FreeRTOS based on Ant Colony Optimisation.,0
+pio-freertos,https://github.com/kaizoku-oh/pio-freertos.git,,:rocket: Using FreeRTOS and stm32cube framework in PlatformIO,0
+freertos_cpp_util,https://github.com/jacobschloss/freertos_cpp_util.git,,A C++ utility library for FreeRTOS.,0
+STM32F411_BLACKPILL_CDC_CLI,https://github.com/thaas58/STM32F411_BLACKPILL_CDC_CLI.git,,Example STM32F411 Black Pill STM32CubeIDE project utilizing the FreeRTOS command line example code,2
+mtb-example-anycloud-mqtt-client,https://github.com/Infineon/mtb-example-anycloud-mqtt-client.git,"Organization(login=""Infineon"")",This code example demonstrates connecting to AWS IoT over MQTT using the AnyCloud SDK for PSoC 6 MCU and CYW43xxx connectivity devices.,0
+FreertosDemo,https://github.com/hunterhedges-zz/FreertosDemo.git,,FreeRTOS demo using TI MSP432,0
+liscolab,https://github.com/abellisco/liscolab.git,,This repository is managed by the Liscovsky-Barrera team,0
+RR,https://github.com/lets-blu/RR.git,,一个基于STM32 HAL库和FreeRTOS操作系统的外设驱动库,0
+mtb-example-anycloud-ble-wifi-onboarding,https://github.com/Infineon/mtb-example-anycloud-ble-wifi-onboarding.git,"Organization(login=""Infineon"")",This code example demonstrates Wi-Fi onboarding with BLE,1
+spiderrobot,https://github.com/gerritonagoodday/spiderrobot.git,,"This is a prototype 8-legged spider with 2 pincers, 2 cameras for eyes, moving vision, and a mandible with pointy teeth to scare the little children, all made mode LEGO Technic. The MCU is an ESP32 Dev module, and software is written in C++.",0
+CMSIS-FreeRTOS-STM32F103,https://github.com/JMaravalhasSilva/CMSIS-FreeRTOS-STM32F103.git,,"A project made for testing FreeRTOS features on the STM32F103 microcontroller family, using only CMSIS.",0
+rtos_robot_with_joystick,https://github.com/Ostantric/rtos_robot_with_joystick.git,,FreeRTOS Arduino project,0
+Garden_monitoring_station,https://github.com/metalalive/Garden_monitoring_station.git,,"Garden monitoring system on embedded platform, with autonomous irrigation, environment detection, network connectivity",0
+Project_Fimble,https://github.com/zst123/Project_Fimble.git,,"Code and documentations for Project Fimble, an IoT food monitoring system, based around the Cypress PSoC 6 and Amazon Web Services.",2
+hydrate-extension-inteligente,https://github.com/Frozen-Burrito/hydrate-extension-inteligente.git,,Repositorio para el software de aplicación para la extensión inteligente de botellas de agua Hydrate.,4
+FreeRTOS-Project-18-from-Systems-in-real-time,https://github.com/SakaSerbia/FreeRTOS-Project-18-from-Systems-in-real-time.git,,"This is my project from the subject Systems in real time, realized on MSP430 with FreeRTOS (Real Time Operating System).",0
+ftp_test,https://github.com/rauschenbach/ftp_test.git,,stm32 ftp server,0
+multipwm,https://github.com/nochkin/multipwm.git,,Multi-channel PWM library for esp-open-rtos,2
+ArduRMMMQ,https://github.com/Dentrax/ArduRMMMQ.git,,Ardu[R]eal-Time Operating System [MM] Magic Mirror [MQ] MQ Gas Sensor - RTOS Project,0
+IMU-Kinetic,https://github.com/motionperfect/IMU-Kinetic.git,"Organization(login=""motionperfect"")",An Inertial Measurement Unit (IMU) implemented in C for STM32L475xx microcontrollers,0
+cdh-tsat5,https://github.com/UMSATS/cdh-tsat5.git,"Organization(login=""UMSATS"")",Contains software for the TSAT5 (2018-2020) Command and Data Handling (CDH) board.,3
+uc-minimal,https://github.com/Eryk-Mozdzen/uc-minimal.git,,Set of minimal projects for various embedded platforms,0
+Demo_FreeRTOS_v10.0.1_for_Renesas_RX64M_with_CSplus_CC-RX,https://github.com/kern-gt/Demo_FreeRTOS_v10.0.1_for_Renesas_RX64M_with_CSplus_CC-RX.git,,,0
+HomeIoT,https://github.com/sdorre/HomeIoT.git,,,0
+m5stick-gauge,https://github.com/bsergei/m5stick-gauge.git,,M5StickC Plus car gauge to display engine coolant temp,0
+GPS-Tracker,https://github.com/Ivanchenko59/GPS-Tracker.git,,"GPS Tracker with GSM connection, logging to SDcard, sending data to mqtt server",0
+Technologies-for-Connectivity-group-5,https://github.com/MichielMolenaar/Technologies-for-Connectivity-group-5.git,,Code Technologies for Connectivity group 5 Clicker Flicker,0
+FreeRTOS-ADC-DMA-PWM-UART-IT-STM32,https://github.com/emre108/FreeRTOS-ADC-DMA-PWM-UART-IT-STM32.git,,Interrupt-Task priority configuration. Semaphores and queue objects in an operating system.,0
+esp-pocs,https://github.com/geovaneferreira/esp-pocs.git,,,0
+Skeleton_Detection,https://github.com/Tianxiaomo/Skeleton_Detection.git,,Skeleton Detection,0
+robot1,https://github.com/gtraines/robot1.git,,Repo for Arduino and Python/whatever else I need to keep track of for my first rover,0
+iota2-hub,https://github.com/iota2/iota2-hub.git,"Organization(login=""iota2"")",IOTA2-HUB is an Ethernet connectivity module that is able to monitor various components and provides multiple options to connect over a number of internet protocols,0
+FreeRTOS_On_Linux,https://github.com/QQxiaoming/FreeRTOS_On_Linux.git,,这是将FreeRTOS V10.2.1移植到linux平台的移植层代码，参考早期freertosV6版本的移植代码，并修复一些bug,0
+EmbedXrpc,https://github.com/snikeguo/EmbedXrpc.git,,rpc for embeded mcu  ,0
+automated-garden,https://github.com/calvinmclean/automated-garden.git,,home garden automation software,6
+ST080,https://github.com/tino1b2be/ST080.git,,ST080 Drum Machine,1
+AESD_ECEN-5013-002,https://github.com/PuneetBansal/AESD_ECEN-5013-002.git,,Repository for the course Advanced Embedded Software Development -Spring 2019,0
+multizone-iot-sdk-pfsc,https://github.com/hex-five/multizone-iot-sdk-pfsc.git,"Organization(login=""hex-five"")","MultiZone®  Trusted Firmware is the quick and safe way to build secure IoT applications with any RISC-V processor. It provides secure access to commercial and private IoT clouds, real-time monitoring, secure boot, and remote firmware updates. The built-in Trusted Execution Environment provides hardware-enforced separation to shield the execution of trusted applications from untrusted 3rd party libraries.",0
+STM32H743-CMake-Template,https://github.com/Mythologyli/STM32H743-CMake-Template.git,,STM32H7 + ILI9341 + FreeRTOS + LVGL + FatFs,0
+Demo_FreeRTOS_v10.1.1_for_Renesas_RX65N_with_CSplus_CC-RX,https://github.com/kern-gt/Demo_FreeRTOS_v10.1.1_for_Renesas_RX65N_with_CSplus_CC-RX.git,,,0
+IoT,https://github.com/IsmaelLopesSilva/IoT.git,,"Sobre Internet das Coisas (artigos, ebooks, Arduino, Raspberry, SMT32 e outros conteúdos).",0
+Azure-Sphere-Home-Process-Controller,https://github.com/Tai-Min/Azure-Sphere-Home-Process-Controller.git,,"Grand Prize winner in Home Is Where the Hack Is Challenge, with Avnet Azure Sphere",0
+triforce-telemetry,https://github.com/TeamTriforceUK/triforce-telemetry.git,"Organization(login=""TeamTriforceUK"")",Firmware for the ESP8266 running on Triforce. Hosts a HTTP server providing a webpage to view telemetry.,3
+Embedded-systems-course,https://github.com/Marcin214/Embedded-systems-course.git,,"Solutions for university classes covering basics of microcontrollers and peripherals, computer buses and RTOS working with ARM and Xmega microcontrollers.",0
+Demo_FreeRTOS_v10.0.1_for_Renesas_RX130_with_CSplus_CC-RX,https://github.com/kern-gt/Demo_FreeRTOS_v10.0.1_for_Renesas_RX130_with_CSplus_CC-RX.git,,,0
+learn-RTOS,https://github.com/ngendah/learn-RTOS.git,,Tutorials on RTOS concepts,0
+DevACustom,https://github.com/TAMU-Robomasters/DevACustom.git,"Organization(login=""TAMU-Robomasters"")",Repository for the full rewrite of our 2020 development platform,1
+GumOS,https://github.com/Andrewerr/GumOS.git,,"Not a real operating system, but a wrapper on FreeRTOS and M5Stack",1
+ESP32,https://github.com/mc-cat-tty/ESP32.git,,ESP32 example projects,0
+homething,https://github.com/charrea6/homething.git,,"IOT for the home, using an ESP8266!",0
+m5stack-freertos-ota,https://github.com/fukuen/m5stack-freertos-ota.git,,Amazon FreeRTOS OTA demo for M5Stack,0
+course_fastbit_embeddedSystems,https://github.com/abdosalem490/course_fastbit_embeddedSystems.git,,this is a list of courses I took related to embedded system,0
+stm32-cmake-projects,https://github.com/robamu-org/stm32-cmake-projects.git,"Organization(login=""robamu-org"")",Test applications to build for STM MCUs using the stm32-cmake repository,0
+STM32F4_FreeRTOS_Demo,https://github.com/abtom87/STM32F4_FreeRTOS_Demo.git,,A simple project consisting of two tasks running with FreeRTOS scheduler. ,0
+mqtt-https-mbedtls,https://github.com/AngeloAlifano/mqtt-https-mbedtls.git,,MQTT client and HTTPS server using mbedtls,0
+RealEmbeddedPandaTime,https://github.com/MrrRaph/RealEmbeddedPandaTime.git,,Real time concurrency exercices,0
+RGB-LED-PWM-Demo-for-Arty-Z7-20,https://github.com/magictaler/RGB-LED-PWM-Demo-for-Arty-Z7-20.git,,RGB PWM LED Demo project running on ARTY Z7-20 hardware,0
+mtb-example-azure-iot,https://github.com/Infineon/mtb-example-azure-iot.git,"Organization(login=""Infineon"")","The code example demonstrates connecting to the Azure IoT services using the Azure SDK for Embedded C. This code example demonstrates the features such as iot hub - C2D, Telemetry, Methods, Twin, Provisioning, Plug and Play.",0
+ESP32-FreeRTOS-BluetoothControl-Alarm,https://github.com/saulcarvalho/ESP32-FreeRTOS-BluetoothControl-Alarm.git,,Real-time based project implemented in an ESP32 WeMos LOLIN32 Lite with FreeRTOS.,0
+esp32-lcd12864-serial,https://github.com/imxieyi/esp32-lcd12864-serial.git,,ESP32 driver for LCD12864 with chinese character,0
+Firmwares,https://github.com/Cking616/Firmwares.git,,,0
+masterclock,https://github.com/msin87/masterclock.git,,Masterclock based on STM32+STemWin+FreeRTOS,0
+FreeRTOS_SPI_Serial_GPS,https://github.com/abtom87/FreeRTOS_SPI_Serial_GPS.git,,"A FreeRTOS project where there are three tasks, time is extracted from GPS Module and displayed over a 7Segment LED display.",0
+freertos_bluetooth,https://github.com/andrewlabssg/freertos_bluetooth.git,"Organization(login=""andrewlabssg"")",FreeRTOS support for the Silicon Labs EFR32BG/MG Bluetooth stack,0
+pros2,https://github.com/purduesigbots/pros2.git,"Organization(login=""purduesigbots"")",Source code for PROS kernel 2: open source C development for the VEX Cortex microcontroller,5
+STM32F429_Disco,https://github.com/embeddedcrab/STM32F429_Disco.git,,This repository showcases STM TouchGFX and other applications using FreeRTOS in C/C++.,0
+Embedded-T-Rex-Runner,https://github.com/kx-Huang/Embedded-T-Rex-Runner.git,,Google Chrome's T-rex Runner Game but an Embedded Version. CS/ECE353 project @University of Wisconsin-Madison,0
+RTOS,https://github.com/kevintom98/RTOS.git,,RTOS projects on STM32F446RE (ARM CORTEX M4) Nucleo Microcontroller,0
+RTOS,https://github.com/ahiralesc/RTOS.git,,Real Time Operating Systems,2
+m5stack-freertos-blinky,https://github.com/fukuen/m5stack-freertos-blinky.git,,,0
+ARM_TPL,https://github.com/alisoam/ARM_TPL.git,,,0
+cm_mcu,https://github.com/apollo-lhc/cm_mcu.git,"Organization(login=""apollo-lhc"")",Microcontroller source code for the APOLLO blade for the CMS tracker HL-LHC upgrade.,7
+stm32f4-freeRTOS,https://github.com/nghiaphamsg/stm32f4-freeRTOS.git,,Learn Running/Porting FreeRTOS (Real Time Operating System) on STM32F446RE and ARM cortex M based Mircocontrollers,0
+cursembedded,https://github.com/mariusmm/cursembedded.git,,Exemples pel curs de sistemes encastats.,0
+STM32-FreeRTOS-float,https://github.com/leech001/STM32-FreeRTOS-float.git,,Support for working with float in STM32 in conjunction with FreeRTOS,0
+ts100_ng,https://github.com/mkninc/ts100_ng.git,,Alternative firmware for the TS100 soldering iron.,0
+RTOS_ASMC,https://github.com/jinparksj/RTOS_ASMC.git,,"Asynchronous Motor Control with FreeRTOS, communicating through RS-485 Bus Network",0
+STM32-FreeRTOS,https://github.com/FabioSchiavo/STM32-FreeRTOS.git,,IoT - STM32 ARM M7 microcontroller board with FreeRTOS middleware,0
+pro-codes090,https://github.com/pro-codes090/pro-codes090.git,,I am pratham vora an embedded engineer . I like explore things in the world of embedded devices and explore behind the scenes working of any component to develop things from scratch and push it to the next level .I develop drivers for microcontrollers(ARM) from scratch and at this place you will find all my projects .  ,0
+I2DS,https://github.com/edward62740/I2DS.git,,This is a security sensor system with app control and cloud messaging capabilities.,0
+WrapperFreeRTOS,https://github.com/alexCajas/WrapperFreeRTOS.git,,"FreeRTOS C++ Wrapper, en POO, compatible con Arduino core y probado en un ESP32.",0
+Arduino-FreeRTOS,https://github.com/wachenda/Arduino-FreeRTOS.git,,,0
+freertos-teensy-old,https://github.com/tsandmann/freertos-teensy-old.git,,FreeRTOS port to Teensy boards (using the Teensy core libraries for Arduino),0
+freeRTOS_ARM_M0_FM33A0xx,https://github.com/KosingZhu/freeRTOS_ARM_M0_FM33A0xx.git,,本项目是基于复旦微M0+系列MCU在keil环境下的移植工程demo,0
+mtb-example-anycloud-ble-cts-server,https://github.com/Infineon/mtb-example-anycloud-ble-cts-server.git,"Organization(login=""Infineon"")",This code example demonstrates the implementation of a simple BLE GAP Central - GATT Server with Current Time Service using the Cypress Combo (Wi-Fi+BT) SoCs.,0
+m5stack-freertos-shadow,https://github.com/fukuen/m5stack-freertos-shadow.git,,Amazon FreeRTOS Shadow demo for M5Stack,0
+MaixK210Playground,https://github.com/fjpolo/MaixK210Playground.git,,"Play around with Maix's Kendryte K210 in C, C++ and Rust",0
+FiatMon,https://github.com/VeryBusyBee/FiatMon.git,,"FiatMon is a device which takes certain CAN messages from Fiat 500L CAN network using OBD2 connector and displays them on the LCD/OLED screen. Most CAN messages are captured from a broadcast stream, but few are requested/received.",0
+rlog,https://github.com/eduardodsp/rlog.git,,Portable remote log message server,0
+udp_rtos_test,https://github.com/rauschenbach/udp_rtos_test.git,,Milandr 1986ВЕ3 + RTOS + LWIP + SOCKETS + UDP ECHO SERVER,0
+mtb-example-anycloud-tcp-client,https://github.com/Infineon/mtb-example-anycloud-tcp-client.git,"Organization(login=""Infineon"")",This code example demonstrates implementing a TCP client using the AnyCloud SDK for PSoC 6 MCU and CYW43xxx connectivity devices.,0
+ble_app_hrs_freertos_mmd,https://github.com/kklobe/ble_app_hrs_freertos_mmd.git,,Example FreeRTOS project demonstrating SEGGER thread awareness scripts and monitor mode debugging for the Nordic nRF52840 DK,0
+mm32_lwip_web,https://github.com/iclite/mm32_lwip_web.git,,MindMotion MM32F3277 LwIP HTTP Server Demo.,0
+FreeRTOS_libopencm3,https://github.com/Electronshik/FreeRTOS_libopencm3.git,,FreeRTOS + libopencm3 template makefile project for stm32 and other,0
+freeRTOS-ESP1,https://github.com/VkBoit/freeRTOS-ESP1.git,,"This is a simple Blink sketch for an ESP32 using FreeRTOS, and specifically Semaphores",0
+w806-emu2413,https://github.com/nyh-workshop/w806-emu2413.git,,EMU2413 for WM806 microcontroller,0
+EpilogueOS,https://github.com/seisatsu/EpilogueOS.git,,An ESP8266/ESP32 FreeRTOS-based mesh-networking operating system based on uLisp and FreeRTOS.,18
+GPIOInterruptsOnCC3200,https://github.com/tzhenghao/GPIOInterruptsOnCC3200.git,,A simple demonstration on how to use GPIO interrupts with freeRTOS on the TI SimpleLink CC3200 Launchpad.,0
+Transfer-files-by-Ethernet,https://github.com/xaowang96/Transfer-files-by-Ethernet.git,,Transfer files over Ethernet,0
+mtb-example-anycloud-ble-ess,https://github.com/Infineon/mtb-example-anycloud-ble-ess.git,"Organization(login=""Infineon"")",This code example demonstrates the implementation of a simple BLE Environmental Sensing Profile.,0
+FreeRTOS_USB_Motor_Control,https://github.com/TAMU-Robomasters/FreeRTOS_USB_Motor_Control.git,"Organization(login=""TAMU-Robomasters"")",Control GM6020 motor in speed mode via USB,0
+FreeRTOS_STM32_Porting,https://github.com/rkroshan/FreeRTOS_STM32_Porting.git,,Porting FreeRTOS on STM32F4 Discovery Board,2
+FreeRTOS_SCI_Loopback,https://github.com/Dipto9999/FreeRTOS_SCI_Loopback.git,,Transmit and Receive a Message via SCI Loopback. FreeRTOS Kernel Periodically Runs Tasks.,0
+Esp32Blasphemy,https://github.com/Drutol/Esp32Blasphemy.git,,"Quick and dirty .Net nanoFramework playground. Mqtt, Rfid, CPU Stats, C++ Interop",0
+osal,https://github.com/kubasejdak/osal.git,,Operating System Abstraction Layer for C/C++,0
+SHL_Pod_RTOS,https://github.com/spartanhl/SHL_Pod_RTOS.git,"Organization(login=""spartanhl"")",STM32 RTOS app for the monitoring and control of Spartan Hyperloop Pod systems,0
+pred-main-xmc4700-kit,https://github.com/Infineon/pred-main-xmc4700-kit.git,"Organization(login=""Infineon"")",This repository contains the Amazon FreeRTOS software package for the XENSIV™ predictive maintenance evaluation kit EVAL_XMC47_PREDMAIN_AA.,0
+simplehttp-esp8266,https://github.com/esp8266-setup/simplehttp-esp8266.git,"Organization(login=""esp8266-setup"")","Simple http web application server, no file serving, just callbacks",1
+Development-of-Real-Time-Systems,https://github.com/pramodk51/Development-of-Real-Time-Systems.git,,,1
+AtmoLight,https://github.com/pfaivre/AtmoLight.git,,Ambiance lighting system,0
+warp-core,https://github.com/qhandley/warp-core.git,,Embedded launch control application for OSU's hybrid rocket team,0
+m5stick-mhz19,https://github.com/bsergei/m5stick-mhz19.git,,CO2 Sensor using MH-Z19 sensor and M5Stick C Plus,0
+real-time-systems,https://github.com/andrempmattos/real-time-systems.git,,Real-time systems projects,0
+BDC_V1.0,https://github.com/berniGelectronic/BDC_V1.0.git,,"Bus Door Controller V1.0, STM32F4",0
+mm32_freertos,https://github.com/iclite/mm32_freertos.git,,MM32 FreeRTOS Example,0
+Robocross,https://github.com/Casonka/Robocross.git,,Проект был создан для участия в РОБОКРОСС 2022 - ежегодные всероссийские испытания беспилотного транспорта. Проект создан при поддержке Донского государственного технического университета и структурного подразделения Ресурсного Центра Робототехники (РЦР). Работа была начата в октябре 2021 года ,0
+stm32f107_makefile_freertos,https://github.com/freelamb/stm32f107_makefile_freertos.git,,stm32f107_makefile_freertos tcp/ip,0
+FreeRTOS-tank,https://github.com/jonimoi/FreeRTOS-tank.git,,A simple autonomous tank using FreeRTOS on a STM32 Nucleo F10RB,0
+osif,https://github.com/dimmykar/osif.git,,Operating System Interface for Embedded Devices,0
+smart-home,https://github.com/makaram99/smart-home.git,,"This is a simple smart home system 🏠, done using FreeRTOS and Atmega32 microcontroller.",1
+FxOneEM,https://github.com/Fx-One/FxOneEM.git,,FxOne是基于FreeRTOS开发的嵌入式开发框架,0
+FreeRTOS,https://github.com/dbywalec/FreeRTOS.git,,Unofficial FreeRTOS clone from SVN,0
+Embedded-systems-guide,https://github.com/ramonheras/Embedded-systems-guide.git,,Texas instrument Bare-Metal&FreeRTOS examples ,0
+ssh,https://github.com/maotingwei/ssh.git,,AM2320+STM32+FreeRTOS+Unibus,0
+esp32-dht22-azureiot,https://github.com/damienpontifex/esp32-dht22-azureiot.git,,Learning about esp32 by making a temperature & humidity logger with dht22 that sends telemetry to azure iot,0
+mtb-example-anycloud-ble-battery-server,https://github.com/Infineon/mtb-example-anycloud-ble-battery-server.git,"Organization(login=""Infineon"")",This code example demonstrates the implementation of a simple Bluetooth LE Battery Service. The Battery Service exposes the Battery Level of the device and comes with support for OTA update over Bluetooth LE.,0
+freertos_inside_linux_using_cmake,https://github.com/masoudir/freertos_inside_linux_using_cmake.git,,This repository contains some examples about how to run freertos inside linux using Cmake.,0
+green-pot,https://github.com/ccxuan123/green-pot.git,,A developing project for automated plant watering system with cat repelling solution based on Arduino Uno with FreeRTOS,0
+Capacity-Controlling,https://github.com/berkayarslan17/Capacity-Controlling.git,,The subject of this project is to make a system that measures how many people are in the room with using Bluetooth signals.,0
+FreeRTOS-cpp_task,https://github.com/0x0c/FreeRTOS-cpp_task.git,,,0
+RTOS-chatting-application-,https://github.com/ahelbadwi/RTOS-chatting-application-.git,,"Used FreeRTOS kernel to develop a chatting application between two micro-controllers through uart channel, lcd, keypad, pushbutton and leds.",0
+freertos-esp32-sys,https://github.com/N3xed/freertos-esp32-sys.git,,FreeRTOS ESP32 port and bindings for Rust,0
+rinasense,https://github.com/Fundacio-i2CAT/rinasense.git,"Organization(login=""Fundacio-i2CAT"")",FreeRTOS RINA library for microcontroller platforms,18
+esp8266_ambient_monitor,https://github.com/luke-holt/esp8266_ambient_monitor.git,,Ambient conditions monitor using MQTT over WiFi for ESP8266 using FreeRTOS. ,0
+FxOneEM,https://github.com/Fx-One/FxOneEM.git,,FxOne是基于FreeRTOS开发的嵌入式开发框架,0
+FreeRTOS,https://github.com/dbywalec/FreeRTOS.git,,Unofficial FreeRTOS clone from SVN,0
+Embedded-systems-guide,https://github.com/ramonheras/Embedded-systems-guide.git,,Texas instrument Bare-Metal&FreeRTOS examples ,0
+ssh,https://github.com/maotingwei/ssh.git,,AM2320+STM32+FreeRTOS+Unibus,0
+esp32-dht22-azureiot,https://github.com/damienpontifex/esp32-dht22-azureiot.git,,Learning about esp32 by making a temperature & humidity logger with dht22 that sends telemetry to azure iot,0
+mtb-example-anycloud-ble-battery-server,https://github.com/Infineon/mtb-example-anycloud-ble-battery-server.git,"Organization(login=""Infineon"")",This code example demonstrates the implementation of a simple Bluetooth LE Battery Service. The Battery Service exposes the Battery Level of the device and comes with support for OTA update over Bluetooth LE.,0
+freertos_inside_linux_using_cmake,https://github.com/masoudir/freertos_inside_linux_using_cmake.git,,This repository contains some examples about how to run freertos inside linux using Cmake.,0
+STM32_ETH_LWIP,https://github.com/lmtan91/STM32_ETH_LWIP.git,,This project aims to develop the STM32 basic applications with FreeRTOS and Standalone as well as based on GCC without using the commercial IDE and Compiler also.,0
+CARTOS,https://github.com/njyjn/CARTOS.git,,Real-Time Car Controller. For CG2271.,0
+http_server,https://github.com/manish5897/http_server.git,,http server for request/response in esp32,0
+stm32joystick_demo,https://github.com/dviejo/stm32joystick_demo.git,,stm32f103c8t6 (Bluepill) HID Usb joystick demo firmware based on libopencm3,0
+quadro2,https://github.com/NikLeberg/quadro2.git,,Quadrocopter running on a ESP32 with FreeRTOS kernel.,0
+FreeRTOS_S12Z,https://github.com/mikisama/FreeRTOS_S12Z.git,,FreeRTOS Ported to FreeScale S12Z,0
+Neneco-FreeRTOS-On-RPI4B,https://github.com/D3boker1/Neneco-FreeRTOS-On-RPI4B.git,,Neneco project is an unofficial port of FreeRTOS for Raspberry Pi 4 Model B.,0
+IOT_Study_ESP32,https://github.com/Mcbt5535/IOT_Study_ESP32.git,,ESP32 + FreeRTOS,0
+Stm32-FatFs-FreeRTOS,https://github.com/Bsm-B/Stm32-FatFs-FreeRTOS.git,,STM32 example of FreeRTOS & FatFs for controlling an SPI-connected MMC/SD memory card,0
+WMNS,https://github.com/edward62740/WMNS.git,,Wireless mesh network system which integrates customizable smart home sensing into a single network. ,0
+Alexa-Core-Test,https://github.com/MichaelDu9226/Alexa-Core-Test.git,,"This is a client demo for Amazon's Alexa Voice Service(AVS). It's based on WIFI SOC MT7687,using HTTP API &Aduio Codec over FreeRTOS.This project is still ongoing.And it will migration to ESP32 in the future.",1
+stm32f407-template,https://github.com/ksteensig/stm32f407-template.git,,Template for stm32f407 with libopencm3 and FreeRTOS support,0
+REMOTE-GREENHOUSE-MONITORING-AND-AUTOMATION-SYSTEM,https://github.com/PuneetBansal/REMOTE-GREENHOUSE-MONITORING-AND-AUTOMATION-SYSTEM.git,,Repository for the Advanced Embedded Software Development (AESD) Project 2.,0
+NewMeter,https://github.com/TSMotter/NewMeter.git,,"Smart Meter for Electric Parameters - STM32F407, ATM90E36A, SX1278, FreeRTOS",0
+edstream,https://github.com/ITIS-Enrico-Fermi/edstream.git,"Organization(login=""ITIS-Enrico-Fermi"")",Realtime streaming facility for embedded displays,2
+freertos-mockup,https://github.com/AcubeSAT/freertos-mockup.git,"Organization(login=""AcubeSAT"")",FreeRTOS code for the AcubeSAT nanosatellite mockup used in TIF 2019,0
+CMPE_244,https://github.com/kripanandjha/CMPE_244.git,,,0
+STM32F4xx_FreeRTOS_Project_Templates,https://github.com/XinLiGH/STM32F4xx_FreeRTOS_Project_Templates.git,,STM32F4 FreeRTOS 项目模板,0
+Temperature_Controller,https://github.com/Lagodish/Temperature_Controller.git,,"Temperature Controller. Based on Esp32. FreeRTOS, UI Web Server, GUI (Oled ssd1306), Ds18b20, RGBW led strip, IO ports",0
+SoCSIM,https://github.com/mariusmm/SoCSIM.git,,SoC emulator to work with a HAL and write apps for FreeRTOS using a Linux box.,0
+Motorcycle_street_parking_sensor,https://github.com/unixperience/Motorcycle_street_parking_sensor.git,,"Motorcycle Proximity alarm with LED and Siren for STM32G0 (cortex-m0+, C/C++)",0
+light52,https://github.com/migraichen/light52.git,,FreeRTOS running on light52 CPU on a Spartan6 FPGA,0
+wxtx,https://github.com/allendavidsnook/wxtx.git,,STM32 Nucleo-F429ZI FreeRTOS RFM69HCW Weather Station Transmitter / Outdoor Unit,0
+development-of-real-time-systems,https://github.com/vish2001/development-of-real-time-systems.git,,Assignments of coursera course: https://www.coursera.org/learn/real-time-systems,0
+Alexa-Core-Test,https://github.com/MichaelDu9226/Alexa-Core-Test.git,,"This is a client demo for Amazon's Alexa Voice Service(AVS). It's based on WIFI SOC MT7687,using HTTP API &Aduio Codec over FreeRTOS.This project is still ongoing.And it will migration to ESP32 in the future.",1
+stm32f407-template,https://github.com/ksteensig/stm32f407-template.git,,Template for stm32f407 with libopencm3 and FreeRTOS support,0
+REMOTE-GREENHOUSE-MONITORING-AND-AUTOMATION-SYSTEM,https://github.com/PuneetBansal/REMOTE-GREENHOUSE-MONITORING-AND-AUTOMATION-SYSTEM.git,,Repository for the Advanced Embedded Software Development (AESD) Project 2.,0
+NewMeter,https://github.com/TSMotter/NewMeter.git,,"Smart Meter for Electric Parameters - STM32F407, ATM90E36A, SX1278, FreeRTOS",0
+edstream,https://github.com/ITIS-Enrico-Fermi/edstream.git,"Organization(login=""ITIS-Enrico-Fermi"")",Realtime streaming facility for embedded displays,2
+esp32-Simple-WebSocket-Server-obsolete,https://github.com/KrzysztofZurek1973/esp32-Simple-WebSocket-Server-obsolete.git,,"Obsolete project, new WebSocket server in WebThing Server in webthings-components.",0
+freertos-mockup,https://github.com/AcubeSAT/freertos-mockup.git,"Organization(login=""AcubeSAT"")",FreeRTOS code for the AcubeSAT nanosatellite mockup used in TIF 2019,0
+iot-arduinoMega-rtos-01,https://github.com/schaeren/iot-arduinoMega-rtos-01.git,,Introduction to freeRTOS (real-time kernel) used with Arduino Mega 2560.,0
+SharpKey,https://github.com/pdsmart/SharpKey.git,,"A Multi-HID Interface, connecting PS/2 & Bluetooth Keyboard/Mice with Retro Host Computers",0
+iRhythm,https://github.com/whutddk/iRhythm.git,,2018 Synopsys ARC®杯电子设计竞赛项目——iRhythm,0
+Arduino-Night-Lamp,https://github.com/NguyenMguyen/Arduino-Night-Lamp.git,,A night lamp with a photodiodes and an Arduino,0
+STM32F103RB,https://github.com/AVilezhaninov/STM32F103RB.git,,Templates and examples for STM32F103RB MCU,0
+rts-project,https://github.com/alabbas-ali/rts-project.git,,This is a freeRTOS example project for arduino uno,0
+K210_FreeRTOS_SDK,https://github.com/loboris/K210_FreeRTOS_SDK.git,,FreeRTOS SDK for Kendryte K210,3
+Advanced-Embedded-Software-Development,https://github.com/jainsarthak277/Advanced-Embedded-Software-Development.git,,"Codes and file for ECEN 5013, Advanced Embedded Software Development. Final project implements a robust client-server module using RF communication, message queues and supporting degraded service with graceful failure.",0
+STM32_Lib,https://github.com/vladubase/STM32_Lib.git,,STM32 Libraries for faster prototyping. All files are ready-to-integrate. You just need to copy setup files (Init---- and function files) of used periphery. The CMSIS (Cortex Microcontroller Software Interface Standard) hardware abstraction layer is used in all initialization files. FreeRTOS is installed in examples and projects. All examples have docs.,0
+EDF-Scheduler-FreeRTOS-,https://github.com/alisheta1998/EDF-Scheduler-FreeRTOS-.git,,,0
+STM32WXX,https://github.com/allendavidsnook/STM32WXX.git,,An STM32 Nucleo-F429ZI FreeRTOS Wireless Weather Station written in C++,0
+CarMate,https://github.com/MHesham/CarMate.git,,A sample application that demo an ATmega2560 running Ardunio and FreeRTOS using PlatformIO,0
+socketio-esp-idf,https://github.com/kgrozdanovski/socketio-esp-idf.git,,SocketIO client and server implementation in Espressif IDF framework.,0
+stm32-cli,https://github.com/lukezsmith/stm32-cli.git,,A FreeRTOS C project for the STM32F407 Discovery board that runs a number of GPIO tasks through a UART-driven command line interface. This project uses GoogleTest for unit testing.,0
+STM32F4xx_FreeRTOS_DSP_Project_Templates,https://github.com/XinLiGH/STM32F4xx_FreeRTOS_DSP_Project_Templates.git,,STM32F4 FreeRTOS DSP 项目模板,0
+socketio-esp-idf,https://github.com/kgrozdanovski/socketio-esp-idf.git,,SocketIO client and server implementation in Espressif IDF framework.,0
+stm32-cli,https://github.com/lukezsmith/stm32-cli.git,,A FreeRTOS C project for the STM32F407 Discovery board that runs a number of GPIO tasks through a UART-driven command line interface. This project uses GoogleTest for unit testing.,0
+mcusim,https://github.com/kennywj/mcusim.git,,,0
+tuts_FreeRTOS,https://github.com/peakBreaker/tuts_FreeRTOS.git,,Exercises and tutorials for the FreeRTOS Real Time Operating System,1
+STM32F207-FreeRTOS-VSCODE-BLINK,https://github.com/fabiovila/STM32F207-FreeRTOS-VSCODE-BLINK.git,,Initial setup for STM32F207 with Freertos that blink two leds in NUCLEO-F207ZG using Visual Studio Code,0
+FreeRTOS.LwIP,https://github.com/jacklee032016/FreeRTOS.LwIP.git,,,1
+aircontrol.v2.x.x,https://github.com/sacculus/aircontrol.v2.x.x.git,,CCS811 & HDC1080 for ESP8266 w/FreeRTOS (ESP8266_RTOS_SDK v2.x.x),0
+Linux_4_ARM,https://github.com/embeddedcrab/Linux_4_ARM.git,,"This repository contains projects done on ARM processor/microcontroller in linux environment. XMC4500 Relax Kit, FreeRTOS w/Freertos Plus, Network Stack Porting over Ethernet, Linux Environment",0
+multizone-sdk-andes,https://github.com/hex-five/multizone-sdk-andes.git,"Organization(login=""hex-five"")","MultiZone® Security TEE for Andes N22/AE250 is the quick and safe way to add security and separation to any RISC-V processors. The RISC-V standard ISA doesn't define TrustZone-like primitives to provide hardware separation. To shield critical functionality from untrusted third-party components, MultiZone provides hardware-enforced, software-defined separation of multiple equally secure worlds. Unlike antiquated hypervisor-like solutions, MultiZone is self-contained, presents an extremely small attack surface, and it is policy driven, meaning that no coding is required – and in fact even allowed. MultiZone works with any 32-bit or 64-bit RISC-V processors with standard Physical Memory Protection unit (PMP) and “U” mode.",0
+GeckoCLI,https://github.com/bence-sebok/GeckoCLI.git,,An embedded application for a Giant Gecko microcontroller based development board. The main feature is a command line interpreter in C and Qt C++ which controls the hardware components with serial commands.,0
+ghost-buster,https://github.com/Matoran/ghost-buster.git,,"Game mixing pacman and breakout, real time programming",0
+string-main-stm32f407-freertos,https://github.com/imjustadog/string-main-stm32f407-freertos.git,,for YongDing river,1
+Spartan-Warrior,https://github.com/tanmayhc7/Spartan-Warrior.git,,Cmpe 244 Embedded Software course project under Prof. Preetpal Kang,0
+Launchpad_FreeRTOS,https://github.com/Junaidk11/Launchpad_FreeRTOS.git,,FreeRTOS Tutorials practiced on TMS570LS1224,0
+2.4GHz-embedded-radio-control-system-with-telemetry,https://github.com/samuelviegas/2.4GHz-embedded-radio-control-system-with-telemetry.git,,Embedded real-time operating system using FreeRTOS.,0
+STM32F103C8_FreeRTOS_CMSIS,https://github.com/mhdfasilwyd/STM32F103C8_FreeRTOS_CMSIS.git,,FreeRTOS and CMSIS Blink Example from scratch on STM32F103C8 (Official FreeRTOS Version).,0
+PiPonics-SensorBoard,https://github.com/karaulj/PiPonics-SensorBoard.git,,Firmware for NUCLEO-L432KC board in PiPonics project.,0
+TaskESP32,https://github.com/mkazimoto/TaskESP32.git,,Class Task for ESP32 using FreeRTOS,0
+mgr_thesis,https://github.com/michalfita/mgr_thesis.git,,Archival copy of my master thesis repository,0
+InterruptDeferring,https://github.com/vijaybnotion/InterruptDeferring.git,,Interrupt Deferring,0
+MonteCarloPi,https://github.com/cygig/MonteCarloPi.git,,"MonteCarloPi is a library to benchmark Arduinos by estimating the value of pi. It uses the Monte Carlo method to estimate pi, and it works with both single core Arduino like the UNO as well as multi-core ones like ESP32. ",0
+MII-SC16-17,https://github.com/mmaguero/MII-SC16-17.git,,"[SC-MII-UGR-2016-17] Proyectos de la asignatura ""Sistemas Críticos"" del Máster Universitario en Ingeniería Informática del curso 2016-17 de la UGR",0
+KW41Z-Dev,https://github.com/rhthomas/KW41Z-Dev.git,,COMP3215 Lab 1 – Implementing FreeRTOS using multiple development environments.,0
+embedepupl,https://github.com/dmayboroda/embedepupl.git,,"2D game written in C, running on SMT32 board, uses FreeRTOS",0
+ResourceManagementwithFreeRTOS,https://github.com/monisha29/ResourceManagementwithFreeRTOS.git,,"Resource management displayed through blinking of LEDs , using Arduino and FreeRTOS",0
+tiva-freertos,https://github.com/akowalew/tiva-freertos.git,,Simple project to give a try with Tiva TM4C microcontroller and FreeRTOS kernel.,0
+FreeMAES,https://github.com/DRoMarin/FreeMAES.git,,MAES Framework FreeRTOS Port for Gomspace's Nanomind 3200 (AT32UC3C),0
+stm32,https://github.com/GuhSerafs/stm32.git,,Repositório dos meus projetos para STM32. ,0
+STMxx,https://github.com/annhan/STMxx.git,,STM32 tutorials,0
+bms-rtos,https://github.com/zainamir-98/bms-rtos.git,,A mini-project intended to simulate a simple braking management in FreeRTOS.,0
+STM32F103C8_FreeRTOS_CMSIS,https://github.com/mhdfasilwyd/STM32F103C8_FreeRTOS_CMSIS.git,,FreeRTOS and CMSIS Blink Example from scratch on STM32F103C8 (Official FreeRTOS Version).,0
+PiPonics-SensorBoard,https://github.com/karaulj/PiPonics-SensorBoard.git,,Firmware for NUCLEO-L432KC board in PiPonics project.,0
+TaskESP32,https://github.com/mkazimoto/TaskESP32.git,,Class Task for ESP32 using FreeRTOS,0
+mgr_thesis,https://github.com/michalfita/mgr_thesis.git,,Archival copy of my master thesis repository,0
+InterruptDeferring,https://github.com/vijaybnotion/InterruptDeferring.git,,Interrupt Deferring,0
+MonteCarloPi,https://github.com/cygig/MonteCarloPi.git,,"MonteCarloPi is a library to benchmark Arduinos by estimating the value of pi. It uses the Monte Carlo method to estimate pi, and it works with both single core Arduino like the UNO as well as multi-core ones like ESP32. ",0
+Atmega32_FreeRTOS_Projects,https://github.com/embeddedcrab/Atmega32_FreeRTOS_Projects.git,,,0
+-Embedded-Software-TermProject,https://github.com/Jinsu-L/-Embedded-Software-TermProject.git,,CNU 2018 Embedded Challenge ,0
+NUCLEO-F207ZG_Freertos_cubemx_config,https://github.com/Robokishan/NUCLEO-F207ZG_Freertos_cubemx_config.git,,USE https://github.com/cnoviello/CubeMXImporter to convert to eclipse project,0
+Microcontroller-Snake-Game-ATMega-324PA-MCU,https://github.com/AfonsoTaborda/Microcontroller-Snake-Game-ATMega-324PA-MCU.git,,Two-player snake game written using FreeRTOS and C. Made to work in an ATEMGA microcontroller which is integrated with a 10x14 LED screen and a joystick.,0
+FreeRTOS-STM32-HAL-integration,https://github.com/metalalive/FreeRTOS-STM32-HAL-integration.git,,"FreeRTOS v10.2 integration with STM32 Hardware Abstraction Layer, and C Unity testing framework",0
+Float64Demo,https://github.com/Juventus-Technikerschule-HF/Float64Demo.git,"Organization(login=""Juventus-Technikerschule-HF"")",float64 Demo for ATXmega128A3U with FreeRTOS,0
+TIVA-C-FreeRTOS-10.0.1,https://github.com/keikomori/TIVA-C-FreeRTOS-10.0.1.git,,"Este projeto foi desenvolvido no decorrer das aulas de Sistemas Embarcados com o objetivo de implementar algumas funções do FreeRTOS em um sistema embarcado, para este trabalho utilizamos o TIVA C. Foram implementados algumas tarefas para analise do gerenciamento das tarefas pelo FreeRTOS e também implementados alguns drivers.",0
+cmd-uart-rtos,https://github.com/dessaya/cmd-uart-rtos.git,,TP CESE materias RTOS + PCSE,0
+PES_Project_6,https://github.com/mfruge9214/PES_Project_6.git,,PES Project 6 F19,0
+mqtt_mq9_sensor,https://github.com/Saka7/mqtt_mq9_sensor.git,,MQTT MQ9 Sensor value publisher on esp8266 MCU,2
+film_processor_poc,https://github.com/TheLongRunSmoke/film_processor_poc.git,,Photographic film processor POC,0
+cust_mem_alloc_freertos_cpp,https://github.com/embeddedcrab/cust_mem_alloc_freertos_cpp.git,,C++ Custom Memory Allocator using FreeRTOS Heap,0
+arduino_tryouts,https://github.com/frknilisu/arduino_tryouts.git,,basic arduino codes,0
+FreeRTOS-arduino-uno,https://github.com/jovanidesouza/FreeRTOS-arduino-uno.git,,"Repositório com Trabalhos da disciplina: Sistemas Operacionais Embarcados 2018/2, Ciência da Computação - UFFS",0
+start-esp32-arduino,https://github.com/m3y54m/start-esp32-arduino.git,,Getting started with Arduino on ESP32,0
+Temperature-Controller,https://github.com/magdi74/Temperature-Controller.git,,Changing heater state with the measured temperature and user input using TivaC and Putty for UART,0
+mtb-example-ota-mqtt,https://github.com/Infineon/mtb-example-ota-mqtt.git,"Organization(login=""Infineon"")",This code example demonstrates Over-the-Air (OTA) firmware update using the AnyCloud SDK for PSoC 6 MCU and CYW43xxx connectivity devices.,0
+DoorbellCamFirmware,https://github.com/mc-cat-tty/DoorbellCamFirmware.git,,Part of DoorbellCam project: firmware for esp32-based notifier,1
+mtb-example-wifi-scan,https://github.com/Infineon/mtb-example-wifi-scan.git,"Organization(login=""Infineon"")",This example demonstrates how to configure different scan filters provided in the Wi-Fi Connection Manager (WCM) middleware and scan for the available Wi-Fi networks using PSoC 6 MCU and CYW43xxx connectivity devices.,0
+modality-trace-recorder-plugin,https://github.com/auxoncorp/modality-trace-recorder-plugin.git,"Organization(login=""auxoncorp"")",A Modality reflector plugin suite and ingest adapter library for Percepio's TraceRecorder data,0
+Practice_F746GDISCOVERY,https://github.com/David-Croose/Practice_F746GDISCOVERY.git,,This is some practice code about STM32F746GDISCOVERY,0
+X512,https://github.com/OS-Q/X512.git,"Organization(login=""OS-Q"")",P51资源扩展：FreeRTOS,0
+SyncroARD,https://github.com/alvarillo89/SyncroARD.git,,🕰️ Biblioteca de Arduino para sincronización de tareas en tarjetas distribuidas,0
+Winstar-wh1602d,https://github.com/Ilshat-cloud/Winstar-wh1602d.git,,,0
+FreeRTOS_AEM_Armv8A,https://github.com/aohzju/FreeRTOS_AEM_Armv8A.git,,FreeRTOS v10.3.1 port for ARM FVP (Fixed Virtual Platform) AEM_Arvm8-A: FVP_Base_RevC-2xAEMv8,0
+ESP8266,https://github.com/Majid-Derhambakhsh/ESP8266.git,,ESP8266 library for use in ARM/AVR microcontrollers with UART communication protocol.,0
+yRobot,https://github.com/yJPO92/yRobot.git,,"Draft pour Meccano Robot. Mixed STM32CubeMX, FreeRTOS, C",0
+SMART-GREENHOUSE-MONITORING-CONTROL-SYSTEM-RTOS,https://github.com/HectorTa1989/SMART-GREENHOUSE-MONITORING-CONTROL-SYSTEM-RTOS.git,,RTOS-based remote monitoring & control system for green house application,0
+se2a4_s7_tp_freertos,https://github.com/kevin-doolaeghe/se2a4_s7_tp_freertos.git,,SE2A4 | Semestre n°7 - TP FreeRTOS,0
+lnArduino_FreeRTOS_gdb,https://github.com/mean00/lnArduino_FreeRTOS_gdb.git,,GDB FreeRTOS support  through python scripts,0
+Car-Runner,https://github.com/Alcachofraz/Car-Runner.git,,Little car game to run on Embedded System (LPC1769),0
+STM32F103x6-Modified-Homework-Project,https://github.com/lazarvulic99/STM32F103x6-Modified-Homework-Project.git,,Implementation of simple STM32F103x6 microcontroller using multiple environments,0
+freertos-st-cm4,https://github.com/UQRacing/freertos-st-cm4.git,"Organization(login=""UQRacing"")","Contains all the necessary files for the latest FreeRTOS on a STM32 Cortex-M4. Includes kernel, port, heap_4 memory allocator, config and ST-specific files.",0
+Critical-Section-Function-Which-Takes-Minimum-Interrupt-Priority,https://github.com/DesignofIntelligence/Critical-Section-Function-Which-Takes-Minimum-Interrupt-Priority.git,,A critical section function which can take the minimum priority of the interrupt that can preempt the critical section,0
+home-security-system,https://github.com/FedyHajali/home-security-system.git,,Project of a Domotic Security System prototype.,0
+Wind_IOT,https://github.com/jsa-m/Wind_IOT.git,,Low cost wind logger with BLE communications.,0
+FreeRTOS-Tetris,https://github.com/philippkarg/FreeRTOS-Tetris.git,,A Tetris game developed in C using the open-source RTOS FreeRTOS.,0
+percepio-freertos-examples,https://github.com/jonlamb-gh/percepio-freertos-examples.git,,,0
+ESP_32_FreeRTOS_Practice,https://github.com/junxian428/ESP_32_FreeRTOS_Practice.git,,ESP32 with FreeRTOS Practice,1
+SUB_FREE_RTOS,https://github.com/syddo/SUB_FREE_RTOS.git,,latest FreeRTOS source as submodule to Projects,0
+stm32f1generic,https://github.com/eduardoaugustojulio/stm32f1generic.git,,,0
+FreeRTOS_STM32,https://github.com/CharlesDias/FreeRTOS_STM32.git,,,0
+environment-monitor,https://github.com/ssnover/environment-monitor.git,,A monitoring device for polling environment sensors and reporting data. A small pet project to learn FreeRTOS.,0
+m5stack-freertos-tft,https://github.com/fukuen/m5stack-freertos-tft.git,,,0
+FreeRTOS_USB_USART_Echo,https://github.com/TAMU-Robomasters/FreeRTOS_USB_USART_Echo.git,"Organization(login=""TAMU-Robomasters"")",2 board + PC communication via USB & USART,0
+stm32f401re-fiddling,https://github.com/PavanKumarPothula/stm32f401re-fiddling.git,,Some mini projects on STM32 nucleo board ,0
+OBD_device_based_on_CAN_Bus,https://github.com/ManuelSN/OBD_device_based_on_CAN_Bus.git,,OBD device based on CAN Bus,0
+InterTask-Communication-ESP32,https://github.com/NegasonicX/InterTask-Communication-ESP32.git,,A basic code to perform inter-task communication using queue logic,0
+Type_K,https://github.com/jsa-m/Type_K.git,,Intelligent type-k measurement system.,0
+free-rtos-esp32-project,https://github.com/chulme/free-rtos-esp32-project.git,,An embedded software project using FreeRTOS to carry out a series of simple tasks.,0
+RTOS_Examples,https://github.com/Mahmoud-Ayoub/RTOS_Examples.git,,This is the implementation of some examples for RTOS Basics,0
+Time-In-Different-Cities-FreeRTOS-Project,https://github.com/DesignofIntelligence/Time-In-Different-Cities-FreeRTOS-Project.git,,,0
+Elevator,https://github.com/jminjares4/Elevator.git,,Microprocessor 2 Final Project,0
+cm3pp_lib_devel,https://github.com/martinribelotta/cm3pp_lib_devel.git,,C++ Code for Cortex M3,0
+zedboard-swsleds-irq,https://github.com/zdzislaw-s/zedboard-swsleds-irq.git,,Control state of LEDs (LD0-LD7) with switches (SW0-SW7),0
+Mergen_C_Elegans,https://github.com/Ostantric/Mergen_C_Elegans.git,,,0
+arm,https://github.com/oscalbert/arm.git,,Projects around ARM technology,0
+semaphoreRTOS,https://github.com/rykovv/semaphoreRTOS.git,,Street semaphore project implemented using FreeRTOS on Arduino.,0
+Arduino-Generic-Libraries,https://github.com/HaiqiangXu/Arduino-Generic-Libraries.git,,Generic libraries to be used by final Arduino projects,1
+amazon-freertos-1.4.2,https://github.com/gilatoes/amazon-freertos-1.4.2.git,,OPTIGA Trust X with Amazon FreeRTOS version 1.4.2 with ESP32,0
+create_JSON,https://github.com/manish5897/create_JSON.git,,JSON creation in esp32 FreeRTOS,0
+mtb-example-psoc6-ble-throughput-freertos,https://github.com/Infineon/mtb-example-psoc6-ble-throughput-freertos.git,"Organization(login=""Infineon"")",This example demonstrates BLE GATT throughput for PSoC 6 MCU. GATT throughput is calculated on both server and client devices.,0
+Embedded-Software-Assignments,https://github.com/tmpidkalwar/Embedded-Software-Assignments.git,,"Low-level driver implementations (SPI, I2C, UART, ADC, PWM), GPIOs, Interrupts. FreeRTOS applications using Semaphores, mutex, queues, watchdog timer",10
+stm32l152c-disco-customproto,https://github.com/dagrigorev/stm32l152c-disco-customproto.git,,Custom protocol implementation for STM32L152C-Discovery board,0
+soil_monitor,https://github.com/dalmago/soil_monitor.git,,ESP8266 based soil humidity monitor using ESP8266_RTOS_SDK,0
+tetris_446re,https://github.com/francovaro/tetris_446re.git,," Tetris game with STM32F446RE, FreeRTOS and an ST7735S LCD",0
+Hands-On-RTOS-With-Microcontrollers-Chapter-7,https://github.com/jwillikers/Hands-On-RTOS-With-Microcontrollers-Chapter-7.git,,LED-blinking application for Chapter 7 of Hands-On RTOS With Microcontrollers,0
+OpenESPCar,https://github.com/mtribiere/OpenESPCar.git,,An open and generic plateform to create ESP based RC car,0
+LPC845FreeRTOS,https://github.com/snhobbs/LPC845FreeRTOS.git,,FreeRTOS V10.4.1 example for LPC845 with NXP SDK,0
+cmsis-asp3,https://github.com/mROS-base/cmsis-asp3.git,"Organization(login=""mROS-base"")",Interface layer between CMSIS OS API and TOPPERS/ASP3 kernel,0
+SojournerST,https://github.com/ckoern/SojournerST.git,,Firmware for a STM32G4-based closed-loop DC Motor Driver Board written in C++,0
+micro-controller-projects,https://github.com/bill-richards/micro-controller-projects.git,,,0
+STM32WL55_Ping_pong_example,https://github.com/AxDen-Dev/STM32WL55_Ping_pong_example.git,"Organization(login=""AxDen-Dev"")",STM32WL55 Lora Ping pong example,1
+Screen-FreeRTOS,https://github.com/AlejandroGC19/Screen-FreeRTOS.git,,User interface with graphic screen and FreeRTOS,0
+echo,https://github.com/rvms-capstone/echo.git,"Organization(login=""rvms-capstone"")",Firmware for a wearable remote vitals monitoring device,0
+esp32_weather_station,https://github.com/RomaricKc1/esp32_weather_station.git,,,0
+freeRTOS-stm32h7-Cpp,https://github.com/martindoff/freeRTOS-stm32h7-Cpp.git,,A simple blink program showing the use of freeRTOS with C++ for a stm32h743 microcontroller ,0
+ARGB,https://github.com/notabucketofspam/ARGB.git,,ATmega328P-based ARGB LED controller,0
+HM10_BlueTooth,https://github.com/dainguyen6789/HM10_BlueTooth.git,,,0
+Demo_FreeRTOS_v10.0.1_for_Renesas_RX65N_with_CSplus_CC-RX,https://github.com/kern-gt/Demo_FreeRTOS_v10.0.1_for_Renesas_RX65N_with_CSplus_CC-RX.git,,,1
+mtb-example-anycloud-wps-enrollee,https://github.com/Infineon/mtb-example-anycloud-wps-enrollee.git,"Organization(login=""Infineon"")",This example demonstrates how to use the connection management and WPS Enrollee features provided in the AnyCloud Wi-Fi Connection Manager (WCM) middleware using PSoC MCU and CYW43xxx connectivity devices.,0
+lpc15xx_dma_spi,https://github.com/jcwren/lpc15xx_dma_spi.git,,LPC15xx DMA SPI demo,0
+microblaze,https://github.com/ShoukathAli23/microblaze.git,,hello world on microblaze,0
+Relay,https://github.com/fsan19/Relay.git,,,0
+tiva-imu,https://github.com/caiotoledo/tiva-imu.git,,,3
+lwiot-freertos,https://github.com/lwIoT/lwiot-freertos.git,"Organization(login=""lwIoT"")",A FreeRTOS wrapper for lwIoT.,0
+stm32-devel,https://github.com/jmlemetayer/stm32-devel.git,,STM32 development,0
+stm32uartdemo,https://github.com/zq-chi/stm32uartdemo.git,,stm32f103 + freeRTOS + uart ll driver loopback test,0
+distributed-iot-analytics,https://github.com/vitalibo/distributed-iot-analytics.git,,,0
+VoltageMeasure,https://github.com/NSJ-student/VoltageMeasure.git,,"STM32F407에서 FreeRTOS, uC/GUI를 활용한 미니 오실레이터 만들기",0
+STM23F746Disco-Playground,https://github.com/fjpolo/STM23F746Disco-Playground.git,,STM32F746 DISCOVERY projects using STMCubeIDE+STMCubeMX.,0
+RPIPicoRTOSMQTT3,https://github.com/jondurrant/RPIPicoRTOSMQTT3.git,,Raspberry Pico with ESP-01S to test MQTT using FreeRTOS and LWESP libraries.,0
+Embedded-Systems-Lab-SP20,https://github.com/peter-mowen/Embedded-Systems-Lab-SP20.git,,Procudures and my lab reports for Temple University's ECE 3623 - Embedded Systems Lab,0
+stm32-contrib,https://github.com/PhischDotOrg/stm32-contrib.git,,Collector Repository for various external projects that I'm using.,0
+etf-mips-temperature-monitoring-system,https://github.com/Wokhadeh/etf-mips-temperature-monitoring-system.git,,IoT system that is using STM32F103R6 microcontroller to collect data about temperature and control group of fans in order to obtain optimal living conditions,0
+EspHttpRtos,https://github.com/grunmax/EspHttpRtos.git,,"Async HTTP server with Regex, JSON, FreeRTOS tasks and BLE for ESP32",0
+aaaos,https://github.com/thanhbinh89/aaaos.git,,The Operation System (OS) base on ESP8266_RTOS_SDK,0
+Project,https://github.com/erabhinavtyagi/Project.git,,"It is a single Node, Single Channel gateway device for smart irrigation system using LoRa and ARM as a platform. It contains two codes : One using FreeRTOS with STM32F4xx and in baremetal mode using STM32F4xx.",0
+RTOS,https://github.com/erabhinavtyagi/RTOS.git,,Basic FreeRTOS programs for beginners using ESP-IDF,0
+Full_Board,https://github.com/lambda-technica/Full_Board.git,,,0
+stm32_project,https://github.com/KarmaStone/stm32_project.git,,stm32l4xx,0
+thermos,https://github.com/ouassarnifahd/thermos.git,,FreeRTOS PIC32 IoT project,0
+docker-freertos-sdl2,https://github.com/PhilippvK/docker-freertos-sdl2.git,,Docker container based on https://github.com/activatedgeek/docker-videostack to simulate FreeRTOS+SDL2 Graphics on any platform.,0
+ESP32_DustTracker,https://github.com/executer-uno/ESP32_DustTracker.git,,"ESP32 with FreeRTOS, SQLITE, SoftwareSerial, HTTPS Redirect and TinyGPS++ (SDS011 and PMS3003 double sensors)",0
+blink,https://github.com/Esp8266-IoT/blink.git,"Organization(login=""Esp8266-IoT"")",blink blue led,0
+development-of-real-time-systems,https://github.com/aydinsimsek/development-of-real-time-systems.git,,Implementations of the Development of Real-Time Systems course assignments on FreeRTOS,0
+FreeRTOS-examples,https://github.com/vanelo/FreeRTOS-examples.git,,This is a list of examples of **FreeRTOS with Arduino Tutorials**,0
+tasks-freertos-arduino,https://github.com/vittoria-thomasini/tasks-freertos-arduino.git,,This project was developed for the course of Real-Time Systems of UNIFTEC and has the proposal to create tasks using FreeRTOS in Arduino UNO for beginners users.,0
+Priority-Inheritance-FreeRTOS,https://github.com/DesignofIntelligence/Priority-Inheritance-FreeRTOS.git,,"Demonstrating the priority inversion bug in FreeRTOS, and the priority inheritance implemented in FreeRTOS, while implementing another priority inheritance method.",0
+esp8266-at-commands,https://github.com/ShiWarai/esp8266-at-commands.git,,Мини-библиотека для работы с WiFI модулем ESP8266 на FreeRTOS,1
+FreeRTOS-SpaceInvaders,https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders.git,,A replica of Space Invaders as a FreeRTOS application written in C. ,0
+STM32F401_BME280_FreeRTOS,https://github.com/ParasolkaJeck2029/STM32F401_BME280_FreeRTOS.git,,It is a simple project to demonstrate how work with FreeRTOS on STM32.,0
+HM10_BlueTooth,https://github.com/dainguyen6789/HM10_BlueTooth.git,,,0
+Demo_FreeRTOS_v10.0.1_for_Renesas_RX65N_with_CSplus_CC-RX,https://github.com/kern-gt/Demo_FreeRTOS_v10.0.1_for_Renesas_RX65N_with_CSplus_CC-RX.git,,,1
+Project,https://github.com/erabhinavtyagi/Project.git,,"It is a single Node, Single Channel gateway device for smart irrigation system using LoRa and ARM as a platform. It contains two codes : One using FreeRTOS with STM32F4xx and in baremetal mode using STM32F4xx.",0
+RTOS,https://github.com/erabhinavtyagi/RTOS.git,,Basic FreeRTOS programs for beginners using ESP-IDF,0
+Full_Board,https://github.com/lambda-technica/Full_Board.git,,,0
+stm32_project,https://github.com/KarmaStone/stm32_project.git,,stm32l4xx,0
+docker-freertos-sdl2,https://github.com/PhilippvK/docker-freertos-sdl2.git,,Docker container based on https://github.com/activatedgeek/docker-videostack to simulate FreeRTOS+SDL2 Graphics on any platform.,0
+ESP32_DustTracker,https://github.com/executer-uno/ESP32_DustTracker.git,,"ESP32 with FreeRTOS, SQLITE, SoftwareSerial, HTTPS Redirect and TinyGPS++ (SDS011 and PMS3003 double sensors)",0
+thermos,https://github.com/ouassarnifahd/thermos.git,,FreeRTOS PIC32 IoT project,0
+blink,https://github.com/Esp8266-IoT/blink.git,"Organization(login=""Esp8266-IoT"")",blink blue led,0
+development-of-real-time-systems,https://github.com/aydinsimsek/development-of-real-time-systems.git,,Implementations of the Development of Real-Time Systems course assignments on FreeRTOS,0
+FreeRTOS-examples,https://github.com/vanelo/FreeRTOS-examples.git,,This is a list of examples of **FreeRTOS with Arduino Tutorials**,0
+Priority-Inheritance-FreeRTOS,https://github.com/DesignofIntelligence/Priority-Inheritance-FreeRTOS.git,,"Demonstrating the priority inversion bug in FreeRTOS, and the priority inheritance implemented in FreeRTOS, while implementing another priority inheritance method.",0
+tasks-freertos-arduino,https://github.com/vittoria-thomasini/tasks-freertos-arduino.git,,This project was developed for the course of Real-Time Systems of UNIFTEC and has the proposal to create tasks using FreeRTOS in Arduino UNO for beginners users.,0
+esp8266-at-commands,https://github.com/ShiWarai/esp8266-at-commands.git,,Мини-библиотека для работы с WiFI модулем ESP8266 на FreeRTOS,1
+FreeRTOS-SpaceInvaders,https://github.com/duclos-cavalcanti/FreeRTOS-SpaceInvaders.git,,A replica of Space Invaders as a FreeRTOS application written in C. ,0
+STM32F401_BME280_FreeRTOS,https://github.com/ParasolkaJeck2029/STM32F401_BME280_FreeRTOS.git,,It is a simple project to demonstrate how work with FreeRTOS on STM32.,0
+TimerInterruptsOnCC3200,https://github.com/tzhenghao/TimerInterruptsOnCC3200.git,,A simple demonstration on how to use timer interrupts with freeRTOS on the TI SimpleLink CC3200 Launchpad.,0
+freertos-arduino,https://github.com/Incise-info/freertos-arduino.git,"Organization(login=""Incise-info"")",Arduino Port for FreeRTOS,0
+ESP8266_Develop,https://github.com/WSCKY/ESP8266_Develop.git,,esp8266 wifi module development.,0
+Renesas-RX-FreeRTOS,https://github.com/GerryFerdinandus/Renesas-RX-FreeRTOS.git,,FreeRTOS for Renesas RX63N processor with GCC compiler,0
+Esp32,https://github.com/adesandr/Esp32.git,,Esp32 stuff,0
+XMC4500_FreeRTOS,https://github.com/embeddedcrab/XMC4500_FreeRTOS.git,,"This repo contains FreeRTOS projects done on XMC4500 Relax Kit using C/C++ containing RTOS usage, peripherals stack etc",0
+esp32-freertos-senai,https://github.com/renoh/esp32-freertos-senai.git,,Class of FreeRTOS with esp32 (SENAI),0
+mtb-example-anycloud-udp-client,https://github.com/Infineon/mtb-example-anycloud-udp-client.git,"Organization(login=""Infineon"")",This code example demonstrates implementing a UDP client using the AnyCloud SDK for PSoC 6 MCU and CYW43xxx connectivity devices.,0
+mtb-example-anycloud-wlan-lowpower,https://github.com/Infineon/mtb-example-anycloud-wlan-lowpower.git,"Organization(login=""Infineon"")",This code example demonstrates the low-power operation of PSoC 6 MCU and CYW43xxx connectivity devices using the AnyCloud Low Power Assistant (LPA) middleware library.,0
+esp-tbrush,https://github.com/Micrified/esp-tbrush.git,,The IoT Toothbrush Project (ESP32) ,0
+stm32_freertos_projects,https://github.com/spiccinini/stm32_freertos_projects.git,,STM32L4 template for development with FreeRTOS,0
+FreeRTOS_Examples,https://github.com/Rajssss/FreeRTOS_Examples.git,,Repository containing example applications on FreeRTOS.,0
+stm32-exploration,https://github.com/aaronhktan/stm32-exploration.git,,"STM32 microcontrollers exploration. Covers the basics (linker scripts, assembly, GPIO, interrupts, clocks) and some other fun stuff (FreeRTOS, Rust).",0
+Real_time_FIR_filtering,https://github.com/ameya134/Real_time_FIR_filtering.git,,This project on TM4C129ENCPDT works as a digital filter that can be used in an audio system for filtering and amplification.,1
+ESP32_FreeRTOS,https://github.com/Rad-hi/ESP32_FreeRTOS.git,,My journey of learning ESP32 FreeRTOS following DigiKey's YouTube series. ,0
+ponics32,https://github.com/karaulj/ponics32.git,,An ESP32-based hydro/aero/aquaponics controller with a nice web UI.,0
+fcplt,https://github.com/eln7/fcplt.git,,instrumentation faceplate harmony 3,0
+FR,https://github.com/chegJH/FR.git,,,5
+stm32_cmake,https://github.com/sengulhamza/stm32_cmake.git,,Your project build files are created with Cmake. It can be used for the STM32F family of MCUs. CMSIS supports it in OS. Freertos was used as the base.,0
+microvisor-iot-device-demo,https://github.com/TwilioDevEd/microvisor-iot-device-demo.git,"Organization(login=""TwilioDevEd"")",Sample application code for Twilio Microvisor,0
+esp8266-playgroud,https://github.com/eduardoaugustojulio/esp8266-playgroud.git,,esp8266 freertos project,0
+cyberford,https://github.com/jaypacamarra/cyberford.git,,autonomous electric vehicle ford edition and inspired by Tesla's Cyber Truck,6
+FreeRTOS-ubuntu,https://github.com/VinhTr00/FreeRTOS-ubuntu.git,,,0
+m5stack-playground,https://github.com/imxieyi/m5stack-playground.git,,Play with M5Stack in RTOS,0
+Garfield,https://github.com/fl-la/Garfield.git,,"Garfield (ALF 2.0)@ OTH Regensburg, seeing @",0
+STM32F4-FreeRTOS-HAL,https://github.com/erickTornero/STM32F4-FreeRTOS-HAL.git,,Examples of using FreeRTOS API with STM32F4Discovery board using HAL Interface,0
+FreeRTOS_STM32,https://github.com/shuai132/FreeRTOS_STM32.git,,FreeRTOS学习资料和工程,0
+Test_FreeRTOS_f446re,https://github.com/francovaro/Test_FreeRTOS_f446re.git,,FreeRTOS on a Nucleo F446RE,0
+stm32-hello,https://github.com/fweiss/stm32-hello.git,,Exercises from Udemy Mastering RTOS course,0
+Advanced-Embedded-Software-Development-AESD,https://github.com/jajoosiddhant/Advanced-Embedded-Software-Development-AESD.git,,"Consists of Projects and Assignments Completed in Advanced Embedded Software Development Course | ECEN 5013-002 | University of Colorado, Boulder: System Calls, Kernel Modules, Cross-Compiling using buildroot, IPCs, FreeRTOS, Multithreading.. ",0
+HomCenter,https://github.com/MarcinFilipek/HomCenter.git,,Project home center on STM32F7 and SPSGRF-868 module. (FreeRTOS),0
+freertosdemo,https://github.com/tiulpin/freertosdemo.git,,🚦 FreeRTOS example on how to implement traffic light with an embedded device,0
+FreeRTOS-for-C-Core,https://github.com/sfyip/FreeRTOS-for-C-Core.git,,FreeRTOS for CCore,0
+nimble_freerots,https://github.com/Arain-yu/nimble_freerots.git,,Transplant nimble to freertos,0
+Priority-Inheritance-Protocol-PIP-TaskScheduler-FreeRTOS,https://github.com/stefanGT44/Priority-Inheritance-Protocol-PIP-TaskScheduler-FreeRTOS.git,,Implementation of the priority inheritance protocol (PIP) in FreeRTOS (operating system for arduino). ,0
+Rotary-Encoder-Matric-00,https://github.com/Aleph-Design/Rotary-Encoder-Matric-00.git,,An attempt to create a project file structure for a FreeRTOS application.,0
+game_freertos_spi,https://github.com/ivan-pinto/game_freertos_spi.git,,Development of an obstacle game using the board STM32F103RBT6 and FreeRTOS.,0
+STM32_SD_FATFS_freeRTOS,https://github.com/alireza-montazeri/STM32_SD_FATFS_freeRTOS.git,,This repository contains a project on STM32L476 for implementing a file system(FATFS) on SD card using freeRTOS.,0
+MDR1986VEx_FreeRTOS-Plus-TCP,https://github.com/0xD503/MDR1986VEx_FreeRTOS-Plus-TCP.git,,FreeRTOS-Plus-TCP port for MDR1986VEx (1T/3) microcontrollers,0
+esp32-cam-mqtt,https://github.com/shehabattia96/esp32-cam-mqtt.git,,ESP32 firmware code to read camera buffer and publish it to an MQTT server and save it to the local SDCard,0
+RTOSfrtISRModular,https://github.com/jimmyangel/RTOSfrtISRModular.git,,Sample Arduino project using FreeRTOS,0
+freertos-nxp-cm0,https://github.com/UQRacing/freertos-nxp-cm0.git,"Organization(login=""UQRacing"")","Contains all the necessary files for the latest FreeRTOS on an NXP Cortex-M0+. Includes kernel, port, heap_4 memory allocator, config and NXP-specific files for thread aware debugging.",0
+balansir-freeRTOS,https://github.com/NetDm/balansir-freeRTOS.git,,Load balancer freeRTOS :: Task02. Gets 50.0% of the total task time,0
+rele_magritte,https://github.com/Henrique-BO/rele_magritte.git,,Plotter 2D com ESP32 e FreeRTOS,0
+esp8266,https://github.com/waortegaand/esp8266.git,,Projects with RTOS SDK in NodeMcu esp8266,0
+m5stack-playground,https://github.com/imxieyi/m5stack-playground.git,,Play with M5Stack in RTOS,0
+Garfield,https://github.com/fl-la/Garfield.git,,"Garfield (ALF 2.0)@ OTH Regensburg, seeing @",0
+STM32F4-FreeRTOS-HAL,https://github.com/erickTornero/STM32F4-FreeRTOS-HAL.git,,Examples of using FreeRTOS API with STM32F4Discovery board using HAL Interface,0
+FreeRTOS_STM32,https://github.com/shuai132/FreeRTOS_STM32.git,,FreeRTOS学习资料和工程,0
+HomCenter,https://github.com/MarcinFilipek/HomCenter.git,,Project home center on STM32F7 and SPSGRF-868 module. (FreeRTOS),0
+Test_FreeRTOS_f446re,https://github.com/francovaro/Test_FreeRTOS_f446re.git,,FreeRTOS on a Nucleo F446RE,0
+Advanced-Embedded-Software-Development-AESD,https://github.com/jajoosiddhant/Advanced-Embedded-Software-Development-AESD.git,,"Consists of Projects and Assignments Completed in Advanced Embedded Software Development Course | ECEN 5013-002 | University of Colorado, Boulder: System Calls, Kernel Modules, Cross-Compiling using buildroot, IPCs, FreeRTOS, Multithreading.. ",0
+stm32-hello,https://github.com/fweiss/stm32-hello.git,,Exercises from Udemy Mastering RTOS course,0
+FreeRTOS-for-C-Core,https://github.com/sfyip/FreeRTOS-for-C-Core.git,,FreeRTOS for CCore,0
+freertosdemo,https://github.com/tiulpin/freertosdemo.git,,🚦 FreeRTOS example on how to implement traffic light with an embedded device,0
+nimble_freerots,https://github.com/Arain-yu/nimble_freerots.git,,Transplant nimble to freertos,0
+Priority-Inheritance-Protocol-PIP-TaskScheduler-FreeRTOS,https://github.com/stefanGT44/Priority-Inheritance-Protocol-PIP-TaskScheduler-FreeRTOS.git,,Implementation of the priority inheritance protocol (PIP) in FreeRTOS (operating system for arduino). ,0
+game_freertos_spi,https://github.com/ivan-pinto/game_freertos_spi.git,,Development of an obstacle game using the board STM32F103RBT6 and FreeRTOS.,0
+Rotary-Encoder-Matric-00,https://github.com/Aleph-Design/Rotary-Encoder-Matric-00.git,,An attempt to create a project file structure for a FreeRTOS application.,0
+STM32_SD_FATFS_freeRTOS,https://github.com/alireza-montazeri/STM32_SD_FATFS_freeRTOS.git,,This repository contains a project on STM32L476 for implementing a file system(FATFS) on SD card using freeRTOS.,0
+MDR1986VEx_FreeRTOS-Plus-TCP,https://github.com/0xD503/MDR1986VEx_FreeRTOS-Plus-TCP.git,,FreeRTOS-Plus-TCP port for MDR1986VEx (1T/3) microcontrollers,0
+RTOSfrtISRModular,https://github.com/jimmyangel/RTOSfrtISRModular.git,,Sample Arduino project using FreeRTOS,0
+esp32-cam-mqtt,https://github.com/shehabattia96/esp32-cam-mqtt.git,,ESP32 firmware code to read camera buffer and publish it to an MQTT server and save it to the local SDCard,0
+freertos-nxp-cm0,https://github.com/UQRacing/freertos-nxp-cm0.git,"Organization(login=""UQRacing"")","Contains all the necessary files for the latest FreeRTOS on an NXP Cortex-M0+. Includes kernel, port, heap_4 memory allocator, config and NXP-specific files for thread aware debugging.",0
+balansir-freeRTOS,https://github.com/NetDm/balansir-freeRTOS.git,,Load balancer freeRTOS :: Task02. Gets 50.0% of the total task time,0
+esp8266,https://github.com/waortegaand/esp8266.git,,Projects with RTOS SDK in NodeMcu esp8266,0
+rele_magritte,https://github.com/Henrique-BO/rele_magritte.git,,Plotter 2D com ESP32 e FreeRTOS,0
+aris-pitot-tube,https://github.com/aris-space/aris-pitot-tube.git,"Organization(login=""aris-space"")",This repository documents the hardware and software of the ARIS pitot tube.,0
+monitor_frtos,https://github.com/JeffeApAlves/monitor_frtos.git,,,0
+string-8-channel-zlg-freertos,https://github.com/imjustadog/string-8-channel-zlg-freertos.git,,for 8 channel wireless vibration wire capture（capture node）,0
+arduino_due_linux_dev,https://github.com/wilsonwang371/arduino_due_linux_dev.git,,Arduino Due Linux Develop Environment,0
+MotorLib-Arduino,https://github.com/AmarNathH/MotorLib-Arduino.git,,Motor Library for Arduino using FreeRTOS,0
+realtimeProgramming,https://github.com/ancor1369/realtimeProgramming.git,,This repository showcases code intended to to real time stuff,0
+blinking,https://github.com/ftheile/blinking.git,,Example for Espressif ESP-IDF,0
+Smart-Shopping-Cart,https://github.com/sorabhgandhi01/Smart-Shopping-Cart.git,,"A multi-controller product prototype using BeagleBone Green, TIVA C-Series launchpad development board along with sensors, actuators and display devices",0
+freeRTOS-plant-monitoring,https://github.com/luqmansen/freeRTOS-plant-monitoring.git,,Plant Monitoring utilizing FreeRTOS,0
+mtb-example-anycloud-ble-findme,https://github.com/Infineon/mtb-example-anycloud-ble-findme.git,"Organization(login=""Infineon"")","This design implements a BLE FMP that consists of an IAS. FMP and IAS are BLE standard Profile and Service respectively, as defined by the Bluetooth SIG. The design uses LED to display the IAS alert level – no alert (LED OFF), mild alert (LED blinking), high alert (LED ON).",0
+EmbeddedGame,https://github.com/ancor1369/EmbeddedGame.git,,FreeRTOs video game ,2
+mtb-example-anycloud-udp-server,https://github.com/Infineon/mtb-example-anycloud-udp-server.git,"Organization(login=""Infineon"")",This code example demonstrates implementing a UDP server using the AnyCloud SDK for PSoC 6 MCU and CYW43xxx connectivity devices.,0
+PIC24_AutoDoor,https://github.com/jdarkf/PIC24_AutoDoor.git,,PIC24_AutoDoor is a miniproject consisting of a realtime software system that commands a door based on some inputs. The application is using the FreeRTOS 10 framework and implemented on a Labcenter Electronics Proteus v8.5 PIC24 simulation model.,0
+STM32-WiFi-Controlled-Car,https://github.com/A-Fitz/STM32-WiFi-Controlled-Car.git,,"A STM32F413ZH powered remote control car running FreeRTOS, controlled via WiFi and a node.js server.",0
+ColorfulMachine,https://github.com/PlastMan420/ColorfulMachine.git,,Arduino Sketch for a color sorting machine.,0
+kendryte-freertos-project,https://github.com/cmdrf/kendryte-freertos-project.git,,Example project for using FreeRTOS on the Kendryte K210 processor,0
+AutoBot,https://github.com/yeshas7272/AutoBot.git,,Source for self navigating bot that makes use of HCSR-04 sensor to detect objects. Contains HCSR-04 drivers for STM32F446RE,0
+Afan_SAME70_FreeRTOS10,https://github.com/AfanVibrant/Afan_SAME70_FreeRTOS10.git,,FreeRTOS V10.0x RTOS on Microchip SAME70Q21 Cortex-M7 MCU.,0
+stm32f746g-discovery_freertos_task_switching,https://github.com/StormRSA/stm32f746g-discovery_freertos_task_switching.git,,"STM32F745G-Discovery FreeRtos LED,USART-TX and Incrementation Task switching wihtout CMSIS wrapper. ",0
+HearMe,https://github.com/viordash/HearMe.git,,Voice signal light. For those with headphones,0
+Esp32-FreeRTOS,https://github.com/abdotamer/Esp32-FreeRTOS.git,,FreeRTOS projects using ESP32,0
+ESP32-Crypto-Coin-Ticker,https://github.com/jaklPhil/ESP32-Crypto-Coin-Ticker.git,,ESP32 Crypto Coin Ticker with matrix led display,0
+OVPSimMulticoreCanny,https://github.com/roshantha9/OVPSimMulticoreCanny.git,,"OVP Simulation of Canny Edge detection running on top of FreeRTOS, on Multicore ARM platform",0
+pico-lvglBMP085,https://github.com/tvlad1234/pico-lvglBMP085.git,,Thermometer demo using LVGL and FreeRTOS running on Pi Pico,0
+Demo_FreeRTOS_v10.0.1_for_Renesas_RX231_with_CSplus_CC-RX,https://github.com/kern-gt/Demo_FreeRTOS_v10.0.1_for_Renesas_RX231_with_CSplus_CC-RX.git,,,0
+arm-rtos,https://github.com/nolanholden/arm-rtos.git,,"FreeRTOS port for use with ARM MCUs, used for PJRC's Teensy 3.6",0
+ESP8266,https://github.com/SoCXin/ESP8266.git,"Organization(login=""SoCXin"")",L4 R3：espressif 160MHz MIPS Tensilica L106 WiFi SoC (ESP8266/ESP8285),0
+selfie_carolocup2018,https://github.com/KNR-Selfie/selfie_carolocup2018.git,"Organization(login=""KNR-Selfie"")",Software for 1:10 Scale Autonomous Car - Selfie. Developed for Carolo-Cup competition,0
+stm32_freertos,https://github.com/radio-ho0/stm32_freertos.git,,stm32 freertos on STM32F103C8T6,0
+Discovery,https://github.com/adibacco/Discovery.git,,Discovery STM32F746G lwIP FreeRTOS OpenSTM32,1
+LPC1768ModemInterface,https://github.com/nerding-it/LPC1768ModemInterface.git,,,0
+stm32_demo,https://github.com/BMTLab/stm32_demo.git,,The first project as a training on programming STM32 controllers using FreeRTOS,0
+mtb-example-anycloud-ble-capsense-buttons-slider,https://github.com/Infineon/mtb-example-anycloud-ble-capsense-buttons-slider.git,"Organization(login=""Infineon"")",This Code Example will demonstrate the CapSense example with custom BLE services.,0
+mtb-example-anycloud-tcp-server,https://github.com/Infineon/mtb-example-anycloud-tcp-server.git,"Organization(login=""Infineon"")",This code example demonstrates implementing a TCP server using the AnyCloud SDK for PSoC 6 MCU and CYW43xxx connectivity devices.,0
+OS-tasks-Scheduler-using-FreeRtos,https://github.com/MEDHAT-ALHADDAD/OS-tasks-Scheduler-using-FreeRtos.git,,OS tasks Scheduler using FreeRtos,0
+Wireless_Scanner,https://github.com/da-vics/Wireless_Scanner.git,,Esp32 based QR_Code Reader,0
+SM32F0_OS,https://github.com/kl-xiao/SM32F0_OS.git,,基于gcc arm的M0芯片的freertos移植demo,0
+STM32,https://github.com/sandman/STM32.git,,Experiments with STM32 microcontroller,0
+Arduino_TOPPERS_ASP_FreeRTOS_API,https://github.com/h7ga40/Arduino_TOPPERS_ASP_FreeRTOS_API.git,,Arduino library with FreeRTOS API implemented in TOPPERS/ASP,0
+MI52-TP-freertos,https://github.com/TheRolfFR/MI52-TP-freertos.git,,If you copy my code without thinking then you don't understand it,0
+fw,https://github.com/minddot/fw.git,"Organization(login=""minddot"")",MindDot Firmware,16
+chisys,https://github.com/chiro2001/chisys.git,,FreeRTOS&其他，on STM32。,0
+MP3_player,https://github.com/NSJ-student/MP3_player.git,,"STM32F407에서 FreeRTOS, uC/GUI, FATFS 라이브러리/ VS1003을 활용한 MP3 플레이어 펌웨어",0
+DEFENDER,https://github.com/edward62740/DEFENDER.git,,This is a 2.4GHz Wi-Fi scanner for estimating channel usage and detect deauthentication attacks. The collected data is sent to a database to be analyzed and provide notifications.,0
+PriorityInversion_FreeRTOS,https://github.com/vijaybnotion/PriorityInversion_FreeRTOS.git,,Demonstrate Priority Inversion with freeRTOS and STM32F411re,0
+ESP32_S3,https://github.com/intelasd/ESP32_S3.git,,Arduino+FreeRTOS development record,0
+stm-opc,https://github.com/Haimrich/stm-opc.git,,OPC UA Client on STM32F769I,0
+echo-2sec-uart-freertos-queue-stm32l476,https://github.com/NetDm/echo-2sec-uart-freertos-queue-stm32l476.git,,"Эхо-петля на UART. Фиксация времени прихода и данных в прерывании Rx UART; передача их из прерывания UART в подзадачу RTOS посредствам очереди в долгосрочный буфер для хранения. Возрат данных из долгосрочного буфера обратно в UART, через 2 секунды.",0
+IPIA_FREERTOS,https://github.com/jminjares4/IPIA_FREERTOS.git,,Senior Project Developed in FreeRTOS using MSP432P401R,0
+full-stack-iot,https://github.com/arashsm79/full-stack-iot.git,,"A simple implementation of an IoT platform using esp-idf. Including Sensors, Gateway, and a Server.",0
+microvisor-weather-device-demo,https://github.com/TwilioDevEd/microvisor-weather-device-demo.git,"Organization(login=""TwilioDevEd"")",A sample weather display device application based on Microvisor,0
+freertos-pandaboard-amp,https://github.com/sbourdelin/freertos-pandaboard-amp.git,,A demo of FreeRTOS v8.2.3 implementing the Linux remoteproc framework on a Cortex-M3 Ducati processor (pandaboard) for asymmetric multiprocessing,0
+crosslib,https://github.com/KrystianD/crosslib.git,,Cross OS library with support for Linux and FreeRTOS,0
+subsystems-tsat4,https://github.com/UMSATS/subsystems-tsat4.git,"Organization(login=""UMSATS"")",Contains software/documents related to the subsystems board for UMSATS 2016-2018.,0
+k1_virgo,https://github.com/isweikk/k1_virgo.git,,"He's a desktop robot, named Virgo.  Base on freeRTOS.  we can control him by the mini program of wechat.",0
+freeRTOS-lpuart-MIMXRT1010-EVK,https://github.com/minhthuc2502/freeRTOS-lpuart-MIMXRT1010-EVK.git,,control robotic arm by board mimxrt1010-evk ,0
+notes,https://github.com/asli18/notes.git,,notes about embedded system,0
+Semi-autonomous-UV-sterilization-bot,https://github.com/tech-igloo/Semi-autonomous-UV-sterilization-bot.git,,UV-sterilization-bot,2
+arduino_freertos_helloworld,https://github.com/Misael1998/arduino_freertos_helloworld.git,,Communicating an arduino with the POSIX demo of FreeRTOS. ,0
+home-iot,https://github.com/koooge/home-iot.git,,HomeIoT using STM32L475E(B-L475E-IOT01A2(STM32L475VGTx)),0
+Embedded-Programming-on-Microcontroller-STM32F103R6,https://github.com/mdodovic/Embedded-Programming-on-Microcontroller-STM32F103R6.git,,"Embedded programming on STM32F103R6 microcontroller. This microcontroller is used to control motor, LCD display, terminals, temperature controller ...",0
+free-rtos-fault-injection-simulator,https://github.com/MarzioVallero/free-rtos-fault-injection-simulator.git,,A FreeRTOS fault injection simulator with campaign management and results processing.,0
+FreeRTOS_LwIP__HTTP_SLIP,https://github.com/Sanya-123/FreeRTOS_LwIP__HTTP_SLIP.git,,Firmware for stm32f407 with TCP/IP stek over UART,0
+Simulador_Sensor_Temperatura_RTOS,https://github.com/Fran-cio/Simulador_Sensor_Temperatura_RTOS.git,,"Un simulador de un sensor de temperatura con graficador de valores censados y gestor de cpu, implementado en c mediante las herramientas de FreeRTOS y Qemu",0
+timers,https://github.com/igors48/timers.git,,DIY LILYGO T-Watch 2020 V3 based project,63
+Propagator-Controller-FREERTOS-ESP32,https://github.com/whyspark/Propagator-Controller-FREERTOS-ESP32.git,,"A Propagator Controller and using FREERTOS to take advantage of both cores of the ESP32, and send temperature readings to an API endpoint.",0
+start-esp-idf,https://github.com/m3y54m/start-esp-idf.git,,Getting started with FreeRTOS on ESP32 (LOLIN32) ,0
+FridgeLogger,https://github.com/jaklPhil/FridgeLogger.git,, ESP32 messuring device for a domestic refrigerator,0
+microvisor-weather-device-demo,https://github.com/TwilioDevEd/microvisor-weather-device-demo.git,"Organization(login=""TwilioDevEd"")",A sample weather display device application based on Microvisor,0
+gtracker,https://github.com/JeffeApAlves/gtracker.git,,Controle de trânsito através de uma vanet.,10
+SEP4-Tron-game,https://github.com/DubiousCactus/SEP4-Tron-game.git,,A Tron-like game implemented on a custom ARM board with LCD screen,0
+war_and_glory,https://github.com/asuar078/war_and_glory.git,,Arduino software to control a 3D printed tank.,0
+Uart-FreeRTOS-Digital-Input,https://github.com/KBonde/Uart-FreeRTOS-Digital-Input.git,,An input project for the STM32F401RE using freeRTOS and serial communication,0
+OS-Comparison,https://github.com/Victor-Y-Fadeev/OS-Comparison.git,,Comparison of real time operating systems,0
+STM32-IoT-Node-FreeRTOS-ADC-UART,https://github.com/jmkuss/STM32-IoT-Node-FreeRTOS-ADC-UART.git,,"This was a final report for UCSD ext. ""Real-Time Operating Systems"" (FreeRTOS) class",0
+ghostbusters,https://github.com/stevenliatti/ghostbusters.git,,Real time game on mylab2,0
+RTS,https://github.com/Lucasgb7/RTS.git,,Repositório para disciplina de Sistemas em Tempo Real.,0
+respirador,https://github.com/pferrero/respirador.git,,Proyecto de sistemas operativos de tiempo real con FreeRTOS,0
+iot-controller,https://github.com/vi7/iot-controller.git,,ESP8266 FreeRTOS based IoT home controller ,0
+coreHTTP-sample,https://github.com/koooge/coreHTTP-sample.git,,"Placrice FreeRTOS/coreHTTP, FreeRTOS-Plus-TCP,  MbedTLS",0
+FreeRTOS,https://github.com/ErickXHdez/FreeRTOS.git,,Small example using FreeRTOS in embedded systems,0
+rtosLwip,https://github.com/jacklee032016/rtosLwip.git,,My works on RTOS (FreeRTOS and uC/OS) and LwIP,2
+udpserver-iot,https://github.com/ElectroMagus/udpserver-iot.git,,"UDP to control motor function. Exploring using FreeRTOS Queues, Tasks and Scheduling in order to process commands and routines.",0
+RealTime_Systems_Masterclass,https://github.com/SuperMoudy/RealTime_Systems_Masterclass.git,,My assignments progress in the Real-time Systems MasterClass by Sprints,0

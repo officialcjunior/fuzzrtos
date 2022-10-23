@@ -5,7 +5,7 @@ import csv
 file_path= "freertos.csv"
 uname = ""
 pwd = ""
-g = Github()
+g = Github("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")
 
 def writer(name,link,org,desc,issuecnt):
     s = csv.writer(f)
@@ -28,6 +28,8 @@ def rprint(repo):
     description = {}
     isssues = {}
     """.format(url,org,des,cnt))
+    rate_limit = g.get_rate_limit()
+    print(rate_limit)
     writer(repo.name,url,org,des,cnt)
     
 def usetopic():
@@ -37,7 +39,7 @@ def usetopic():
             print("Warning : Rate limit Exceeded ")
             break
         rprint(repo)
-        clone_repo(repo)   
+        #clone_repo(repo)   
 
 f = open(file_path,"w+")
 usetopic()
