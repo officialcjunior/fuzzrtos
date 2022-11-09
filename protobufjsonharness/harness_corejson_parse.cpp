@@ -14,14 +14,14 @@
 using namespace std;
 
 extern "C"{
-    #include "core_json.h";
+    #include "core_json.h"
 }
 
 void fuzz_core_json( char *buffer, char *queryKey);
 
 DEFINE_PROTO_FUZZER( const core_json_pair& input_pair) {
     string buffer = JSON_value_to_string(input_pair.buffer());
-    string query = input_pair.queryKey().getPaths(0);
+    string query = JSON_value_to_string(input_pair.buffer());
     
     char *char_buffer = new char[buffer.size()+1];
     char *char_query = new char[query.size()+1];
@@ -32,7 +32,7 @@ DEFINE_PROTO_FUZZER( const core_json_pair& input_pair) {
     char_buffer[buffer.size()]=0;
     char_query[query.size()]=0;
 
-    fuzz_core_json( char_buffer, char_query);
+    fuzz_core_json(char_buffer, char_query);
 }
 
 void fuzz_core_json( char *buffer, char *query){
