@@ -1,4 +1,5 @@
 TARGET=corejson_fuzz
+C=clang-10
 CXX=clang++-10
 CXXFLAGS=-g -fsanitize=fuzzer,address
 PB_SRC=json.pb.cc
@@ -14,6 +15,9 @@ all: $(TARGET)
 
 harness.o: harness.cc
 	$(CXX) $(CXXFLAGS) -c $(DFUZZ) $<
+
+core_json.o: core_json.c
+	$(C) $(CXXFLAGS) -c $<
 
 $(TARGET): harness.o core_json.o $(TARGET).cc
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(PB_SRC) $(LPM_LIB) $(PROTOBUF_LIB) $(INC)
