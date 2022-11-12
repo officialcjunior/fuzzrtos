@@ -66,6 +66,7 @@ std::string JSON_num_to_str(JSON_number num) {
     // Find the number type
     switch(num.value_case()) {
 
+        // Get raw number values
         case JSON_number::kDouble:
             out << num.double_();
             break;
@@ -142,12 +143,15 @@ std::string SerializeJSON(const JSON_opt &json_data) {
     // Initialize output string
     std::stringstream out;
 
+    // Find the type of JSON input
     switch(json_data.value_case()) {
 
+        // Object + key-value pair to find in object
         case JSON_opt::kInp:
             out << JSON_inp_to_str(json_data.inp());
             break;
 
+        // Only object
         case JSON_opt::kObj:
             out << JSON_obj_to_str(json_data.obj());
             break;
