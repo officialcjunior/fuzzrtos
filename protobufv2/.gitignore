@@ -1,0 +1,6 @@
+corpus/
+corejson_fuzz
+*.o
+*.gcda
+*.gcno
+*.log
