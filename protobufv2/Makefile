@@ -11,6 +11,7 @@ LPM_LIB=$(LPM_DIR)/build/src/libfuzzer/libprotobuf-mutator-libfuzzer.a $(LPM_DIR
 INC=-I$(PROTOBUF_DIR)/include -I$(LPM_DIR)
 DFUZZ=-DLLVMFuzzerTestOneInput=fuzz
 COV_FLAGS=--coverage
+LINKER_FLAGS=-fuse-ld=mold
 
 all: $(TARGET)
 
@@ -21,7 +22,7 @@ core_json.o: core_json.c
 	$(C) $(CXXFLAGS) $(COV_FLAGS) -c $<
 
 $(TARGET): harness.o core_json.o $(TARGET).cc
-	$(CXX) $(CXXFLAGS) $(COV_FLAGS) -o $@ $^ $(PB_SRC) $(LPM_LIB) $(PROTOBUF_LIB) $(INC)
+	$(CXX) $(CXXFLAGS) $(LINKER_FLAGS) $(COV_FLAGS) -o $@ $^ $(PB_SRC) $(LPM_LIB) $(PROTOBUF_LIB) $(INC)
 
 clean: 
 	rm $(TARGET) *.o
