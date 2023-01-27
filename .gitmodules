@@ -1,3 +1,6 @@
 [submodule "protobufjsonharness/libprotobuf-mutator"]
 	path = protobufjsonharness/libprotobuf-mutator
 	url = https://github.com/google/libprotobuf-mutator
+[submodule "protobuf-kernel/FreeRTOS"]
+	path = protobuf-kernel/FreeRTOS
+	url = git@github.com:FreeRTOS/FreeRTOS.git
