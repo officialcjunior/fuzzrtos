@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+message StreamBuffer {
+  uint32 a = 1;
+  string b = 2;
+}
