@@ -1,12 +1,11 @@
 # Changeable values
 TARGET                := freertos_kernel_fuzz
-C                     := clang
-CXX                   := clang++
+C                     := clang-10
+CXX                   := clang++-10
 CXXFLAGS              := -g -fsanitize=fuzzer,address
 PB_SRC                := rtos_protocol_buffers.pb.cc
-PWD 				  := /home/cjunior/Downloads/arch
-PROTOBUF_DIR          := $(PWD)/libprotobuf-mutator/build/external.protobuf
-LPM_DIR               := $(PWD)/libprotobuf-mutator
+PROTOBUF_DIR          := $(HOME)/libprotobuf-mutator/build/external.protobuf
+LPM_DIR               := $(HOME)/libprotobuf-mutator
 PROTOBUF_LIB          := $(PROTOBUF_DIR)/lib/libprotobufd.a
 LPM_LIB               := $(LPM_DIR)/build/src/libfuzzer/libprotobuf-mutator-libfuzzer.a $(LPM_DIR)/build/src/libprotobuf-mutator.a
 INC                   := -I$(PROTOBUF_DIR)/include -I$(LPM_DIR)
