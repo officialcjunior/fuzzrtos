@@ -30,7 +30,7 @@ extern "C" int fuzz(char *data, int mode_len, size_t size) {
         
         // Validate and search
         default:
-            xQueue = xQueueCreate(1, size);
+            xQueue = xQueueCreate(1, mode_len);
             xQueueSend(xQueue, ( void * ) data, ( TickType_t ) 0 );
             xQueueReceive(xQueue, ( void * ) data, 0);            
             free(xQueue);
