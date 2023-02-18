@@ -14,7 +14,7 @@ extern "C" int fuzz(char *data, int mode_len, size_t size) {
     QueueHandle_t xQueue;
 
     // Avoid crashes on nulls
-    if(size < 2 || mode_len >= (size + 1)) {
+    if(size < 1 || mode_len >= (size + 1)) {
         return 0;
     }
 
@@ -30,7 +30,7 @@ extern "C" int fuzz(char *data, int mode_len, size_t size) {
         
         // Validate and search
         default:
-            xQueue = xQueueCreate(1, mode_len);
+            xQueue = xQueueCreate(size, mode_len);
             xQueueSend(xQueue, ( void * ) data, ( TickType_t ) 0 );
             xQueueReceive(xQueue, ( void * ) data, 0);            
             free(xQueue);
