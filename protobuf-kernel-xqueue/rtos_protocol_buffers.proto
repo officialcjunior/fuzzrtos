@@ -1,5 +1,19 @@
 syntax = "proto3";
 
-message StreamBuffer {
-  string a = 1;
+message Queue_value {
+  oneof value{
+    string str = 1;
+    Queue_num n = 2;
+  }
+}
+
+message Queue_num{
+    oneof value {
+        int64 long = 1;
+        double double = 2;
+    }
+}
+
+message Queue_val{
+  repeated Queue_value a = 1;
 }
