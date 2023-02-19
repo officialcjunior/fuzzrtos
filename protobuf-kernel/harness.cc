@@ -7,38 +7,36 @@
 #include "FreeRTOS.h"
 #include "FreeRTOSConfig.h"
 #include "stream_buffer.h"
+#include "queue.h"
+#include "timers.h"
 
 // Fuzzer entrypoint
-extern "C" int fuzz(char *data, int mode_len, size_t size) {
-
+extern "C" int fuzz(char *data, size_t size) {
 
     static StreamBufferHandle_t buffer;
+    static QueueHandle_t queue;
+    static TimerHandle_t xTimer;
 
-    // Avoid crashes on nulls
-    if(size < 2 || mode_len >= (size + 1)) {
-        return 0;
-    }
-
-    switch(mode_len) {
-
-        // Only validate
-        case 0:
-            //buffer = data;
-           // bufferLength = sizeof(buffer) - 1;
-            
-           // xQueueGenericCreate( mode_len, mode_len, size );
-            break;
+    // First bit determines structure to fuzz
+    switch(data[0] % 2) {
         
-        // Validate and search
-        default:
-
-
+        // streambuffer
+        case 0:
             buffer = xStreamBufferCreate(100, 1);
-            xStreamBufferSend(buffer, data, mode_len, portMAX_DELAY);
-            xStreamBufferReceive(buffer, data, mode_len, portMAX_DELAY);            
+            xStreamBufferSend(buffer, data, size, portMAX_DELAY);
+            xStreamBufferReceive(buffer, data, size, portMAX_DELAY);            
             free(buffer);
-        break;       
+            break;
 
+        // queue
+        case 1:
+            queue = xQueueGenericCreate(size, 1, 0);
+            xQueueSend(queue, data, portMAX_DELAY);
+            xQueueReceive(queue, data, portMAX_DELAY);
+            free(queue);
+            break;
+    
     }
+
     return 0;
 }

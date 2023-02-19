@@ -19,11 +19,11 @@ std::string SerializeStreambuffer(const StreamBuffer &test_proto) {
 }
 
 // Fuzzing entrypoint
-extern "C" int fuzz(char *data, size_t mode_len, size_t size);
+extern "C" int fuzz(char *data, size_t size);
 
 DEFINE_PROTO_FUZZER(const StreamBuffer &test_proto) {
     
     std::string s = SerializeStreambuffer(test_proto);
 
-    fuzz((char*)s.data(), s.length(), s.size());
+    fuzz((char*)s.data(), s.size());
 }
