@@ -5,13 +5,16 @@
 #include <bits/stdc++.h>
 #include <string>
 
-std::string SerializeStreambuffer(const StreamBuffer &test_proto) {
+std::string SerializeStreambuffer(Queue_val q_v) {
     std::stringstream all;
-    const auto &bb = test_proto.a();
-    if(bb.size() != 0) {
-        all.write(bb.c_str(), bb.size());
+    all << "[";
+    for(int i=0; i<q_v.item_size(); ++i) {
+        all << q_v.a(i).value().str();
+        if (i < q_v.items_size() - 1) {
+            all << ", ";
+        }
     }
-
+    all << "]";
     std::string res = all.str();
     return res;
 }

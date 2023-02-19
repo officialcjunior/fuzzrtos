@@ -32,7 +32,7 @@ extern "C" int fuzz(char *data, int mode_len, size_t size) {
         default:
             xQueue = xQueueCreate(size, mode_len);
             xQueueSend(xQueue, ( void * ) data, ( TickType_t ) 0 );
-            xQueueReceive(xQueue, ( void * ) data, 0);            
+            xQueueReceive(xQueue, ( void * ) data, 0);
             free(xQueue);
         break;       
 
