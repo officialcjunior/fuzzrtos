@@ -9,6 +9,10 @@
 #include "stream_buffer.h"
 #include "queue.h"
 #include "timers.h"
+#include "FreeRTOS_IP.h"
+#include "FreeRTOS_Sockets.h"
+#include "FreeRTOS_IP_Private.h"
+#include "FreeRTOS_TCP_IP.h"
 
 // Fuzzer entrypoint
 extern "C" int fuzz(char *data, size_t size) {
@@ -35,8 +39,18 @@ extern "C" int fuzz(char *data, size_t size) {
             xQueueReceive(queue, data, portMAX_DELAY);
             free(queue);
             break;
-    
-    }
 
-    return 0;
+        case 2:
+        Socket_t xSocket;
+        struct freertos_sockaddr xBindAddress;
+
+        xSocket = FreeRTOS_socket(FREERTOS_AF_INET, FREERTOS_SOCK_DGRAM, FREERTOS_IPPROTO_TCP);
+
+        FreeRTOS_bind(xSocket, &xBindAddress, sizeof(xBindAddress));
+
+        FreeRTOS_listen(xSocket, 5);
+        break;
+
+    }
+return 0;
 }

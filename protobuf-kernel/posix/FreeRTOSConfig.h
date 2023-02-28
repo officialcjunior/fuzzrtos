@@ -60,6 +60,13 @@
 #define configUSE_TASK_NOTIFICATIONS               1
 #define configSUPPORT_STATIC_ALLOCATION            1
 
+#define configNET_MASK3 0xFF
+#define configNET_MASK2 0xFF
+#define configNET_MASK1 0xFF
+#define configNET_MASK0 0x00
+#define configNETWORK_INTERFACE_TO_USE ( 0 )
+
+
 /* Software timer related configuration options.  The maximum possible task
  * priority is configMAX_PRIORITIES - 1.  The priority of the timer task is
  * deliberately set higher to ensure it is correctly capped back to
