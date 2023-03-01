@@ -11,7 +11,7 @@ LPM_LIB               := $(LPM_DIR)/build/src/libfuzzer/libprotobuf-mutator-libf
 INC                   := -I$(PROTOBUF_DIR)/include -I$(LPM_DIR)
 FUZZ_FLAGS            := -DLLVMFuzzerTestOneInput=fuzz
 FREERTOS_FLAGS        := -DprojCOVERAGE_TEST=1 -DTRACE_ON_ENTER=0
-LINKER_FLAGS          := -fuse-ld=mold
+LINKER_FLAGS          := -fuse-ld=mold -lpcap
 
 FREERTOS_DIR_REL      := ./FreeRTOS/FreeRTOS
 FREERTOS_DIR          := $(abspath $(FREERTOS_DIR_REL))
@@ -74,6 +74,9 @@ SOURCE_FILES          += ${FREERTOS_DIR}/Demo/Common/Minimal/TaskNotify.c
 SOURCE_FILES          += ${FREERTOS_DIR}/Demo/Common/Minimal/TimerDemo.c
 SOURCE_FILES          += ${FREERTOS_PLUS_DIR}/Source/FreeRTOS-Plus-Trace/trcKernelPort.c
 SOURCE_FILES          += $(wildcard ${FREERTOS_PLUS_DIR}/Source/FreeRTOS-Plus-Trace/*.c )
+SOURCE_FILES          += ${FREERTOS_PLUS_DIR}/Demo/FreeRTOS_Plus_TCP_Echo_Posix/main_networking.c
+SOURCE_FILES          += ${FREERTOS_PLUS_DIR}/Demo/FreeRTOS_Plus_TCP_Echo_Posix/TCPEchoClient_SingleTasks.c
+
 
 SOURCE_FILES += ${FREERTOS_PLUS_DIR}/Source/FreeRTOS-Plus-TCP/source/FreeRTOS_ARP.c
 SOURCE_FILES += ${FREERTOS_PLUS_DIR}/Source/FreeRTOS-Plus-TCP/source/FreeRTOS_DHCP.c
