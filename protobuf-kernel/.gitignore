@@ -1,0 +1,9 @@
+.cache/
+corpus/
+freertos_kernel_fuzz
+*.json
+*.o
+*.d
+*.gcda
+*.gcno
+*.log
