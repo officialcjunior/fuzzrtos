@@ -44,33 +44,41 @@ struct TableStruct_rtos_5fprotocol_5fbuffers_2eproto {
   static const uint32_t offsets[];
 };
 extern const ::PROTOBUF_NAMESPACE_ID::internal::DescriptorTable descriptor_table_rtos_5fprotocol_5fbuffers_2eproto;
-class StreamBuffer;
-struct StreamBufferDefaultTypeInternal;
-extern StreamBufferDefaultTypeInternal _StreamBuffer_default_instance_;
+class Queue_num;
+struct Queue_numDefaultTypeInternal;
+extern Queue_numDefaultTypeInternal _Queue_num_default_instance_;
+class Queue_val;
+struct Queue_valDefaultTypeInternal;
+extern Queue_valDefaultTypeInternal _Queue_val_default_instance_;
+class Queue_value;
+struct Queue_valueDefaultTypeInternal;
+extern Queue_valueDefaultTypeInternal _Queue_value_default_instance_;
 PROTOBUF_NAMESPACE_OPEN
-template<> ::StreamBuffer* Arena::CreateMaybeMessage<::StreamBuffer>(Arena*);
+template<> ::Queue_num* Arena::CreateMaybeMessage<::Queue_num>(Arena*);
+template<> ::Queue_val* Arena::CreateMaybeMessage<::Queue_val>(Arena*);
+template<> ::Queue_value* Arena::CreateMaybeMessage<::Queue_value>(Arena*);
 PROTOBUF_NAMESPACE_CLOSE
 
 // ===================================================================
 
-class StreamBuffer final :
-    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:StreamBuffer) */ {
+class Queue_value final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Queue_value) */ {
  public:
-  inline StreamBuffer() : StreamBuffer(nullptr) {}
-  ~StreamBuffer() override;
-  explicit PROTOBUF_CONSTEXPR StreamBuffer(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+  inline Queue_value() : Queue_value(nullptr) {}
+  ~Queue_value() override;
+  explicit PROTOBUF_CONSTEXPR Queue_value(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
 
-  StreamBuffer(const StreamBuffer& from);
-  StreamBuffer(StreamBuffer&& from) noexcept
-    : StreamBuffer() {
+  Queue_value(const Queue_value& from);
+  Queue_value(Queue_value&& from) noexcept
+    : Queue_value() {
     *this = ::std::move(from);
   }
 
-  inline StreamBuffer& operator=(const StreamBuffer& from) {
+  inline Queue_value& operator=(const Queue_value& from) {
     CopyFrom(from);
     return *this;
   }
-  inline StreamBuffer& operator=(StreamBuffer&& from) noexcept {
+  inline Queue_value& operator=(Queue_value&& from) noexcept {
     if (this == &from) return *this;
     if (GetOwningArena() == from.GetOwningArena()
   #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
@@ -93,20 +101,26 @@ class StreamBuffer final :
   static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
     return default_instance().GetMetadata().reflection;
   }
-  static const StreamBuffer& default_instance() {
+  static const Queue_value& default_instance() {
     return *internal_default_instance();
   }
-  static inline const StreamBuffer* internal_default_instance() {
-    return reinterpret_cast<const StreamBuffer*>(
-               &_StreamBuffer_default_instance_);
+  enum ValueCase {
+    kStr = 1,
+    kN = 2,
+    VALUE_NOT_SET = 0,
+  };
+
+  static inline const Queue_value* internal_default_instance() {
+    return reinterpret_cast<const Queue_value*>(
+               &_Queue_value_default_instance_);
   }
   static constexpr int kIndexInFileMessages =
     0;
 
-  friend void swap(StreamBuffer& a, StreamBuffer& b) {
+  friend void swap(Queue_value& a, Queue_value& b) {
     a.Swap(&b);
   }
-  inline void Swap(StreamBuffer* other) {
+  inline void Swap(Queue_value* other) {
     if (other == this) return;
   #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
     if (GetOwningArena() != nullptr &&
@@ -119,7 +133,7 @@ class StreamBuffer final :
       ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
     }
   }
-  void UnsafeArenaSwap(StreamBuffer* other) {
+  void UnsafeArenaSwap(Queue_value* other) {
     if (other == this) return;
     GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
     InternalSwap(other);
@@ -127,14 +141,14 @@ class StreamBuffer final :
 
   // implements Message ----------------------------------------------
 
-  StreamBuffer* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
-    return CreateMaybeMessage<StreamBuffer>(arena);
+  Queue_value* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<Queue_value>(arena);
   }
   using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
-  void CopyFrom(const StreamBuffer& from);
+  void CopyFrom(const Queue_value& from);
   using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
-  void MergeFrom( const StreamBuffer& from) {
-    StreamBuffer::MergeImpl(*this, from);
+  void MergeFrom( const Queue_value& from) {
+    Queue_value::MergeImpl(*this, from);
   }
   private:
   static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
@@ -152,15 +166,391 @@ class StreamBuffer final :
   void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
   void SharedDtor();
   void SetCachedSize(int size) const final;
-  void InternalSwap(StreamBuffer* other);
+  void InternalSwap(Queue_value* other);
 
   private:
   friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
   static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
-    return "StreamBuffer";
+    return "Queue_value";
   }
   protected:
-  explicit StreamBuffer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+  explicit Queue_value(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kStrFieldNumber = 1,
+    kNFieldNumber = 2,
+  };
+  // string str = 1;
+  bool has_str() const;
+  private:
+  bool _internal_has_str() const;
+  public:
+  void clear_str();
+  const std::string& str() const;
+  template <typename ArgT0 = const std::string&, typename... ArgT>
+  void set_str(ArgT0&& arg0, ArgT... args);
+  std::string* mutable_str();
+  PROTOBUF_NODISCARD std::string* release_str();
+  void set_allocated_str(std::string* str);
+  private:
+  const std::string& _internal_str() const;
+  inline PROTOBUF_ALWAYS_INLINE void _internal_set_str(const std::string& value);
+  std::string* _internal_mutable_str();
+  public:
+
+  // .Queue_num n = 2;
+  bool has_n() const;
+  private:
+  bool _internal_has_n() const;
+  public:
+  void clear_n();
+  const ::Queue_num& n() const;
+  PROTOBUF_NODISCARD ::Queue_num* release_n();
+  ::Queue_num* mutable_n();
+  void set_allocated_n(::Queue_num* n);
+  private:
+  const ::Queue_num& _internal_n() const;
+  ::Queue_num* _internal_mutable_n();
+  public:
+  void unsafe_arena_set_allocated_n(
+      ::Queue_num* n);
+  ::Queue_num* unsafe_arena_release_n();
+
+  void clear_value();
+  ValueCase value_case() const;
+  // @@protoc_insertion_point(class_scope:Queue_value)
+ private:
+  class _Internal;
+  void set_has_str();
+  void set_has_n();
+
+  inline bool has_value() const;
+  inline void clear_has_value();
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    union ValueUnion {
+      constexpr ValueUnion() : _constinit_{} {}
+        ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized _constinit_;
+      ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr str_;
+      ::Queue_num* n_;
+    } value_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint32_t _oneof_case_[1];
+
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_rtos_5fprotocol_5fbuffers_2eproto;
+};
+// -------------------------------------------------------------------
+
+class Queue_num final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Queue_num) */ {
+ public:
+  inline Queue_num() : Queue_num(nullptr) {}
+  ~Queue_num() override;
+  explicit PROTOBUF_CONSTEXPR Queue_num(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  Queue_num(const Queue_num& from);
+  Queue_num(Queue_num&& from) noexcept
+    : Queue_num() {
+    *this = ::std::move(from);
+  }
+
+  inline Queue_num& operator=(const Queue_num& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline Queue_num& operator=(Queue_num&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const Queue_num& default_instance() {
+    return *internal_default_instance();
+  }
+  enum ValueCase {
+    kLong = 1,
+    kDouble = 2,
+    VALUE_NOT_SET = 0,
+  };
+
+  static inline const Queue_num* internal_default_instance() {
+    return reinterpret_cast<const Queue_num*>(
+               &_Queue_num_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    1;
+
+  friend void swap(Queue_num& a, Queue_num& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(Queue_num* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(Queue_num* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  Queue_num* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<Queue_num>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const Queue_num& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const Queue_num& from) {
+    Queue_num::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(Queue_num* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Queue_num";
+  }
+  protected:
+  explicit Queue_num(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                       bool is_message_owned = false);
+  public:
+
+  static const ClassData _class_data_;
+  const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*GetClassData() const final;
+
+  ::PROTOBUF_NAMESPACE_ID::Metadata GetMetadata() const final;
+
+  // nested types ----------------------------------------------------
+
+  // accessors -------------------------------------------------------
+
+  enum : int {
+    kLongFieldNumber = 1,
+    kDoubleFieldNumber = 2,
+  };
+  // int64 long = 1;
+  bool has_long_() const;
+  private:
+  bool _internal_has_long_() const;
+  public:
+  void clear_long_();
+  int64_t long_() const;
+  void set_long_(int64_t value);
+  private:
+  int64_t _internal_long_() const;
+  void _internal_set_long_(int64_t value);
+  public:
+
+  // double double = 2;
+  bool has_double_() const;
+  private:
+  bool _internal_has_double_() const;
+  public:
+  void clear_double_();
+  double double_() const;
+  void set_double_(double value);
+  private:
+  double _internal_double_() const;
+  void _internal_set_double_(double value);
+  public:
+
+  void clear_value();
+  ValueCase value_case() const;
+  // @@protoc_insertion_point(class_scope:Queue_num)
+ private:
+  class _Internal;
+  void set_has_long_();
+  void set_has_double_();
+
+  inline bool has_value() const;
+  inline void clear_has_value();
+
+  template <typename T> friend class ::PROTOBUF_NAMESPACE_ID::Arena::InternalHelper;
+  typedef void InternalArenaConstructable_;
+  typedef void DestructorSkippable_;
+  struct Impl_ {
+    union ValueUnion {
+      constexpr ValueUnion() : _constinit_{} {}
+        ::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized _constinit_;
+      int64_t long__;
+      double double__;
+    } value_;
+    mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
+    uint32_t _oneof_case_[1];
+
+  };
+  union { Impl_ _impl_; };
+  friend struct ::TableStruct_rtos_5fprotocol_5fbuffers_2eproto;
+};
+// -------------------------------------------------------------------
+
+class Queue_val final :
+    public ::PROTOBUF_NAMESPACE_ID::Message /* @@protoc_insertion_point(class_definition:Queue_val) */ {
+ public:
+  inline Queue_val() : Queue_val(nullptr) {}
+  ~Queue_val() override;
+  explicit PROTOBUF_CONSTEXPR Queue_val(::PROTOBUF_NAMESPACE_ID::internal::ConstantInitialized);
+
+  Queue_val(const Queue_val& from);
+  Queue_val(Queue_val&& from) noexcept
+    : Queue_val() {
+    *this = ::std::move(from);
+  }
+
+  inline Queue_val& operator=(const Queue_val& from) {
+    CopyFrom(from);
+    return *this;
+  }
+  inline Queue_val& operator=(Queue_val&& from) noexcept {
+    if (this == &from) return *this;
+    if (GetOwningArena() == from.GetOwningArena()
+  #ifdef PROTOBUF_FORCE_COPY_IN_MOVE
+        && GetOwningArena() != nullptr
+  #endif  // !PROTOBUF_FORCE_COPY_IN_MOVE
+    ) {
+      InternalSwap(&from);
+    } else {
+      CopyFrom(from);
+    }
+    return *this;
+  }
+
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* descriptor() {
+    return GetDescriptor();
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Descriptor* GetDescriptor() {
+    return default_instance().GetMetadata().descriptor;
+  }
+  static const ::PROTOBUF_NAMESPACE_ID::Reflection* GetReflection() {
+    return default_instance().GetMetadata().reflection;
+  }
+  static const Queue_val& default_instance() {
+    return *internal_default_instance();
+  }
+  static inline const Queue_val* internal_default_instance() {
+    return reinterpret_cast<const Queue_val*>(
+               &_Queue_val_default_instance_);
+  }
+  static constexpr int kIndexInFileMessages =
+    2;
+
+  friend void swap(Queue_val& a, Queue_val& b) {
+    a.Swap(&b);
+  }
+  inline void Swap(Queue_val* other) {
+    if (other == this) return;
+  #ifdef PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() != nullptr &&
+        GetOwningArena() == other->GetOwningArena()) {
+   #else  // PROTOBUF_FORCE_COPY_IN_SWAP
+    if (GetOwningArena() == other->GetOwningArena()) {
+  #endif  // !PROTOBUF_FORCE_COPY_IN_SWAP
+      InternalSwap(other);
+    } else {
+      ::PROTOBUF_NAMESPACE_ID::internal::GenericSwap(this, other);
+    }
+  }
+  void UnsafeArenaSwap(Queue_val* other) {
+    if (other == this) return;
+    GOOGLE_DCHECK(GetOwningArena() == other->GetOwningArena());
+    InternalSwap(other);
+  }
+
+  // implements Message ----------------------------------------------
+
+  Queue_val* New(::PROTOBUF_NAMESPACE_ID::Arena* arena = nullptr) const final {
+    return CreateMaybeMessage<Queue_val>(arena);
+  }
+  using ::PROTOBUF_NAMESPACE_ID::Message::CopyFrom;
+  void CopyFrom(const Queue_val& from);
+  using ::PROTOBUF_NAMESPACE_ID::Message::MergeFrom;
+  void MergeFrom( const Queue_val& from) {
+    Queue_val::MergeImpl(*this, from);
+  }
+  private:
+  static void MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg);
+  public:
+  PROTOBUF_ATTRIBUTE_REINITIALIZES void Clear() final;
+  bool IsInitialized() const final;
+
+  size_t ByteSizeLong() const final;
+  const char* _InternalParse(const char* ptr, ::PROTOBUF_NAMESPACE_ID::internal::ParseContext* ctx) final;
+  uint8_t* _InternalSerialize(
+      uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const final;
+  int GetCachedSize() const final { return _impl_._cached_size_.Get(); }
+
+  private:
+  void SharedCtor(::PROTOBUF_NAMESPACE_ID::Arena* arena, bool is_message_owned);
+  void SharedDtor();
+  void SetCachedSize(int size) const final;
+  void InternalSwap(Queue_val* other);
+
+  private:
+  friend class ::PROTOBUF_NAMESPACE_ID::internal::AnyMetadata;
+  static ::PROTOBUF_NAMESPACE_ID::StringPiece FullMessageName() {
+    return "Queue_val";
+  }
+  protected:
+  explicit Queue_val(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                        bool is_message_owned = false);
   public:
 
@@ -176,21 +566,25 @@ class StreamBuffer final :
   enum : int {
     kAFieldNumber = 1,
   };
-  // string a = 1;
-  void clear_a();
-  const std::string& a() const;
-  template <typename ArgT0 = const std::string&, typename... ArgT>
-  void set_a(ArgT0&& arg0, ArgT... args);
-  std::string* mutable_a();
-  PROTOBUF_NODISCARD std::string* release_a();
-  void set_allocated_a(std::string* a);
+  // repeated .Queue_value a = 1;
+  int a_size() const;
   private:
-  const std::string& _internal_a() const;
-  inline PROTOBUF_ALWAYS_INLINE void _internal_set_a(const std::string& value);
-  std::string* _internal_mutable_a();
+  int _internal_a_size() const;
   public:
+  void clear_a();
+  ::Queue_value* mutable_a(int index);
+  ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Queue_value >*
+      mutable_a();
+  private:
+  const ::Queue_value& _internal_a(int index) const;
+  ::Queue_value* _internal_add_a();
+  public:
+  const ::Queue_value& a(int index) const;
+  ::Queue_value* add_a();
+  const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Queue_value >&
+      a() const;
 
-  // @@protoc_insertion_point(class_scope:StreamBuffer)
+  // @@protoc_insertion_point(class_scope:Queue_val)
  private:
   class _Internal;
 
@@ -198,7 +592,7 @@ class StreamBuffer final :
   typedef void InternalArenaConstructable_;
   typedef void DestructorSkippable_;
   struct Impl_ {
-    ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr a_;
+    ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Queue_value > a_;
     mutable ::PROTOBUF_NAMESPACE_ID::internal::CachedSize _cached_size_;
   };
   union { Impl_ _impl_; };
@@ -213,61 +607,308 @@ class StreamBuffer final :
   #pragma GCC diagnostic push
   #pragma GCC diagnostic ignored "-Wstrict-aliasing"
 #endif  // __GNUC__
-// StreamBuffer
+// Queue_value
 
-// string a = 1;
-inline void StreamBuffer::clear_a() {
-  _impl_.a_.ClearToEmpty();
+// string str = 1;
+inline bool Queue_value::_internal_has_str() const {
+  return value_case() == kStr;
 }
-inline const std::string& StreamBuffer::a() const {
-  // @@protoc_insertion_point(field_get:StreamBuffer.a)
-  return _internal_a();
+inline bool Queue_value::has_str() const {
+  return _internal_has_str();
+}
+inline void Queue_value::set_has_str() {
+  _impl_._oneof_case_[0] = kStr;
+}
+inline void Queue_value::clear_str() {
+  if (_internal_has_str()) {
+    _impl_.value_.str_.Destroy();
+    clear_has_value();
+  }
+}
+inline const std::string& Queue_value::str() const {
+  // @@protoc_insertion_point(field_get:Queue_value.str)
+  return _internal_str();
 }
 template <typename ArgT0, typename... ArgT>
-inline PROTOBUF_ALWAYS_INLINE
-void StreamBuffer::set_a(ArgT0&& arg0, ArgT... args) {
- 
- _impl_.a_.Set(static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
-  // @@protoc_insertion_point(field_set:StreamBuffer.a)
+inline void Queue_value::set_str(ArgT0&& arg0, ArgT... args) {
+  if (!_internal_has_str()) {
+    clear_value();
+    set_has_str();
+    _impl_.value_.str_.InitDefault();
+  }
+  _impl_.value_.str_.Set( static_cast<ArgT0 &&>(arg0), args..., GetArenaForAllocation());
+  // @@protoc_insertion_point(field_set:Queue_value.str)
 }
-inline std::string* StreamBuffer::mutable_a() {
-  std::string* _s = _internal_mutable_a();
-  // @@protoc_insertion_point(field_mutable:StreamBuffer.a)
+inline std::string* Queue_value::mutable_str() {
+  std::string* _s = _internal_mutable_str();
+  // @@protoc_insertion_point(field_mutable:Queue_value.str)
   return _s;
 }
-inline const std::string& StreamBuffer::_internal_a() const {
-  return _impl_.a_.Get();
+inline const std::string& Queue_value::_internal_str() const {
+  if (_internal_has_str()) {
+    return _impl_.value_.str_.Get();
+  }
+  return ::PROTOBUF_NAMESPACE_ID::internal::GetEmptyStringAlreadyInited();
 }
-inline void StreamBuffer::_internal_set_a(const std::string& value) {
-  
-  _impl_.a_.Set(value, GetArenaForAllocation());
+inline void Queue_value::_internal_set_str(const std::string& value) {
+  if (!_internal_has_str()) {
+    clear_value();
+    set_has_str();
+    _impl_.value_.str_.InitDefault();
+  }
+  _impl_.value_.str_.Set(value, GetArenaForAllocation());
 }
-inline std::string* StreamBuffer::_internal_mutable_a() {
-  
-  return _impl_.a_.Mutable(GetArenaForAllocation());
+inline std::string* Queue_value::_internal_mutable_str() {
+  if (!_internal_has_str()) {
+    clear_value();
+    set_has_str();
+    _impl_.value_.str_.InitDefault();
+  }
+  return _impl_.value_.str_.Mutable(      GetArenaForAllocation());
 }
-inline std::string* StreamBuffer::release_a() {
-  // @@protoc_insertion_point(field_release:StreamBuffer.a)
-  return _impl_.a_.Release();
-}
-inline void StreamBuffer::set_allocated_a(std::string* a) {
-  if (a != nullptr) {
-    
+inline std::string* Queue_value::release_str() {
+  // @@protoc_insertion_point(field_release:Queue_value.str)
+  if (_internal_has_str()) {
+    clear_has_value();
+    return _impl_.value_.str_.Release();
   } else {
-    
+    return nullptr;
   }
-  _impl_.a_.SetAllocated(a, GetArenaForAllocation());
-#ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (_impl_.a_.IsDefault()) {
-    _impl_.a_.Set("", GetArenaForAllocation());
+}
+inline void Queue_value::set_allocated_str(std::string* str) {
+  if (has_value()) {
+    clear_value();
   }
-#endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  // @@protoc_insertion_point(field_set_allocated:StreamBuffer.a)
+  if (str != nullptr) {
+    set_has_str();
+    _impl_.value_.str_.InitAllocated(str, GetArenaForAllocation());
+  }
+  // @@protoc_insertion_point(field_set_allocated:Queue_value.str)
+}
+
+// .Queue_num n = 2;
+inline bool Queue_value::_internal_has_n() const {
+  return value_case() == kN;
+}
+inline bool Queue_value::has_n() const {
+  return _internal_has_n();
+}
+inline void Queue_value::set_has_n() {
+  _impl_._oneof_case_[0] = kN;
+}
+inline void Queue_value::clear_n() {
+  if (_internal_has_n()) {
+    if (GetArenaForAllocation() == nullptr) {
+      delete _impl_.value_.n_;
+    }
+    clear_has_value();
+  }
+}
+inline ::Queue_num* Queue_value::release_n() {
+  // @@protoc_insertion_point(field_release:Queue_value.n)
+  if (_internal_has_n()) {
+    clear_has_value();
+    ::Queue_num* temp = _impl_.value_.n_;
+    if (GetArenaForAllocation() != nullptr) {
+      temp = ::PROTOBUF_NAMESPACE_ID::internal::DuplicateIfNonNull(temp);
+    }
+    _impl_.value_.n_ = nullptr;
+    return temp;
+  } else {
+    return nullptr;
+  }
+}
+inline const ::Queue_num& Queue_value::_internal_n() const {
+  return _internal_has_n()
+      ? *_impl_.value_.n_
+      : reinterpret_cast< ::Queue_num&>(::_Queue_num_default_instance_);
+}
+inline const ::Queue_num& Queue_value::n() const {
+  // @@protoc_insertion_point(field_get:Queue_value.n)
+  return _internal_n();
+}
+inline ::Queue_num* Queue_value::unsafe_arena_release_n() {
+  // @@protoc_insertion_point(field_unsafe_arena_release:Queue_value.n)
+  if (_internal_has_n()) {
+    clear_has_value();
+    ::Queue_num* temp = _impl_.value_.n_;
+    _impl_.value_.n_ = nullptr;
+    return temp;
+  } else {
+    return nullptr;
+  }
+}
+inline void Queue_value::unsafe_arena_set_allocated_n(::Queue_num* n) {
+  clear_value();
+  if (n) {
+    set_has_n();
+    _impl_.value_.n_ = n;
+  }
+  // @@protoc_insertion_point(field_unsafe_arena_set_allocated:Queue_value.n)
+}
+inline ::Queue_num* Queue_value::_internal_mutable_n() {
+  if (!_internal_has_n()) {
+    clear_value();
+    set_has_n();
+    _impl_.value_.n_ = CreateMaybeMessage< ::Queue_num >(GetArenaForAllocation());
+  }
+  return _impl_.value_.n_;
+}
+inline ::Queue_num* Queue_value::mutable_n() {
+  ::Queue_num* _msg = _internal_mutable_n();
+  // @@protoc_insertion_point(field_mutable:Queue_value.n)
+  return _msg;
+}
+
+inline bool Queue_value::has_value() const {
+  return value_case() != VALUE_NOT_SET;
+}
+inline void Queue_value::clear_has_value() {
+  _impl_._oneof_case_[0] = VALUE_NOT_SET;
+}
+inline Queue_value::ValueCase Queue_value::value_case() const {
+  return Queue_value::ValueCase(_impl_._oneof_case_[0]);
+}
+// -------------------------------------------------------------------
+
+// Queue_num
+
+// int64 long = 1;
+inline bool Queue_num::_internal_has_long_() const {
+  return value_case() == kLong;
+}
+inline bool Queue_num::has_long_() const {
+  return _internal_has_long_();
+}
+inline void Queue_num::set_has_long_() {
+  _impl_._oneof_case_[0] = kLong;
+}
+inline void Queue_num::clear_long_() {
+  if (_internal_has_long_()) {
+    _impl_.value_.long__ = int64_t{0};
+    clear_has_value();
+  }
+}
+inline int64_t Queue_num::_internal_long_() const {
+  if (_internal_has_long_()) {
+    return _impl_.value_.long__;
+  }
+  return int64_t{0};
+}
+inline void Queue_num::_internal_set_long_(int64_t value) {
+  if (!_internal_has_long_()) {
+    clear_value();
+    set_has_long_();
+  }
+  _impl_.value_.long__ = value;
+}
+inline int64_t Queue_num::long_() const {
+  // @@protoc_insertion_point(field_get:Queue_num.long)
+  return _internal_long_();
+}
+inline void Queue_num::set_long_(int64_t value) {
+  _internal_set_long_(value);
+  // @@protoc_insertion_point(field_set:Queue_num.long)
+}
+
+// double double = 2;
+inline bool Queue_num::_internal_has_double_() const {
+  return value_case() == kDouble;
+}
+inline bool Queue_num::has_double_() const {
+  return _internal_has_double_();
+}
+inline void Queue_num::set_has_double_() {
+  _impl_._oneof_case_[0] = kDouble;
+}
+inline void Queue_num::clear_double_() {
+  if (_internal_has_double_()) {
+    _impl_.value_.double__ = 0;
+    clear_has_value();
+  }
+}
+inline double Queue_num::_internal_double_() const {
+  if (_internal_has_double_()) {
+    return _impl_.value_.double__;
+  }
+  return 0;
+}
+inline void Queue_num::_internal_set_double_(double value) {
+  if (!_internal_has_double_()) {
+    clear_value();
+    set_has_double_();
+  }
+  _impl_.value_.double__ = value;
+}
+inline double Queue_num::double_() const {
+  // @@protoc_insertion_point(field_get:Queue_num.double)
+  return _internal_double_();
+}
+inline void Queue_num::set_double_(double value) {
+  _internal_set_double_(value);
+  // @@protoc_insertion_point(field_set:Queue_num.double)
+}
+
+inline bool Queue_num::has_value() const {
+  return value_case() != VALUE_NOT_SET;
+}
+inline void Queue_num::clear_has_value() {
+  _impl_._oneof_case_[0] = VALUE_NOT_SET;
+}
+inline Queue_num::ValueCase Queue_num::value_case() const {
+  return Queue_num::ValueCase(_impl_._oneof_case_[0]);
+}
+// -------------------------------------------------------------------
+
+// Queue_val
+
+// repeated .Queue_value a = 1;
+inline int Queue_val::_internal_a_size() const {
+  return _impl_.a_.size();
+}
+inline int Queue_val::a_size() const {
+  return _internal_a_size();
+}
+inline void Queue_val::clear_a() {
+  _impl_.a_.Clear();
+}
+inline ::Queue_value* Queue_val::mutable_a(int index) {
+  // @@protoc_insertion_point(field_mutable:Queue_val.a)
+  return _impl_.a_.Mutable(index);
+}
+inline ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Queue_value >*
+Queue_val::mutable_a() {
+  // @@protoc_insertion_point(field_mutable_list:Queue_val.a)
+  return &_impl_.a_;
+}
+inline const ::Queue_value& Queue_val::_internal_a(int index) const {
+  return _impl_.a_.Get(index);
+}
+inline const ::Queue_value& Queue_val::a(int index) const {
+  // @@protoc_insertion_point(field_get:Queue_val.a)
+  return _internal_a(index);
+}
+inline ::Queue_value* Queue_val::_internal_add_a() {
+  return _impl_.a_.Add();
+}
+inline ::Queue_value* Queue_val::add_a() {
+  ::Queue_value* _add = _internal_add_a();
+  // @@protoc_insertion_point(field_add:Queue_val.a)
+  return _add;
+}
+inline const ::PROTOBUF_NAMESPACE_ID::RepeatedPtrField< ::Queue_value >&
+Queue_val::a() const {
+  // @@protoc_insertion_point(field_list:Queue_val.a)
+  return _impl_.a_;
 }
 
 #ifdef __GNUC__
   #pragma GCC diagnostic pop
 #endif  // __GNUC__
+// -------------------------------------------------------------------
+
+// -------------------------------------------------------------------
+
 
 // @@protoc_insertion_point(namespace_scope)
 

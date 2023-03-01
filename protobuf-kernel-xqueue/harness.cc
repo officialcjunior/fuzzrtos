@@ -9,10 +9,10 @@
 #include "queue.h"
 
 // Fuzzer entrypoint
-extern "C" int fuzz(char *data, int mode_len, size_t size) {
+extern "C" int fuzz(char **data, int mode_len, size_t size) {
 
     QueueHandle_t xQueue;
-
+    
     // Avoid crashes on nulls
     if(size < 1 || mode_len >= (size + 1)) {
         return 0;
@@ -30,9 +30,11 @@ extern "C" int fuzz(char *data, int mode_len, size_t size) {
         
         // Validate and search
         default:
-            xQueue = xQueueCreate(size, mode_len);
-            xQueueSend(xQueue, ( void * ) data, ( TickType_t ) 0 );
-            xQueueReceive(xQueue, ( void * ) data, 0);
+            xQueue = xQueueCreate(mode_len, size);
+            for(int i=0; i<mode_len; ++i) {
+                xQueueSend(xQueue, ( void * ) data[i], ( TickType_t ) 0 );
+                xQueueReceive(xQueue, ( void * ) data[i], 0);
+            }
             free(xQueue);
         break;       
 

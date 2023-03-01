@@ -20,49 +20,102 @@ PROTOBUF_PRAGMA_INIT_SEG
 namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
-PROTOBUF_CONSTEXPR StreamBuffer::StreamBuffer(
+PROTOBUF_CONSTEXPR Queue_value::Queue_value(
     ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.a_)*/{&::_pbi::fixed_address_empty_string, ::_pbi::ConstantInitialized{}}
-  , /*decltype(_impl_._cached_size_)*/{}} {}
-struct StreamBufferDefaultTypeInternal {
-  PROTOBUF_CONSTEXPR StreamBufferDefaultTypeInternal()
+    /*decltype(_impl_.value_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_._oneof_case_)*/{}} {}
+struct Queue_valueDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR Queue_valueDefaultTypeInternal()
       : _instance(::_pbi::ConstantInitialized{}) {}
-  ~StreamBufferDefaultTypeInternal() {}
+  ~Queue_valueDefaultTypeInternal() {}
   union {
-    StreamBuffer _instance;
+    Queue_value _instance;
   };
 };
-PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 StreamBufferDefaultTypeInternal _StreamBuffer_default_instance_;
-static ::_pb::Metadata file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[1];
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Queue_valueDefaultTypeInternal _Queue_value_default_instance_;
+PROTOBUF_CONSTEXPR Queue_num::Queue_num(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.value_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_._oneof_case_)*/{}} {}
+struct Queue_numDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR Queue_numDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~Queue_numDefaultTypeInternal() {}
+  union {
+    Queue_num _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Queue_numDefaultTypeInternal _Queue_num_default_instance_;
+PROTOBUF_CONSTEXPR Queue_val::Queue_val(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.a_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}} {}
+struct Queue_valDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR Queue_valDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~Queue_valDefaultTypeInternal() {}
+  union {
+    Queue_val _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 Queue_valDefaultTypeInternal _Queue_val_default_instance_;
+static ::_pb::Metadata file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[3];
 static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_rtos_5fprotocol_5fbuffers_2eproto = nullptr;
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_rtos_5fprotocol_5fbuffers_2eproto = nullptr;
 
 const uint32_t TableStruct_rtos_5fprotocol_5fbuffers_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
   ~0u,  // no _has_bits_
-  PROTOBUF_FIELD_OFFSET(::StreamBuffer, _internal_metadata_),
+  PROTOBUF_FIELD_OFFSET(::Queue_value, _internal_metadata_),
+  ~0u,  // no _extensions_
+  PROTOBUF_FIELD_OFFSET(::Queue_value, _impl_._oneof_case_[0]),
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  PROTOBUF_FIELD_OFFSET(::Queue_value, _impl_.value_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Queue_num, _internal_metadata_),
+  ~0u,  // no _extensions_
+  PROTOBUF_FIELD_OFFSET(::Queue_num, _impl_._oneof_case_[0]),
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  PROTOBUF_FIELD_OFFSET(::Queue_num, _impl_.value_),
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Queue_val, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::StreamBuffer, _impl_.a_),
+  PROTOBUF_FIELD_OFFSET(::Queue_val, _impl_.a_),
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::StreamBuffer)},
+  { 0, -1, -1, sizeof(::Queue_value)},
+  { 9, -1, -1, sizeof(::Queue_num)},
+  { 18, -1, -1, sizeof(::Queue_val)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
-  &::_StreamBuffer_default_instance_._instance,
+  &::_Queue_value_default_instance_._instance,
+  &::_Queue_num_default_instance_._instance,
+  &::_Queue_val_default_instance_._instance,
 };
 
 const char descriptor_table_protodef_rtos_5fprotocol_5fbuffers_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\033rtos_protocol_buffers.proto\"\031\n\014StreamB"
-  "uffer\022\t\n\001a\030\001 \001(\tb\006proto3"
+  "\n\033rtos_protocol_buffers.proto\">\n\013Queue_v"
+  "alue\022\r\n\003str\030\001 \001(\tH\000\022\027\n\001n\030\002 \001(\0132\n.Queue_n"
+  "umH\000B\007\n\005value\"6\n\tQueue_num\022\016\n\004long\030\001 \001(\003"
+  "H\000\022\020\n\006double\030\002 \001(\001H\000B\007\n\005value\"$\n\tQueue_v"
+  "al\022\027\n\001a\030\001 \003(\0132\014.Queue_valueb\006proto3"
   ;
 static ::_pbi::once_flag descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_rtos_5fprotocol_5fbuffers_2eproto = {
-    false, false, 64, descriptor_table_protodef_rtos_5fprotocol_5fbuffers_2eproto,
+    false, false, 195, descriptor_table_protodef_rtos_5fprotocol_5fbuffers_2eproto,
     "rtos_protocol_buffers.proto",
-    &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once, nullptr, 0, 1,
+    &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once, nullptr, 0, 3,
     schemas, file_default_instances, TableStruct_rtos_5fprotocol_5fbuffers_2eproto::offsets,
     file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto, file_level_enum_descriptors_rtos_5fprotocol_5fbuffers_2eproto,
     file_level_service_descriptors_rtos_5fprotocol_5fbuffers_2eproto,
@@ -76,51 +129,77 @@ PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_in
 
 // ===================================================================
 
-class StreamBuffer::_Internal {
+class Queue_value::_Internal {
  public:
+  static const ::Queue_num& n(const Queue_value* msg);
 };
 
-StreamBuffer::StreamBuffer(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+const ::Queue_num&
+Queue_value::_Internal::n(const Queue_value* msg) {
+  return *msg->_impl_.value_.n_;
+}
+void Queue_value::set_allocated_n(::Queue_num* n) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  clear_value();
+  if (n) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(n);
+    if (message_arena != submessage_arena) {
+      n = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, n, submessage_arena);
+    }
+    set_has_n();
+    _impl_.value_.n_ = n;
+  }
+  // @@protoc_insertion_point(field_set_allocated:Queue_value.n)
+}
+Queue_value::Queue_value(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:StreamBuffer)
+  // @@protoc_insertion_point(arena_constructor:Queue_value)
 }
-StreamBuffer::StreamBuffer(const StreamBuffer& from)
+Queue_value::Queue_value(const Queue_value& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  StreamBuffer* const _this = this; (void)_this;
+  Queue_value* const _this = this; (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.a_){}
-    , /*decltype(_impl_._cached_size_)*/{}};
+      decltype(_impl_.value_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  _impl_.a_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.a_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
-  if (!from._internal_a().empty()) {
-    _this->_impl_.a_.Set(from._internal_a(), 
-      _this->GetArenaForAllocation());
+  clear_has_value();
+  switch (from.value_case()) {
+    case kStr: {
+      _this->_internal_set_str(from._internal_str());
+      break;
+    }
+    case kN: {
+      _this->_internal_mutable_n()->::Queue_num::MergeFrom(
+          from._internal_n());
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
   }
-  // @@protoc_insertion_point(copy_constructor:StreamBuffer)
+  // @@protoc_insertion_point(copy_constructor:Queue_value)
 }
 
-inline void StreamBuffer::SharedCtor(
+inline void Queue_value::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.a_){}
+      decltype(_impl_.value_){}
     , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}
   };
-  _impl_.a_.InitDefault();
-  #ifdef PROTOBUF_FORCE_COPY_DEFAULT_STRING
-    _impl_.a_.Set("", GetArenaForAllocation());
-  #endif // PROTOBUF_FORCE_COPY_DEFAULT_STRING
+  clear_has_value();
 }
 
-StreamBuffer::~StreamBuffer() {
-  // @@protoc_insertion_point(destructor:StreamBuffer)
+Queue_value::~Queue_value() {
+  // @@protoc_insertion_point(destructor:Queue_value)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -128,38 +207,69 @@ StreamBuffer::~StreamBuffer() {
   SharedDtor();
 }
 
-inline void StreamBuffer::SharedDtor() {
+inline void Queue_value::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  _impl_.a_.Destroy();
+  if (has_value()) {
+    clear_value();
+  }
 }
 
-void StreamBuffer::SetCachedSize(int size) const {
+void Queue_value::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void StreamBuffer::Clear() {
-// @@protoc_insertion_point(message_clear_start:StreamBuffer)
+void Queue_value::clear_value() {
+// @@protoc_insertion_point(one_of_clear_start:Queue_value)
+  switch (value_case()) {
+    case kStr: {
+      _impl_.value_.str_.Destroy();
+      break;
+    }
+    case kN: {
+      if (GetArenaForAllocation() == nullptr) {
+        delete _impl_.value_.n_;
+      }
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
+  }
+  _impl_._oneof_case_[0] = VALUE_NOT_SET;
+}
+
+
+void Queue_value::Clear() {
+// @@protoc_insertion_point(message_clear_start:Queue_value)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  _impl_.a_.ClearToEmpty();
+  clear_value();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* StreamBuffer::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* Queue_value::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
     ptr = ::_pbi::ReadTag(ptr, &tag);
     switch (tag >> 3) {
-      // string a = 1;
+      // string str = 1;
       case 1:
         if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
-          auto str = _internal_mutable_a();
+          auto str = _internal_mutable_str();
           ptr = ::_pbi::InlineGreedyStringParser(str, ptr, ctx);
           CHK_(ptr);
-          CHK_(::_pbi::VerifyUTF8(str, "StreamBuffer.a"));
+          CHK_(::_pbi::VerifyUTF8(str, "Queue_value.str"));
+        } else
+          goto handle_unusual;
+        continue;
+      // .Queue_num n = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 18)) {
+          ptr = ctx->ParseMessage(_internal_mutable_n(), ptr);
+          CHK_(ptr);
         } else
           goto handle_unusual;
         continue;
@@ -186,102 +296,572 @@ failure:
 #undef CHK_
 }
 
-uint8_t* StreamBuffer::_InternalSerialize(
+uint8_t* Queue_value::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:StreamBuffer)
+  // @@protoc_insertion_point(serialize_to_array_start:Queue_value)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  // string a = 1;
-  if (!this->_internal_a().empty()) {
+  // string str = 1;
+  if (_internal_has_str()) {
     ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::VerifyUtf8String(
-      this->_internal_a().data(), static_cast<int>(this->_internal_a().length()),
+      this->_internal_str().data(), static_cast<int>(this->_internal_str().length()),
       ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::SERIALIZE,
-      "StreamBuffer.a");
+      "Queue_value.str");
     target = stream->WriteStringMaybeAliased(
-        1, this->_internal_a(), target);
+        1, this->_internal_str(), target);
+  }
+
+  // .Queue_num n = 2;
+  if (_internal_has_n()) {
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+      InternalWriteMessage(2, _Internal::n(this),
+        _Internal::n(this).GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
     target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
         _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
   }
-  // @@protoc_insertion_point(serialize_to_array_end:StreamBuffer)
+  // @@protoc_insertion_point(serialize_to_array_end:Queue_value)
   return target;
 }
 
-size_t StreamBuffer::ByteSizeLong() const {
-// @@protoc_insertion_point(message_byte_size_start:StreamBuffer)
+size_t Queue_value::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Queue_value)
   size_t total_size = 0;
 
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // string a = 1;
-  if (!this->_internal_a().empty()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
-        this->_internal_a());
+  switch (value_case()) {
+    // string str = 1;
+    case kStr: {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::StringSize(
+          this->_internal_str());
+      break;
+    }
+    // .Queue_num n = 2;
+    case kN: {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.value_.n_);
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
   }
-
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
 }
 
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData StreamBuffer::_class_data_ = {
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Queue_value::_class_data_ = {
     ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
-    StreamBuffer::MergeImpl
+    Queue_value::MergeImpl
 };
-const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*StreamBuffer::GetClassData() const { return &_class_data_; }
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Queue_value::GetClassData() const { return &_class_data_; }
 
 
-void StreamBuffer::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
-  auto* const _this = static_cast<StreamBuffer*>(&to_msg);
-  auto& from = static_cast<const StreamBuffer&>(from_msg);
-  // @@protoc_insertion_point(class_specific_merge_from_start:StreamBuffer)
+void Queue_value::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Queue_value*>(&to_msg);
+  auto& from = static_cast<const Queue_value&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:Queue_value)
   GOOGLE_DCHECK_NE(&from, _this);
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (!from._internal_a().empty()) {
-    _this->_internal_set_a(from._internal_a());
+  switch (from.value_case()) {
+    case kStr: {
+      _this->_internal_set_str(from._internal_str());
+      break;
+    }
+    case kN: {
+      _this->_internal_mutable_n()->::Queue_num::MergeFrom(
+          from._internal_n());
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
   }
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
-void StreamBuffer::CopyFrom(const StreamBuffer& from) {
-// @@protoc_insertion_point(class_specific_copy_from_start:StreamBuffer)
+void Queue_value::CopyFrom(const Queue_value& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Queue_value)
   if (&from == this) return;
   Clear();
   MergeFrom(from);
 }
 
-bool StreamBuffer::IsInitialized() const {
+bool Queue_value::IsInitialized() const {
   return true;
 }
 
-void StreamBuffer::InternalSwap(StreamBuffer* other) {
+void Queue_value::InternalSwap(Queue_value* other) {
   using std::swap;
-  auto* lhs_arena = GetArenaForAllocation();
-  auto* rhs_arena = other->GetArenaForAllocation();
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::ArenaStringPtr::InternalSwap(
-      &_impl_.a_, lhs_arena,
-      &other->_impl_.a_, rhs_arena
-  );
+  swap(_impl_.value_, other->_impl_.value_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
 }
 
-::PROTOBUF_NAMESPACE_ID::Metadata StreamBuffer::GetMetadata() const {
+::PROTOBUF_NAMESPACE_ID::Metadata Queue_value::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
       file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[0]);
 }
 
+// ===================================================================
+
+class Queue_num::_Internal {
+ public:
+};
+
+Queue_num::Queue_num(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:Queue_num)
+}
+Queue_num::Queue_num(const Queue_num& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Queue_num* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.value_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  clear_has_value();
+  switch (from.value_case()) {
+    case kLong: {
+      _this->_internal_set_long_(from._internal_long_());
+      break;
+    }
+    case kDouble: {
+      _this->_internal_set_double_(from._internal_double_());
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
+  }
+  // @@protoc_insertion_point(copy_constructor:Queue_num)
+}
+
+inline void Queue_num::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.value_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}
+  };
+  clear_has_value();
+}
+
+Queue_num::~Queue_num() {
+  // @@protoc_insertion_point(destructor:Queue_num)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void Queue_num::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  if (has_value()) {
+    clear_value();
+  }
+}
+
+void Queue_num::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void Queue_num::clear_value() {
+// @@protoc_insertion_point(one_of_clear_start:Queue_num)
+  switch (value_case()) {
+    case kLong: {
+      // No need to clear
+      break;
+    }
+    case kDouble: {
+      // No need to clear
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
+  }
+  _impl_._oneof_case_[0] = VALUE_NOT_SET;
+}
+
+
+void Queue_num::Clear() {
+// @@protoc_insertion_point(message_clear_start:Queue_num)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  clear_value();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* Queue_num::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // int64 long = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 8)) {
+          _internal_set_long_(::PROTOBUF_NAMESPACE_ID::internal::ReadVarint64(&ptr));
+          CHK_(ptr);
+        } else
+          goto handle_unusual;
+        continue;
+      // double double = 2;
+      case 2:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 17)) {
+          _internal_set_double_(::PROTOBUF_NAMESPACE_ID::internal::UnalignedLoad<double>(ptr));
+          ptr += sizeof(double);
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* Queue_num::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Queue_num)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // int64 long = 1;
+  if (_internal_has_long_()) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteInt64ToArray(1, this->_internal_long_(), target);
+  }
+
+  // double double = 2;
+  if (_internal_has_double_()) {
+    target = stream->EnsureSpace(target);
+    target = ::_pbi::WireFormatLite::WriteDoubleToArray(2, this->_internal_double_(), target);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Queue_num)
+  return target;
+}
+
+size_t Queue_num::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Queue_num)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  switch (value_case()) {
+    // int64 long = 1;
+    case kLong: {
+      total_size += ::_pbi::WireFormatLite::Int64SizePlusOne(this->_internal_long_());
+      break;
+    }
+    // double double = 2;
+    case kDouble: {
+      total_size += 1 + 8;
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Queue_num::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Queue_num::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Queue_num::GetClassData() const { return &_class_data_; }
+
+
+void Queue_num::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Queue_num*>(&to_msg);
+  auto& from = static_cast<const Queue_num&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:Queue_num)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  switch (from.value_case()) {
+    case kLong: {
+      _this->_internal_set_long_(from._internal_long_());
+      break;
+    }
+    case kDouble: {
+      _this->_internal_set_double_(from._internal_double_());
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Queue_num::CopyFrom(const Queue_num& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Queue_num)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Queue_num::IsInitialized() const {
+  return true;
+}
+
+void Queue_num::InternalSwap(Queue_num* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_.value_, other->_impl_.value_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata Queue_num::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[1]);
+}
+
+// ===================================================================
+
+class Queue_val::_Internal {
+ public:
+};
+
+Queue_val::Queue_val(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:Queue_val)
+}
+Queue_val::Queue_val(const Queue_val& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  Queue_val* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.a_){from._impl_.a_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:Queue_val)
+}
+
+inline void Queue_val::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.a_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+}
+
+Queue_val::~Queue_val() {
+  // @@protoc_insertion_point(destructor:Queue_val)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void Queue_val::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.a_.~RepeatedPtrField();
+}
+
+void Queue_val::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void Queue_val::Clear() {
+// @@protoc_insertion_point(message_clear_start:Queue_val)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.a_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* Queue_val::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // repeated .Queue_value a = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_a(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* Queue_val::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:Queue_val)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .Queue_value a = 1;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_a_size()); i < n; i++) {
+    const auto& repfield = this->_internal_a(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Queue_val)
+  return target;
+}
+
+size_t Queue_val::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Queue_val)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  // repeated .Queue_value a = 1;
+  total_size += 1UL * this->_internal_a_size();
+  for (const auto& msg : this->_impl_.a_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
+  }
+
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Queue_val::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Queue_val::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Queue_val::GetClassData() const { return &_class_data_; }
+
+
+void Queue_val::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Queue_val*>(&to_msg);
+  auto& from = static_cast<const Queue_val&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:Queue_val)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  _this->_impl_.a_.MergeFrom(from._impl_.a_);
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Queue_val::CopyFrom(const Queue_val& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Queue_val)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Queue_val::IsInitialized() const {
+  return true;
+}
+
+void Queue_val::InternalSwap(Queue_val* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  _impl_.a_.InternalSwap(&other->_impl_.a_);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata Queue_val::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[2]);
+}
+
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
-template<> PROTOBUF_NOINLINE ::StreamBuffer*
-Arena::CreateMaybeMessage< ::StreamBuffer >(Arena* arena) {
-  return Arena::CreateMessageInternal< ::StreamBuffer >(arena);
+template<> PROTOBUF_NOINLINE ::Queue_value*
+Arena::CreateMaybeMessage< ::Queue_value >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Queue_value >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Queue_num*
+Arena::CreateMaybeMessage< ::Queue_num >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Queue_num >(arena);
+}
+template<> PROTOBUF_NOINLINE ::Queue_val*
+Arena::CreateMaybeMessage< ::Queue_val >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Queue_val >(arena);
 }
 PROTOBUF_NAMESPACE_CLOSE
 

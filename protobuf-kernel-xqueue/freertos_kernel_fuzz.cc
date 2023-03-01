@@ -5,26 +5,20 @@
 #include <bits/stdc++.h>
 #include <string>
 
-std::string SerializeStreambuffer(Queue_val q_v) {
-    std::stringstream all;
-    all << "[";
-    for(int i=0; i<q_v.item_size(); ++i) {
-        all << q_v.a(i).value().str();
-        if (i < q_v.items_size() - 1) {
-            all << ", ";
-        }
+std::vector<std::string> SerializeQueue(Queue_val &q_v) {
+    std::vector<std::string> arr;
+    for(int i=0; i<q_v.a_size(); ++i) {
+        arr.push_back(q_v.a(i).str().c_str());
     }
-    all << "]";
-    std::string res = all.str();
-    return res;
+    return arr;
 }
 
 // Fuzzing entrypoint
-extern "C" int fuzz(char *data, size_t mode_len, size_t size);
+extern "C" int fuzz(std::vector<std::string> data, size_t mode_len, size_t size);
 
-DEFINE_PROTO_FUZZER(const StreamBuffer &test_proto) {
+DEFINE_PROTO_FUZZER(const Queue_val &q_v) {
     
-    std::string s = SerializeStreambuffer(test_proto);
+    std::vector<std::string> s = SerializeQueue(q_v);
 
-    fuzz((char*)s.data(), s.length(), s.size());
+    fuzz(s, q_v.a_size(), sizeof(q_v.a(0).str()));
 }

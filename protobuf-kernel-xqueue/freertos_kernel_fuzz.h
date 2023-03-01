@@ -2,4 +2,4 @@
 #include <bits/stdc++.h>
 #include <string>
 
-std::string SerializeStreambuffer(const StreamBuffer &test_proto);
+std::string SerializeQueue(const Queue_val &q_v);
