@@ -5,8 +5,8 @@
 #include <bits/stdc++.h>
 #include <string>
 
-std::vector<std::string> SerializeQueue(Queue_val &q_v) {
-    std::vector<std::string> arr;
+std::vector<const char*> SerializeQueue(const Queue_val &q_v) {
+    std::vector<const char*> arr;
     for(int i=0; i<q_v.a_size(); ++i) {
         arr.push_back(q_v.a(i).str().c_str());
     }
@@ -14,11 +14,11 @@ std::vector<std::string> SerializeQueue(Queue_val &q_v) {
 }
 
 // Fuzzing entrypoint
-extern "C" int fuzz(std::vector<std::string> data, size_t mode_len, size_t size);
+extern "C" int fuzz(std::vector<const char*> data, size_t mode_len, size_t size);
 
 DEFINE_PROTO_FUZZER(const Queue_val &q_v) {
     
-    std::vector<std::string> s = SerializeQueue(q_v);
+    std::vector<const char*> s = SerializeQueue(q_v);
 
     fuzz(s, q_v.a_size(), sizeof(q_v.a(0).str()));
 }
