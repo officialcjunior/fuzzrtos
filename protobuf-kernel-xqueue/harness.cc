@@ -8,8 +8,11 @@
 #include "FreeRTOSConfig.h"
 #include "queue.h"
 
+#include <bits/stdc++.h>
+#include <string>
+
 // Fuzzer entrypoint
-extern "C" int fuzz(char **data, int mode_len, size_t size) {
+extern "C" int fuzz(std::vector<const char*> data, int mode_len, size_t size) {
 
     QueueHandle_t xQueue;
     
@@ -31,9 +34,9 @@ extern "C" int fuzz(char **data, int mode_len, size_t size) {
         // Validate and search
         default:
             xQueue = xQueueCreate(mode_len, size);
-            for(int i=0; i<mode_len; ++i) {
-                xQueueSend(xQueue, ( void * ) data[i], ( TickType_t ) 0 );
-                xQueueReceive(xQueue, ( void * ) data[i], 0);
+            for(const auto& str : data) {
+                xQueueSend(xQueue, ( void * ) str, ( TickType_t ) 0 );
+                xQueueReceive(xQueue, ( void * ) str, 0);
             }
             free(xQueue);
         break;       
