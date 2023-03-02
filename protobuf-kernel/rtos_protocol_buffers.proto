@@ -1,6 +1,55 @@
 syntax = "proto3";
 
+message input {
+  StreamBuffer stream = 1;
+  TcpMessage tcp = 2;
+  Queue queue = 3;
+  Task task = 4;
+  Semaphore semaphore = 5;
+  Mutex mutex = 6;
+  EventGroup event_group = 7;
+}
+
 message StreamBuffer {
   uint32 a = 1;
   string b = 2;
+}
+
+message TcpMessage {
+  int32 id = 1;
+  string payload = 2;
+}
+
+message Queue {
+  uint32 handle = 1;
+  uint32 item_size = 2;
+  uint32 length = 3;
+}
+
+message Task {
+  uint32 handle = 1;
+  string name = 2;
+  uint32 priority = 3;
+  uint32 stack_size = 4;
+  uint32 current_priority = 5;
+  uint32 base_priority = 6;
+  uint32 stack_high_water_mark = 7;
+}
+
+message Semaphore {
+  uint32 handle = 1;
+  uint32 max_count = 2;
+  uint32 current_count = 3;
+}
+
+message Mutex {
+  uint32 handle = 1;
+  uint32 recursion_count = 2;
+  string owner_name = 3;
+}
+
+
+message EventGroup {
+  uint32 handle = 1;
+  uint32 event_bits = 2;
 }
