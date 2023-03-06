@@ -20,5 +20,5 @@ DEFINE_PROTO_FUZZER(const Queue_val &q_v) {
     
     std::vector<const char*> s = SerializeQueue(q_v);
 
-    fuzz(s, q_v.a_size(), sizeof(q_v.a(0).str()));
+    fuzz(s, q_v.a_size(), sizeof(q_v.a(0).str().c_str()));
 }
