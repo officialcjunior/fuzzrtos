@@ -20,15 +20,23 @@ PROTOBUF_PRAGMA_INIT_SEG
 namespace _pb = ::PROTOBUF_NAMESPACE_ID;
 namespace _pbi = _pb::internal;
 
+PROTOBUF_CONSTEXPR Option::Option(
+    ::_pbi::ConstantInitialized): _impl_{
+    /*decltype(_impl_.value_)*/{}
+  , /*decltype(_impl_._cached_size_)*/{}
+  , /*decltype(_impl_._oneof_case_)*/{}} {}
+struct OptionDefaultTypeInternal {
+  PROTOBUF_CONSTEXPR OptionDefaultTypeInternal()
+      : _instance(::_pbi::ConstantInitialized{}) {}
+  ~OptionDefaultTypeInternal() {}
+  union {
+    Option _instance;
+  };
+};
+PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 OptionDefaultTypeInternal _Option_default_instance_;
 PROTOBUF_CONSTEXPR input::input(
     ::_pbi::ConstantInitialized): _impl_{
-    /*decltype(_impl_.stream_)*/nullptr
-  , /*decltype(_impl_.tcp_)*/nullptr
-  , /*decltype(_impl_.queue_)*/nullptr
-  , /*decltype(_impl_.task_)*/nullptr
-  , /*decltype(_impl_.semaphore_)*/nullptr
-  , /*decltype(_impl_.mutex_)*/nullptr
-  , /*decltype(_impl_.event_group_)*/nullptr
+    /*decltype(_impl_.seq_)*/{}
   , /*decltype(_impl_._cached_size_)*/{}} {}
 struct inputDefaultTypeInternal {
   PROTOBUF_CONSTEXPR inputDefaultTypeInternal()
@@ -145,24 +153,32 @@ struct EventGroupDefaultTypeInternal {
   };
 };
 PROTOBUF_ATTRIBUTE_NO_DESTROY PROTOBUF_CONSTINIT PROTOBUF_ATTRIBUTE_INIT_PRIORITY1 EventGroupDefaultTypeInternal _EventGroup_default_instance_;
-static ::_pb::Metadata file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[8];
+static ::_pb::Metadata file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[9];
 static constexpr ::_pb::EnumDescriptor const** file_level_enum_descriptors_rtos_5fprotocol_5fbuffers_2eproto = nullptr;
 static constexpr ::_pb::ServiceDescriptor const** file_level_service_descriptors_rtos_5fprotocol_5fbuffers_2eproto = nullptr;
 
 const uint32_t TableStruct_rtos_5fprotocol_5fbuffers_2eproto::offsets[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
+  ~0u,  // no _has_bits_
+  PROTOBUF_FIELD_OFFSET(::Option, _internal_metadata_),
+  ~0u,  // no _extensions_
+  PROTOBUF_FIELD_OFFSET(::Option, _impl_._oneof_case_[0]),
+  ~0u,  // no _weak_field_map_
+  ~0u,  // no _inlined_string_donated_
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  ::_pbi::kInvalidFieldOffsetTag,
+  PROTOBUF_FIELD_OFFSET(::Option, _impl_.value_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::input, _internal_metadata_),
   ~0u,  // no _extensions_
   ~0u,  // no _oneof_case_
   ~0u,  // no _weak_field_map_
   ~0u,  // no _inlined_string_donated_
-  PROTOBUF_FIELD_OFFSET(::input, _impl_.stream_),
-  PROTOBUF_FIELD_OFFSET(::input, _impl_.tcp_),
-  PROTOBUF_FIELD_OFFSET(::input, _impl_.queue_),
-  PROTOBUF_FIELD_OFFSET(::input, _impl_.task_),
-  PROTOBUF_FIELD_OFFSET(::input, _impl_.semaphore_),
-  PROTOBUF_FIELD_OFFSET(::input, _impl_.mutex_),
-  PROTOBUF_FIELD_OFFSET(::input, _impl_.event_group_),
+  PROTOBUF_FIELD_OFFSET(::input, _impl_.seq_),
   ~0u,  // no _has_bits_
   PROTOBUF_FIELD_OFFSET(::StreamBuffer, _internal_metadata_),
   ~0u,  // no _extensions_
@@ -229,17 +245,19 @@ const uint32_t TableStruct_rtos_5fprotocol_5fbuffers_2eproto::offsets[] PROTOBUF
   PROTOBUF_FIELD_OFFSET(::EventGroup, _impl_.event_bits_),
 };
 static const ::_pbi::MigrationSchema schemas[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) = {
-  { 0, -1, -1, sizeof(::input)},
-  { 13, -1, -1, sizeof(::StreamBuffer)},
-  { 21, -1, -1, sizeof(::TcpMessage)},
-  { 29, -1, -1, sizeof(::Queue)},
-  { 38, -1, -1, sizeof(::Task)},
-  { 51, -1, -1, sizeof(::Semaphore)},
-  { 60, -1, -1, sizeof(::Mutex)},
-  { 69, -1, -1, sizeof(::EventGroup)},
+  { 0, -1, -1, sizeof(::Option)},
+  { 14, -1, -1, sizeof(::input)},
+  { 21, -1, -1, sizeof(::StreamBuffer)},
+  { 29, -1, -1, sizeof(::TcpMessage)},
+  { 37, -1, -1, sizeof(::Queue)},
+  { 46, -1, -1, sizeof(::Task)},
+  { 59, -1, -1, sizeof(::Semaphore)},
+  { 68, -1, -1, sizeof(::Mutex)},
+  { 77, -1, -1, sizeof(::EventGroup)},
 };
 
 static const ::_pb::Message* const file_default_instances[] = {
+  &::_Option_default_instance_._instance,
   &::_input_default_instance_._instance,
   &::_StreamBuffer_default_instance_._instance,
   &::_TcpMessage_default_instance_._instance,
@@ -251,31 +269,32 @@ static const ::_pb::Message* const file_default_instances[] = {
 };
 
 const char descriptor_table_protodef_rtos_5fprotocol_5fbuffers_2eproto[] PROTOBUF_SECTION_VARIABLE(protodesc_cold) =
-  "\n\033rtos_protocol_buffers.proto\"\304\001\n\005input\022"
-  "\035\n\006stream\030\001 \001(\0132\r.StreamBuffer\022\030\n\003tcp\030\002 "
-  "\001(\0132\013.TcpMessage\022\025\n\005queue\030\003 \001(\0132\006.Queue\022"
-  "\023\n\004task\030\004 \001(\0132\005.Task\022\035\n\tsemaphore\030\005 \001(\0132"
-  "\n.Semaphore\022\025\n\005mutex\030\006 \001(\0132\006.Mutex\022 \n\013ev"
-  "ent_group\030\007 \001(\0132\013.EventGroup\"$\n\014StreamBu"
-  "ffer\022\t\n\001a\030\001 \001(\r\022\t\n\001b\030\002 \001(\t\")\n\nTcpMessage"
-  "\022\n\n\002id\030\001 \001(\005\022\017\n\007payload\030\002 \001(\t\":\n\005Queue\022\016"
-  "\n\006handle\030\001 \001(\r\022\021\n\titem_size\030\002 \001(\r\022\016\n\006len"
-  "gth\030\003 \001(\r\"\232\001\n\004Task\022\016\n\006handle\030\001 \001(\r\022\014\n\004na"
-  "me\030\002 \001(\t\022\020\n\010priority\030\003 \001(\r\022\022\n\nstack_size"
-  "\030\004 \001(\r\022\030\n\020current_priority\030\005 \001(\r\022\025\n\rbase"
-  "_priority\030\006 \001(\r\022\035\n\025stack_high_water_mark"
-  "\030\007 \001(\r\"E\n\tSemaphore\022\016\n\006handle\030\001 \001(\r\022\021\n\tm"
-  "ax_count\030\002 \001(\r\022\025\n\rcurrent_count\030\003 \001(\r\"D\n"
-  "\005Mutex\022\016\n\006handle\030\001 \001(\r\022\027\n\017recursion_coun"
-  "t\030\002 \001(\r\022\022\n\nowner_name\030\003 \001(\t\"0\n\nEventGrou"
-  "p\022\016\n\006handle\030\001 \001(\r\022\022\n\nevent_bits\030\002 \001(\rb\006p"
-  "roto3"
+  "\n\033rtos_protocol_buffers.proto\"\334\001\n\006Option"
+  "\022\037\n\006stream\030\001 \001(\0132\r.StreamBufferH\000\022\032\n\003tcp"
+  "\030\002 \001(\0132\013.TcpMessageH\000\022\027\n\005queue\030\003 \001(\0132\006.Q"
+  "ueueH\000\022\025\n\004task\030\004 \001(\0132\005.TaskH\000\022\037\n\tsemapho"
+  "re\030\005 \001(\0132\n.SemaphoreH\000\022\027\n\005mutex\030\006 \001(\0132\006."
+  "MutexH\000\022\"\n\013event_group\030\007 \001(\0132\013.EventGrou"
+  "pH\000B\007\n\005value\"\035\n\005input\022\024\n\003seq\030\001 \003(\0132\007.Opt"
+  "ion\"$\n\014StreamBuffer\022\t\n\001a\030\001 \001(\r\022\t\n\001b\030\002 \001("
+  "\t\")\n\nTcpMessage\022\n\n\002id\030\001 \001(\005\022\017\n\007payload\030\002"
+  " \001(\t\":\n\005Queue\022\016\n\006handle\030\001 \001(\r\022\021\n\titem_si"
+  "ze\030\002 \001(\r\022\016\n\006length\030\003 \001(\r\"\232\001\n\004Task\022\016\n\006han"
+  "dle\030\001 \001(\r\022\014\n\004name\030\002 \001(\t\022\020\n\010priority\030\003 \001("
+  "\r\022\022\n\nstack_size\030\004 \001(\r\022\030\n\020current_priorit"
+  "y\030\005 \001(\r\022\025\n\rbase_priority\030\006 \001(\r\022\035\n\025stack_"
+  "high_water_mark\030\007 \001(\r\"E\n\tSemaphore\022\016\n\006ha"
+  "ndle\030\001 \001(\r\022\021\n\tmax_count\030\002 \001(\r\022\025\n\rcurrent"
+  "_count\030\003 \001(\r\"D\n\005Mutex\022\016\n\006handle\030\001 \001(\r\022\027\n"
+  "\017recursion_count\030\002 \001(\r\022\022\n\nowner_name\030\003 \001"
+  "(\t\"0\n\nEventGroup\022\016\n\006handle\030\001 \001(\r\022\022\n\neven"
+  "t_bits\030\002 \001(\rb\006proto3"
   ;
 static ::_pbi::once_flag descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once;
 const ::_pbi::DescriptorTable descriptor_table_rtos_5fprotocol_5fbuffers_2eproto = {
-    false, false, 725, descriptor_table_protodef_rtos_5fprotocol_5fbuffers_2eproto,
+    false, false, 780, descriptor_table_protodef_rtos_5fprotocol_5fbuffers_2eproto,
     "rtos_protocol_buffers.proto",
-    &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once, nullptr, 0, 8,
+    &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once, nullptr, 0, 9,
     schemas, file_default_instances, TableStruct_rtos_5fprotocol_5fbuffers_2eproto::offsets,
     file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto, file_level_enum_descriptors_rtos_5fprotocol_5fbuffers_2eproto,
     file_level_service_descriptors_rtos_5fprotocol_5fbuffers_2eproto,
@@ -289,107 +308,223 @@ PROTOBUF_ATTRIBUTE_INIT_PRIORITY2 static ::_pbi::AddDescriptorsRunner dynamic_in
 
 // ===================================================================
 
-class input::_Internal {
+class Option::_Internal {
  public:
-  static const ::StreamBuffer& stream(const input* msg);
-  static const ::TcpMessage& tcp(const input* msg);
-  static const ::Queue& queue(const input* msg);
-  static const ::Task& task(const input* msg);
-  static const ::Semaphore& semaphore(const input* msg);
-  static const ::Mutex& mutex(const input* msg);
-  static const ::EventGroup& event_group(const input* msg);
+  static const ::StreamBuffer& stream(const Option* msg);
+  static const ::TcpMessage& tcp(const Option* msg);
+  static const ::Queue& queue(const Option* msg);
+  static const ::Task& task(const Option* msg);
+  static const ::Semaphore& semaphore(const Option* msg);
+  static const ::Mutex& mutex(const Option* msg);
+  static const ::EventGroup& event_group(const Option* msg);
 };
 
 const ::StreamBuffer&
-input::_Internal::stream(const input* msg) {
-  return *msg->_impl_.stream_;
+Option::_Internal::stream(const Option* msg) {
+  return *msg->_impl_.value_.stream_;
 }
 const ::TcpMessage&
-input::_Internal::tcp(const input* msg) {
-  return *msg->_impl_.tcp_;
+Option::_Internal::tcp(const Option* msg) {
+  return *msg->_impl_.value_.tcp_;
 }
 const ::Queue&
-input::_Internal::queue(const input* msg) {
-  return *msg->_impl_.queue_;
+Option::_Internal::queue(const Option* msg) {
+  return *msg->_impl_.value_.queue_;
 }
 const ::Task&
-input::_Internal::task(const input* msg) {
-  return *msg->_impl_.task_;
+Option::_Internal::task(const Option* msg) {
+  return *msg->_impl_.value_.task_;
 }
 const ::Semaphore&
-input::_Internal::semaphore(const input* msg) {
-  return *msg->_impl_.semaphore_;
+Option::_Internal::semaphore(const Option* msg) {
+  return *msg->_impl_.value_.semaphore_;
 }
 const ::Mutex&
-input::_Internal::mutex(const input* msg) {
-  return *msg->_impl_.mutex_;
+Option::_Internal::mutex(const Option* msg) {
+  return *msg->_impl_.value_.mutex_;
 }
 const ::EventGroup&
-input::_Internal::event_group(const input* msg) {
-  return *msg->_impl_.event_group_;
+Option::_Internal::event_group(const Option* msg) {
+  return *msg->_impl_.value_.event_group_;
 }
-input::input(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+void Option::set_allocated_stream(::StreamBuffer* stream) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  clear_value();
+  if (stream) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(stream);
+    if (message_arena != submessage_arena) {
+      stream = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, stream, submessage_arena);
+    }
+    set_has_stream();
+    _impl_.value_.stream_ = stream;
+  }
+  // @@protoc_insertion_point(field_set_allocated:Option.stream)
+}
+void Option::set_allocated_tcp(::TcpMessage* tcp) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  clear_value();
+  if (tcp) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(tcp);
+    if (message_arena != submessage_arena) {
+      tcp = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, tcp, submessage_arena);
+    }
+    set_has_tcp();
+    _impl_.value_.tcp_ = tcp;
+  }
+  // @@protoc_insertion_point(field_set_allocated:Option.tcp)
+}
+void Option::set_allocated_queue(::Queue* queue) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  clear_value();
+  if (queue) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(queue);
+    if (message_arena != submessage_arena) {
+      queue = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, queue, submessage_arena);
+    }
+    set_has_queue();
+    _impl_.value_.queue_ = queue;
+  }
+  // @@protoc_insertion_point(field_set_allocated:Option.queue)
+}
+void Option::set_allocated_task(::Task* task) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  clear_value();
+  if (task) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(task);
+    if (message_arena != submessage_arena) {
+      task = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, task, submessage_arena);
+    }
+    set_has_task();
+    _impl_.value_.task_ = task;
+  }
+  // @@protoc_insertion_point(field_set_allocated:Option.task)
+}
+void Option::set_allocated_semaphore(::Semaphore* semaphore) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  clear_value();
+  if (semaphore) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(semaphore);
+    if (message_arena != submessage_arena) {
+      semaphore = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, semaphore, submessage_arena);
+    }
+    set_has_semaphore();
+    _impl_.value_.semaphore_ = semaphore;
+  }
+  // @@protoc_insertion_point(field_set_allocated:Option.semaphore)
+}
+void Option::set_allocated_mutex(::Mutex* mutex) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  clear_value();
+  if (mutex) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(mutex);
+    if (message_arena != submessage_arena) {
+      mutex = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, mutex, submessage_arena);
+    }
+    set_has_mutex();
+    _impl_.value_.mutex_ = mutex;
+  }
+  // @@protoc_insertion_point(field_set_allocated:Option.mutex)
+}
+void Option::set_allocated_event_group(::EventGroup* event_group) {
+  ::PROTOBUF_NAMESPACE_ID::Arena* message_arena = GetArenaForAllocation();
+  clear_value();
+  if (event_group) {
+    ::PROTOBUF_NAMESPACE_ID::Arena* submessage_arena =
+      ::PROTOBUF_NAMESPACE_ID::Arena::InternalGetOwningArena(event_group);
+    if (message_arena != submessage_arena) {
+      event_group = ::PROTOBUF_NAMESPACE_ID::internal::GetOwnedMessage(
+          message_arena, event_group, submessage_arena);
+    }
+    set_has_event_group();
+    _impl_.value_.event_group_ = event_group;
+  }
+  // @@protoc_insertion_point(field_set_allocated:Option.event_group)
+}
+Option::Option(::PROTOBUF_NAMESPACE_ID::Arena* arena,
                          bool is_message_owned)
   : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
   SharedCtor(arena, is_message_owned);
-  // @@protoc_insertion_point(arena_constructor:input)
+  // @@protoc_insertion_point(arena_constructor:Option)
 }
-input::input(const input& from)
+Option::Option(const Option& from)
   : ::PROTOBUF_NAMESPACE_ID::Message() {
-  input* const _this = this; (void)_this;
+  Option* const _this = this; (void)_this;
   new (&_impl_) Impl_{
-      decltype(_impl_.stream_){nullptr}
-    , decltype(_impl_.tcp_){nullptr}
-    , decltype(_impl_.queue_){nullptr}
-    , decltype(_impl_.task_){nullptr}
-    , decltype(_impl_.semaphore_){nullptr}
-    , decltype(_impl_.mutex_){nullptr}
-    , decltype(_impl_.event_group_){nullptr}
-    , /*decltype(_impl_._cached_size_)*/{}};
+      decltype(_impl_.value_){}
+    , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}};
 
   _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
-  if (from._internal_has_stream()) {
-    _this->_impl_.stream_ = new ::StreamBuffer(*from._impl_.stream_);
+  clear_has_value();
+  switch (from.value_case()) {
+    case kStream: {
+      _this->_internal_mutable_stream()->::StreamBuffer::MergeFrom(
+          from._internal_stream());
+      break;
+    }
+    case kTcp: {
+      _this->_internal_mutable_tcp()->::TcpMessage::MergeFrom(
+          from._internal_tcp());
+      break;
+    }
+    case kQueue: {
+      _this->_internal_mutable_queue()->::Queue::MergeFrom(
+          from._internal_queue());
+      break;
+    }
+    case kTask: {
+      _this->_internal_mutable_task()->::Task::MergeFrom(
+          from._internal_task());
+      break;
+    }
+    case kSemaphore: {
+      _this->_internal_mutable_semaphore()->::Semaphore::MergeFrom(
+          from._internal_semaphore());
+      break;
+    }
+    case kMutex: {
+      _this->_internal_mutable_mutex()->::Mutex::MergeFrom(
+          from._internal_mutex());
+      break;
+    }
+    case kEventGroup: {
+      _this->_internal_mutable_event_group()->::EventGroup::MergeFrom(
+          from._internal_event_group());
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
   }
-  if (from._internal_has_tcp()) {
-    _this->_impl_.tcp_ = new ::TcpMessage(*from._impl_.tcp_);
-  }
-  if (from._internal_has_queue()) {
-    _this->_impl_.queue_ = new ::Queue(*from._impl_.queue_);
-  }
-  if (from._internal_has_task()) {
-    _this->_impl_.task_ = new ::Task(*from._impl_.task_);
-  }
-  if (from._internal_has_semaphore()) {
-    _this->_impl_.semaphore_ = new ::Semaphore(*from._impl_.semaphore_);
-  }
-  if (from._internal_has_mutex()) {
-    _this->_impl_.mutex_ = new ::Mutex(*from._impl_.mutex_);
-  }
-  if (from._internal_has_event_group()) {
-    _this->_impl_.event_group_ = new ::EventGroup(*from._impl_.event_group_);
-  }
-  // @@protoc_insertion_point(copy_constructor:input)
+  // @@protoc_insertion_point(copy_constructor:Option)
 }
 
-inline void input::SharedCtor(
+inline void Option::SharedCtor(
     ::_pb::Arena* arena, bool is_message_owned) {
   (void)arena;
   (void)is_message_owned;
   new (&_impl_) Impl_{
-      decltype(_impl_.stream_){nullptr}
-    , decltype(_impl_.tcp_){nullptr}
-    , decltype(_impl_.queue_){nullptr}
-    , decltype(_impl_.task_){nullptr}
-    , decltype(_impl_.semaphore_){nullptr}
-    , decltype(_impl_.mutex_){nullptr}
-    , decltype(_impl_.event_group_){nullptr}
+      decltype(_impl_.value_){}
     , /*decltype(_impl_._cached_size_)*/{}
+    , /*decltype(_impl_._oneof_case_)*/{}
   };
+  clear_has_value();
 }
 
-input::~input() {
-  // @@protoc_insertion_point(destructor:input)
+Option::~Option() {
+  // @@protoc_insertion_point(destructor:Option)
   if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
   (void)arena;
     return;
@@ -397,59 +532,81 @@ input::~input() {
   SharedDtor();
 }
 
-inline void input::SharedDtor() {
+inline void Option::SharedDtor() {
   GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
-  if (this != internal_default_instance()) delete _impl_.stream_;
-  if (this != internal_default_instance()) delete _impl_.tcp_;
-  if (this != internal_default_instance()) delete _impl_.queue_;
-  if (this != internal_default_instance()) delete _impl_.task_;
-  if (this != internal_default_instance()) delete _impl_.semaphore_;
-  if (this != internal_default_instance()) delete _impl_.mutex_;
-  if (this != internal_default_instance()) delete _impl_.event_group_;
+  if (has_value()) {
+    clear_value();
+  }
 }
 
-void input::SetCachedSize(int size) const {
+void Option::SetCachedSize(int size) const {
   _impl_._cached_size_.Set(size);
 }
 
-void input::Clear() {
-// @@protoc_insertion_point(message_clear_start:input)
+void Option::clear_value() {
+// @@protoc_insertion_point(one_of_clear_start:Option)
+  switch (value_case()) {
+    case kStream: {
+      if (GetArenaForAllocation() == nullptr) {
+        delete _impl_.value_.stream_;
+      }
+      break;
+    }
+    case kTcp: {
+      if (GetArenaForAllocation() == nullptr) {
+        delete _impl_.value_.tcp_;
+      }
+      break;
+    }
+    case kQueue: {
+      if (GetArenaForAllocation() == nullptr) {
+        delete _impl_.value_.queue_;
+      }
+      break;
+    }
+    case kTask: {
+      if (GetArenaForAllocation() == nullptr) {
+        delete _impl_.value_.task_;
+      }
+      break;
+    }
+    case kSemaphore: {
+      if (GetArenaForAllocation() == nullptr) {
+        delete _impl_.value_.semaphore_;
+      }
+      break;
+    }
+    case kMutex: {
+      if (GetArenaForAllocation() == nullptr) {
+        delete _impl_.value_.mutex_;
+      }
+      break;
+    }
+    case kEventGroup: {
+      if (GetArenaForAllocation() == nullptr) {
+        delete _impl_.value_.event_group_;
+      }
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
+  }
+  _impl_._oneof_case_[0] = VALUE_NOT_SET;
+}
+
+
+void Option::Clear() {
+// @@protoc_insertion_point(message_clear_start:Option)
   uint32_t cached_has_bits = 0;
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  if (GetArenaForAllocation() == nullptr && _impl_.stream_ != nullptr) {
-    delete _impl_.stream_;
-  }
-  _impl_.stream_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.tcp_ != nullptr) {
-    delete _impl_.tcp_;
-  }
-  _impl_.tcp_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.queue_ != nullptr) {
-    delete _impl_.queue_;
-  }
-  _impl_.queue_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.task_ != nullptr) {
-    delete _impl_.task_;
-  }
-  _impl_.task_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.semaphore_ != nullptr) {
-    delete _impl_.semaphore_;
-  }
-  _impl_.semaphore_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.mutex_ != nullptr) {
-    delete _impl_.mutex_;
-  }
-  _impl_.mutex_ = nullptr;
-  if (GetArenaForAllocation() == nullptr && _impl_.event_group_ != nullptr) {
-    delete _impl_.event_group_;
-  }
-  _impl_.event_group_ = nullptr;
+  clear_value();
   _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
 }
 
-const char* input::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+const char* Option::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
 #define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
   while (!ctx->Done(&ptr)) {
     uint32_t tag;
@@ -534,59 +691,331 @@ failure:
 #undef CHK_
 }
 
-uint8_t* input::_InternalSerialize(
+uint8_t* Option::_InternalSerialize(
     uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
-  // @@protoc_insertion_point(serialize_to_array_start:input)
+  // @@protoc_insertion_point(serialize_to_array_start:Option)
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
   // .StreamBuffer stream = 1;
-  if (this->_internal_has_stream()) {
+  if (_internal_has_stream()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(1, _Internal::stream(this),
         _Internal::stream(this).GetCachedSize(), target, stream);
   }
 
   // .TcpMessage tcp = 2;
-  if (this->_internal_has_tcp()) {
+  if (_internal_has_tcp()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(2, _Internal::tcp(this),
         _Internal::tcp(this).GetCachedSize(), target, stream);
   }
 
   // .Queue queue = 3;
-  if (this->_internal_has_queue()) {
+  if (_internal_has_queue()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(3, _Internal::queue(this),
         _Internal::queue(this).GetCachedSize(), target, stream);
   }
 
   // .Task task = 4;
-  if (this->_internal_has_task()) {
+  if (_internal_has_task()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(4, _Internal::task(this),
         _Internal::task(this).GetCachedSize(), target, stream);
   }
 
   // .Semaphore semaphore = 5;
-  if (this->_internal_has_semaphore()) {
+  if (_internal_has_semaphore()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(5, _Internal::semaphore(this),
         _Internal::semaphore(this).GetCachedSize(), target, stream);
   }
 
   // .Mutex mutex = 6;
-  if (this->_internal_has_mutex()) {
+  if (_internal_has_mutex()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(6, _Internal::mutex(this),
         _Internal::mutex(this).GetCachedSize(), target, stream);
   }
 
   // .EventGroup event_group = 7;
-  if (this->_internal_has_event_group()) {
+  if (_internal_has_event_group()) {
     target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
       InternalWriteMessage(7, _Internal::event_group(this),
         _Internal::event_group(this).GetCachedSize(), target, stream);
+  }
+
+  if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
+    target = ::_pbi::WireFormat::InternalSerializeUnknownFieldsToArray(
+        _internal_metadata_.unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(::PROTOBUF_NAMESPACE_ID::UnknownFieldSet::default_instance), target, stream);
+  }
+  // @@protoc_insertion_point(serialize_to_array_end:Option)
+  return target;
+}
+
+size_t Option::ByteSizeLong() const {
+// @@protoc_insertion_point(message_byte_size_start:Option)
+  size_t total_size = 0;
+
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  switch (value_case()) {
+    // .StreamBuffer stream = 1;
+    case kStream: {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.value_.stream_);
+      break;
+    }
+    // .TcpMessage tcp = 2;
+    case kTcp: {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.value_.tcp_);
+      break;
+    }
+    // .Queue queue = 3;
+    case kQueue: {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.value_.queue_);
+      break;
+    }
+    // .Task task = 4;
+    case kTask: {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.value_.task_);
+      break;
+    }
+    // .Semaphore semaphore = 5;
+    case kSemaphore: {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.value_.semaphore_);
+      break;
+    }
+    // .Mutex mutex = 6;
+    case kMutex: {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.value_.mutex_);
+      break;
+    }
+    // .EventGroup event_group = 7;
+    case kEventGroup: {
+      total_size += 1 +
+        ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
+          *_impl_.value_.event_group_);
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
+  }
+  return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
+}
+
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData Option::_class_data_ = {
+    ::PROTOBUF_NAMESPACE_ID::Message::CopyWithSourceCheck,
+    Option::MergeImpl
+};
+const ::PROTOBUF_NAMESPACE_ID::Message::ClassData*Option::GetClassData() const { return &_class_data_; }
+
+
+void Option::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF_NAMESPACE_ID::Message& from_msg) {
+  auto* const _this = static_cast<Option*>(&to_msg);
+  auto& from = static_cast<const Option&>(from_msg);
+  // @@protoc_insertion_point(class_specific_merge_from_start:Option)
+  GOOGLE_DCHECK_NE(&from, _this);
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  switch (from.value_case()) {
+    case kStream: {
+      _this->_internal_mutable_stream()->::StreamBuffer::MergeFrom(
+          from._internal_stream());
+      break;
+    }
+    case kTcp: {
+      _this->_internal_mutable_tcp()->::TcpMessage::MergeFrom(
+          from._internal_tcp());
+      break;
+    }
+    case kQueue: {
+      _this->_internal_mutable_queue()->::Queue::MergeFrom(
+          from._internal_queue());
+      break;
+    }
+    case kTask: {
+      _this->_internal_mutable_task()->::Task::MergeFrom(
+          from._internal_task());
+      break;
+    }
+    case kSemaphore: {
+      _this->_internal_mutable_semaphore()->::Semaphore::MergeFrom(
+          from._internal_semaphore());
+      break;
+    }
+    case kMutex: {
+      _this->_internal_mutable_mutex()->::Mutex::MergeFrom(
+          from._internal_mutex());
+      break;
+    }
+    case kEventGroup: {
+      _this->_internal_mutable_event_group()->::EventGroup::MergeFrom(
+          from._internal_event_group());
+      break;
+    }
+    case VALUE_NOT_SET: {
+      break;
+    }
+  }
+  _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+}
+
+void Option::CopyFrom(const Option& from) {
+// @@protoc_insertion_point(class_specific_copy_from_start:Option)
+  if (&from == this) return;
+  Clear();
+  MergeFrom(from);
+}
+
+bool Option::IsInitialized() const {
+  return true;
+}
+
+void Option::InternalSwap(Option* other) {
+  using std::swap;
+  _internal_metadata_.InternalSwap(&other->_internal_metadata_);
+  swap(_impl_.value_, other->_impl_.value_);
+  swap(_impl_._oneof_case_[0], other->_impl_._oneof_case_[0]);
+}
+
+::PROTOBUF_NAMESPACE_ID::Metadata Option::GetMetadata() const {
+  return ::_pbi::AssignDescriptors(
+      &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[0]);
+}
+
+// ===================================================================
+
+class input::_Internal {
+ public:
+};
+
+input::input(::PROTOBUF_NAMESPACE_ID::Arena* arena,
+                         bool is_message_owned)
+  : ::PROTOBUF_NAMESPACE_ID::Message(arena, is_message_owned) {
+  SharedCtor(arena, is_message_owned);
+  // @@protoc_insertion_point(arena_constructor:input)
+}
+input::input(const input& from)
+  : ::PROTOBUF_NAMESPACE_ID::Message() {
+  input* const _this = this; (void)_this;
+  new (&_impl_) Impl_{
+      decltype(_impl_.seq_){from._impl_.seq_}
+    , /*decltype(_impl_._cached_size_)*/{}};
+
+  _internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
+  // @@protoc_insertion_point(copy_constructor:input)
+}
+
+inline void input::SharedCtor(
+    ::_pb::Arena* arena, bool is_message_owned) {
+  (void)arena;
+  (void)is_message_owned;
+  new (&_impl_) Impl_{
+      decltype(_impl_.seq_){arena}
+    , /*decltype(_impl_._cached_size_)*/{}
+  };
+}
+
+input::~input() {
+  // @@protoc_insertion_point(destructor:input)
+  if (auto *arena = _internal_metadata_.DeleteReturnArena<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>()) {
+  (void)arena;
+    return;
+  }
+  SharedDtor();
+}
+
+inline void input::SharedDtor() {
+  GOOGLE_DCHECK(GetArenaForAllocation() == nullptr);
+  _impl_.seq_.~RepeatedPtrField();
+}
+
+void input::SetCachedSize(int size) const {
+  _impl_._cached_size_.Set(size);
+}
+
+void input::Clear() {
+// @@protoc_insertion_point(message_clear_start:input)
+  uint32_t cached_has_bits = 0;
+  // Prevent compiler warnings about cached_has_bits being unused
+  (void) cached_has_bits;
+
+  _impl_.seq_.Clear();
+  _internal_metadata_.Clear<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>();
+}
+
+const char* input::_InternalParse(const char* ptr, ::_pbi::ParseContext* ctx) {
+#define CHK_(x) if (PROTOBUF_PREDICT_FALSE(!(x))) goto failure
+  while (!ctx->Done(&ptr)) {
+    uint32_t tag;
+    ptr = ::_pbi::ReadTag(ptr, &tag);
+    switch (tag >> 3) {
+      // repeated .Option seq = 1;
+      case 1:
+        if (PROTOBUF_PREDICT_TRUE(static_cast<uint8_t>(tag) == 10)) {
+          ptr -= 1;
+          do {
+            ptr += 1;
+            ptr = ctx->ParseMessage(_internal_add_seq(), ptr);
+            CHK_(ptr);
+            if (!ctx->DataAvailable(ptr)) break;
+          } while (::PROTOBUF_NAMESPACE_ID::internal::ExpectTag<10>(ptr));
+        } else
+          goto handle_unusual;
+        continue;
+      default:
+        goto handle_unusual;
+    }  // switch
+  handle_unusual:
+    if ((tag == 0) || ((tag & 7) == 4)) {
+      CHK_(ptr);
+      ctx->SetLastTag(tag);
+      goto message_done;
+    }
+    ptr = UnknownFieldParse(
+        tag,
+        _internal_metadata_.mutable_unknown_fields<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(),
+        ptr, ctx);
+    CHK_(ptr != nullptr);
+  }  // while
+message_done:
+  return ptr;
+failure:
+  ptr = nullptr;
+  goto message_done;
+#undef CHK_
+}
+
+uint8_t* input::_InternalSerialize(
+    uint8_t* target, ::PROTOBUF_NAMESPACE_ID::io::EpsCopyOutputStream* stream) const {
+  // @@protoc_insertion_point(serialize_to_array_start:input)
+  uint32_t cached_has_bits = 0;
+  (void) cached_has_bits;
+
+  // repeated .Option seq = 1;
+  for (unsigned i = 0,
+      n = static_cast<unsigned>(this->_internal_seq_size()); i < n; i++) {
+    const auto& repfield = this->_internal_seq(i);
+    target = ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::
+        InternalWriteMessage(1, repfield, repfield.GetCachedSize(), target, stream);
   }
 
   if (PROTOBUF_PREDICT_FALSE(_internal_metadata_.have_unknown_fields())) {
@@ -605,53 +1034,11 @@ size_t input::ByteSizeLong() const {
   // Prevent compiler warnings about cached_has_bits being unused
   (void) cached_has_bits;
 
-  // .StreamBuffer stream = 1;
-  if (this->_internal_has_stream()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.stream_);
-  }
-
-  // .TcpMessage tcp = 2;
-  if (this->_internal_has_tcp()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.tcp_);
-  }
-
-  // .Queue queue = 3;
-  if (this->_internal_has_queue()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.queue_);
-  }
-
-  // .Task task = 4;
-  if (this->_internal_has_task()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.task_);
-  }
-
-  // .Semaphore semaphore = 5;
-  if (this->_internal_has_semaphore()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.semaphore_);
-  }
-
-  // .Mutex mutex = 6;
-  if (this->_internal_has_mutex()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.mutex_);
-  }
-
-  // .EventGroup event_group = 7;
-  if (this->_internal_has_event_group()) {
-    total_size += 1 +
-      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(
-        *_impl_.event_group_);
+  // repeated .Option seq = 1;
+  total_size += 1UL * this->_internal_seq_size();
+  for (const auto& msg : this->_impl_.seq_) {
+    total_size +=
+      ::PROTOBUF_NAMESPACE_ID::internal::WireFormatLite::MessageSize(msg);
   }
 
   return MaybeComputeUnknownFieldsSize(total_size, &_impl_._cached_size_);
@@ -672,34 +1059,7 @@ void input::MergeImpl(::PROTOBUF_NAMESPACE_ID::Message& to_msg, const ::PROTOBUF
   uint32_t cached_has_bits = 0;
   (void) cached_has_bits;
 
-  if (from._internal_has_stream()) {
-    _this->_internal_mutable_stream()->::StreamBuffer::MergeFrom(
-        from._internal_stream());
-  }
-  if (from._internal_has_tcp()) {
-    _this->_internal_mutable_tcp()->::TcpMessage::MergeFrom(
-        from._internal_tcp());
-  }
-  if (from._internal_has_queue()) {
-    _this->_internal_mutable_queue()->::Queue::MergeFrom(
-        from._internal_queue());
-  }
-  if (from._internal_has_task()) {
-    _this->_internal_mutable_task()->::Task::MergeFrom(
-        from._internal_task());
-  }
-  if (from._internal_has_semaphore()) {
-    _this->_internal_mutable_semaphore()->::Semaphore::MergeFrom(
-        from._internal_semaphore());
-  }
-  if (from._internal_has_mutex()) {
-    _this->_internal_mutable_mutex()->::Mutex::MergeFrom(
-        from._internal_mutex());
-  }
-  if (from._internal_has_event_group()) {
-    _this->_internal_mutable_event_group()->::EventGroup::MergeFrom(
-        from._internal_event_group());
-  }
+  _this->_impl_.seq_.MergeFrom(from._impl_.seq_);
   _this->_internal_metadata_.MergeFrom<::PROTOBUF_NAMESPACE_ID::UnknownFieldSet>(from._internal_metadata_);
 }
 
@@ -717,18 +1077,13 @@ bool input::IsInitialized() const {
 void input::InternalSwap(input* other) {
   using std::swap;
   _internal_metadata_.InternalSwap(&other->_internal_metadata_);
-  ::PROTOBUF_NAMESPACE_ID::internal::memswap<
-      PROTOBUF_FIELD_OFFSET(input, _impl_.event_group_)
-      + sizeof(input::_impl_.event_group_)
-      - PROTOBUF_FIELD_OFFSET(input, _impl_.stream_)>(
-          reinterpret_cast<char*>(&_impl_.stream_),
-          reinterpret_cast<char*>(&other->_impl_.stream_));
+  _impl_.seq_.InternalSwap(&other->_impl_.seq_);
 }
 
 ::PROTOBUF_NAMESPACE_ID::Metadata input::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
-      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[0]);
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[1]);
 }
 
 // ===================================================================
@@ -958,7 +1313,7 @@ void StreamBuffer::InternalSwap(StreamBuffer* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata StreamBuffer::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
-      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[1]);
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[2]);
 }
 
 // ===================================================================
@@ -1188,7 +1543,7 @@ void TcpMessage::InternalSwap(TcpMessage* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata TcpMessage::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
-      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[2]);
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[3]);
 }
 
 // ===================================================================
@@ -1423,7 +1778,7 @@ void Queue::InternalSwap(Queue* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata Queue::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
-      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[3]);
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[4]);
 }
 
 // ===================================================================
@@ -1782,7 +2137,7 @@ void Task::InternalSwap(Task* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata Task::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
-      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[4]);
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[5]);
 }
 
 // ===================================================================
@@ -2017,7 +2372,7 @@ void Semaphore::InternalSwap(Semaphore* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata Semaphore::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
-      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[5]);
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[6]);
 }
 
 // ===================================================================
@@ -2280,7 +2635,7 @@ void Mutex::InternalSwap(Mutex* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata Mutex::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
-      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[6]);
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[7]);
 }
 
 // ===================================================================
@@ -2491,11 +2846,15 @@ void EventGroup::InternalSwap(EventGroup* other) {
 ::PROTOBUF_NAMESPACE_ID::Metadata EventGroup::GetMetadata() const {
   return ::_pbi::AssignDescriptors(
       &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_getter, &descriptor_table_rtos_5fprotocol_5fbuffers_2eproto_once,
-      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[7]);
+      file_level_metadata_rtos_5fprotocol_5fbuffers_2eproto[8]);
 }
 
 // @@protoc_insertion_point(namespace_scope)
 PROTOBUF_NAMESPACE_OPEN
+template<> PROTOBUF_NOINLINE ::Option*
+Arena::CreateMaybeMessage< ::Option >(Arena* arena) {
+  return Arena::CreateMessageInternal< ::Option >(arena);
+}
 template<> PROTOBUF_NOINLINE ::input*
 Arena::CreateMaybeMessage< ::input >(Arena* arena) {
   return Arena::CreateMessageInternal< ::input >(arena);

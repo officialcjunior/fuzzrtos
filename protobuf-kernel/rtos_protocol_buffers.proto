@@ -1,13 +1,19 @@
 syntax = "proto3";
 
+message Option {
+  oneof value {
+    StreamBuffer stream = 1;
+    TcpMessage tcp = 2;
+    Queue queue = 3;
+    Task task = 4;
+    Semaphore semaphore = 5;
+    Mutex mutex = 6;
+    EventGroup event_group = 7;
+  }
+}
+
 message input {
-  StreamBuffer stream = 1;
-  TcpMessage tcp = 2;
-  Queue queue = 3;
-  Task task = 4;
-  Semaphore semaphore = 5;
-  Mutex mutex = 6;
-  EventGroup event_group = 7;
+  repeated Option seq = 1;
 }
 
 message StreamBuffer {
