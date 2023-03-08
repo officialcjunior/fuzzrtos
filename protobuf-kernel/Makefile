@@ -114,7 +114,7 @@ all: $(TARGET)
 	$(C) $(CXXFLAGS) $(INCLUDE_DIRS) $(FREERTOS_FLAGS) -MMD -c $< -o $@
 
 harness.o: harness.cc
-	$(CXX) $(CXXFLAGS) $(INCLUDE_DIRS) $(FREERTOS_FLAGS) -c $(FUZZ_FLAGS) $<
+	$(CXX) $(CXXFLAGS) $(INCLUDE_DIRS) $(FREERTOS_FLAGS) -c $(FUZZ_FLAGS) $(PB_SRC) $(LPM_LIB) $(PROTOBUF_LIB) $(INC) $<
 
 $(TARGET): harness.o $(OBJ_FILES) $(TARGET).cc
 	$(CXX) $(CXXFLAGS) $(LINKER_FLAGS) -o $@ $^ $(PB_SRC) $(LPM_LIB) $(PROTOBUF_LIB) $(INC)
