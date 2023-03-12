@@ -34,11 +34,14 @@ extern "C" int fuzz(std::vector<const char*> data, int mode_len, size_t size) {
         // Validate and search
         default:
             xQueue = xQueueCreate(mode_len, size);
+            if( xQueue != NULL ){
             for(const auto& str : data) {
-                xQueueSend(xQueue, ( void * ) str, ( TickType_t ) 0 );
+                if( xQueueSend(xQueue, ( void * ) str, ( TickType_t ) 0 ) == pdPASS ){
                 xQueueReceive(xQueue, ( void * ) str, 0);
+                }
             }
             free(xQueue);
+            }
         break;       
 
     }
